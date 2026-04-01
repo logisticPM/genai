@@ -1,0 +1,528 @@
+[
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 17.3,
+    "rule_results": []
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 19.6,
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 0.38 instead of 0. Visual differences are exaggerated by ~2.7x."
+    ]
+  },
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 20.8,
+    "rule_results": []
+  },
+  {
+    "instance_id": "14",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 24.3,
+    "rule_results": []
+  },
+  {
+    "instance_id": "12",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 17.9,
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 60000.0 instead of 0. Visual differences are exaggerated by ~2.9x."
+    ]
+  },
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "elapsed_s": 15.2,
+    "rule_results": []
+  },
+  {
+    "instance_id": "13",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 18.0,
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 19400.0 instead of 0. Visual differences are exaggerated by ~11.8x.",
+      "inappropriate_axis_range: Axis range is very narrow: 19400.0-21200.0 (covers only 8% of max value). This significantly exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "elapsed_s": 20.5,
+    "rule_results": []
+  },
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 20.2,
+    "rule_results": [
+      "broken_scale: Tick intervals are inconsistent (max deviation 986.667 vs avg 300.333)."
+    ]
+  },
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 22.2,
+    "rule_results": [
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 175% from average). Widths: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 6.0, 4.0]."
+    ]
+  },
+  {
+    "instance_id": "33",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 27.1,
+    "rule_results": [
+      "broken_scale: Tick intervals are inconsistent (max deviation 8.000 vs avg 13.000)."
+    ]
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 25.0,
+    "rule_results": [
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-60.0, Right range: 0.0-100.0, scale ratio: 1.7x."
+    ]
+  },
+  {
+    "instance_id": "19",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 20.2,
+    "rule_results": [
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-9000.0, Right range: 0.0-3000.0, scale ratio: 3.0x."
+    ]
+  },
+  {
+    "instance_id": "26",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 21.0,
+    "rule_results": [
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-50.0, Right range: 0.0-100.0, scale ratio: 2.0x."
+    ]
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 24.1,
+    "rule_results": []
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 20.4,
+    "rule_results": []
+  },
+  {
+    "instance_id": "52",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 25.4,
+    "rule_results": []
+  },
+  {
+    "instance_id": "10",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 33.5,
+    "rule_results": []
+  },
+  {
+    "instance_id": "29",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 29.0,
+    "rule_results": []
+  },
+  {
+    "instance_id": "128",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.0,
+    "rule_results": []
+  },
+  {
+    "instance_id": "17",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 20.4,
+    "rule_results": [
+      "inverted_axis: Y-axis appears inverted: values increase from top (0.0) to bottom (35.0), suggesting the axis direction is reversed."
+    ]
+  },
+  {
+    "instance_id": "112",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 24.9,
+    "rule_results": []
+  },
+  {
+    "instance_id": "60",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 20.3,
+    "rule_results": []
+  },
+  {
+    "instance_id": "18",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 24.7,
+    "rule_results": []
+  },
+  {
+    "instance_id": "50",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 23.2,
+    "rule_results": []
+  },
+  {
+    "instance_id": "24",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 18.9,
+    "rule_results": []
+  },
+  {
+    "instance_id": "70",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 18.3,
+    "rule_results": []
+  },
+  {
+    "instance_id": "79",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 18.8,
+    "rule_results": []
+  },
+  {
+    "instance_id": "67",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 23.2,
+    "rule_results": []
+  },
+  {
+    "instance_id": "89",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 22.4,
+    "rule_results": []
+  },
+  {
+    "instance_id": "30",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 17.7,
+    "rule_results": []
+  },
+  {
+    "instance_id": "32",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "elapsed_s": 18.1,
+    "rule_results": []
+  },
+  {
+    "instance_id": "171",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 24.8,
+    "rule_results": []
+  },
+  {
+    "instance_id": "49",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 27.2,
+    "rule_results": []
+  },
+  {
+    "instance_id": "173",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 24.4,
+    "rule_results": []
+  },
+  {
+    "instance_id": "172",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 25.7,
+    "rule_results": []
+  },
+  {
+    "instance_id": "175",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 24.0,
+    "rule_results": []
+  },
+  {
+    "instance_id": "174",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 25.1,
+    "rule_results": []
+  },
+  {
+    "instance_id": "177",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 24.8,
+    "rule_results": [
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 150% from average). Widths: [5.0, 15.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0]."
+    ]
+  },
+  {
+    "instance_id": "176",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 27.6,
+    "rule_results": []
+  },
+  {
+    "instance_id": "179",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 23.0,
+    "rule_results": []
+  },
+  {
+    "instance_id": "178",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 31.0,
+    "rule_results": []
+  },
+  {
+    "instance_id": "180",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 22.1,
+    "rule_results": []
+  },
+  {
+    "instance_id": "181",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 20.4,
+    "rule_results": []
+  },
+  {
+    "instance_id": "182",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 25.5,
+    "rule_results": []
+  },
+  {
+    "instance_id": "183",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 23.5,
+    "rule_results": []
+  },
+  {
+    "instance_id": "185",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 24.6,
+    "rule_results": []
+  },
+  {
+    "instance_id": "184",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 24.0,
+    "rule_results": []
+  },
+  {
+    "instance_id": "186",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 21.5,
+    "rule_results": []
+  },
+  {
+    "instance_id": "187",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 21.9,
+    "rule_results": []
+  }
+]

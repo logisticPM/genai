@@ -1,0 +1,5576 @@
+[
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "elapsed_s": 13.2,
+    "t_extract_s": 3.2,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 14.0,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0.38,
+      0.42,
+      0.44,
+      0.46,
+      0.48,
+      0.5,
+      0.52,
+      0.54,
+      0.56,
+      0.58,
+      0.6
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 0.38 instead of 0. Visual differences are exaggerated by ~2.7x.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 0.018 vs avg 0.022)."
+    ]
+  },
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 14.6,
+    "t_extract_s": 3.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "elapsed_s": 15.2,
+    "t_extract_s": 3.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 17.3,
+    "t_extract_s": 3.2,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate_use_of_line_chart",
+      "inconsistent_tick_intervals",
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inverted_axis"
+    ],
+    "elapsed_s": 18.3,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      1803,
+      516,
+      148,
+      42,
+      12,
+      3,
+      1
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 986.667 vs avg -300.333).",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (6 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 19.1,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-60.0, Right range: 10.0-100.0, scale ratio: 1.5x."
+    ]
+  },
+  {
+    "instance_id": "11",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 12.9,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.3,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 28.9,
+    "t_extract_s": 4.3,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.3,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "10",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 19.4,
+    "t_extract_s": 4.5,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "14",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 14.9,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "12",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 17.3,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      60000,
+      68000,
+      76000,
+      84000,
+      92000
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 60000.0 instead of 0. Visual differences are exaggerated by ~2.9x.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "16",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 12.4,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "17",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.1,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "15",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [],
+    "elapsed_s": 15.7,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "13",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "misrepresentation"
+    ],
+    "elapsed_s": 27.0,
+    "t_extract_s": 13.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      21200,
+      21000,
+      20800,
+      20600,
+      20400,
+      20200,
+      20000,
+      19800,
+      19600,
+      19400
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 19400.0 instead of 0. Visual differences are exaggerated by ~11.8x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (9 decreasing vs 0 increasing pairs).",
+      "inappropriate_axis_range: Axis range is narrow: 19400.0-21200.0 (covers only 8% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "21",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [],
+    "elapsed_s": 11.4,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "20",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 12.2,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": [
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 39% from average). Widths: [0.1, 0.1, 0.1, 0.1, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]."
+    ]
+  },
+  {
+    "instance_id": "19",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 14.7,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      1000,
+      2000,
+      3000,
+      4000,
+      5000,
+      6000,
+      7000,
+      8000,
+      9000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-9000.0, Right range: 0.0-3000.0, scale ratio: 3.0x."
+    ]
+  },
+  {
+    "instance_id": "22",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 10.0,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "24",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_use_of_line_chart"
+    ],
+    "elapsed_s": 13.4,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500,
+      4000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "25",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 12.8,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "26",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 13.8,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-50.0, Right range: 0.0-100.0, scale ratio: 2.0x."
+    ]
+  },
+  {
+    "instance_id": "18",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 30.6,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      50,
+      100,
+      150
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "23",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 17.5,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      7000,
+      6500,
+      6000,
+      5500,
+      5000,
+      4500,
+      4000,
+      3500,
+      3000
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 3000.0 instead of 0. Visual differences are exaggerated by ~1.8x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (8 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "28",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 13.7,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "27",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "misrepresentation"
+    ],
+    "elapsed_s": 16.3,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      42,
+      34
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 34.0 instead of 0. Visual differences are exaggerated by ~5.2x.",
+      "broken_scale: Need at least 3 values",
+      "inappropriate_axis_range: Axis range is narrow: 34.0-42.0 (covers only 19% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "29",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.9,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "30",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 15.8,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "32",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 13.6,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "33",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 15.5,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      5,
+      20,
+      35,
+      50,
+      65
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 8.000 vs avg 13.000)."
+    ]
+  },
+  {
+    "instance_id": "31",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 18.2,
+    "t_extract_s": 3.1,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      20000,
+      40000,
+      60000,
+      80000,
+      100000,
+      120000,
+      140000,
+      160000,
+      180000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-180000.0, Right range: 0.0-60000.0, scale ratio: 3.0x."
+    ]
+  },
+  {
+    "instance_id": "34",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.0,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "36",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 14.7,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      9800,
+      9700,
+      9600,
+      9500,
+      9400,
+      9300,
+      9200,
+      9100
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 9100.0 instead of 0. Visual differences are exaggerated by ~14.0x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (7 decreasing vs 0 increasing pairs).",
+      "inappropriate_axis_range: Axis range is narrow: 9100.0-9800.0 (covers only 7% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "35",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 17.7,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-16.0, Right range: 0.0-50.0, scale ratio: 3.1x."
+    ]
+  },
+  {
+    "instance_id": "37",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 14.7,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "39",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 11.9,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "38",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 13.2,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": [
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 50% from average). Widths: [199830.0, 300000.0, 100000.0]."
+    ]
+  },
+  {
+    "instance_id": "42",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 12.5,
+    "t_extract_s": 1.5,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "45",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [],
+    "elapsed_s": 11.5,
+    "t_extract_s": 3.6,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "40",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 17.5,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "41",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "inverted_axis",
+      "3d",
+      "inconsistent_tick_intervals",
+      "misrepresentation"
+    ],
+    "elapsed_s": 17.0,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [
+      8,
+      6,
+      4,
+      0,
+      -4,
+      -6
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 1.200 vs avg -2.800).",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (5 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "44",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 13.5,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 196.0 instead of 0. Visual differences are exaggerated by ~15.0x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 196.0-210.0 (covers only 7% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "43",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 17.3,
+    "t_extract_s": 3.0,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      -200000,
+      -400000,
+      -600000,
+      -800000,
+      -1000000,
+      -1200000,
+      -1400000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (7 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "46",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.4,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      4,
+      8,
+      12,
+      16
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "47",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 18.8,
+    "t_extract_s": 3.3,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": [
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 1999% from average). Widths: [3107.0, 5309.0, -1341.0, -5515.0, 3585.0, -2143.0, 1803.0, 1453.0, -3644.0]."
+    ]
+  },
+  {
+    "instance_id": "48",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.9,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      50,
+      100,
+      150,
+      200,
+      250
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "51",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 13.8,
+    "t_extract_s": 1.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      249000,
+      250000,
+      251000,
+      252000
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 249000.0 instead of 0. Visual differences are exaggerated by ~84.0x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 249000.0-252000.0 (covers only 1% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "50",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.2,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "53",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 16.2,
+    "t_extract_s": 3.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0.625,
+      0.6,
+      0.575,
+      0.55,
+      0.525,
+      0.5
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 0.5 instead of 0. Visual differences are exaggerated by ~5.0x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (5 decreasing vs 0 increasing pairs).",
+      "inappropriate_axis_range: Axis range is narrow: 0.5-0.625 (covers only 20% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "52",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 17.5,
+    "t_extract_s": 3.0,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "49",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 20.6,
+    "t_extract_s": 7.5,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "54",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 13.1,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "55",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 15.2,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      48,
+      51,
+      54,
+      57,
+      60
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 48.0 instead of 0. Visual differences are exaggerated by ~5.0x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 48.0-60.0 (covers only 20% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "56",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 16.6,
+    "t_extract_s": 3.1,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      84,
+      76,
+      62,
+      64,
+      28,
+      29
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 25.000 vs avg -11.000).",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (3 decreasing vs 2 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "57",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 15.5,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "58",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 14.7,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      1000,
+      2000,
+      3000,
+      4000,
+      5000,
+      6000,
+      7000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "60",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 15.4,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [
+      0,
+      5000000,
+      10000000,
+      15000000,
+      20000000,
+      25000000,
+      30000000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "61",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 15.0,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 50.0 instead of 0. Visual differences are exaggerated by ~4.6x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 50.0-64.0 (covers only 22% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "59",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [],
+    "elapsed_s": 21.4,
+    "t_extract_s": 4.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "62",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inverted_axis",
+      "misrepresentation",
+      "dual_axis"
+    ],
+    "elapsed_s": 20.2,
+    "t_extract_s": 4.2,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      -10000,
+      -8000,
+      -6000,
+      -4000,
+      -2000,
+      0,
+      2005
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: -10000.0-2005.0, Right range: 1900.0-2005.0, scale ratio: 114.3x."
+    ]
+  },
+  {
+    "instance_id": "66",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 12.9,
+    "t_extract_s": 3.8,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "65",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 15.3,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "64",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 16.9,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      100,
+      90,
+      80,
+      70,
+      60,
+      50,
+      40,
+      30,
+      20,
+      10,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (10 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "63",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 21.5,
+    "t_extract_s": 4.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "67",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 15.6,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "scatter",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "69",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 10.5,
+    "t_extract_s": 1.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "68",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "dual_axis"
+    ],
+    "elapsed_s": 17.1,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 83.0-87.0 (covers only 5% of max value). This exaggerates visual differences.",
+      "dual_axis: Dual Y-axis detected. Left range: 83.0-87.0, Right range: 55.0-95.0, scale ratio: 10.0x."
+    ]
+  },
+  {
+    "instance_id": "70",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 15.1,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      40,
+      39,
+      38,
+      37,
+      36,
+      35,
+      34
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (6 decreasing vs 0 increasing pairs).",
+      "inappropriate_axis_range: Axis range is narrow: 34.0-40.0 (covers only 15% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "71",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis",
+      "inverted_axis"
+    ],
+    "elapsed_s": 16.0,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      200,
+      100,
+      0,
+      -100,
+      -200,
+      -300,
+      -400
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (6 decreasing vs 0 increasing pairs).",
+      "dual_axis: Dual Y-axis detected. Left range: -400.0-200.0, Right range: -100.0-50.0, scale ratio: 4.0x."
+    ]
+  },
+  {
+    "instance_id": "73",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 14.6,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "72",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 17.3,
+    "t_extract_s": 3.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "76",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 15.3,
+    "t_extract_s": 2.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      0,
+      100,
+      100,
+      100,
+      200,
+      200,
+      200,
+      300,
+      300,
+      300
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 70.000 vs avg 30.000)."
+    ]
+  },
+  {
+    "instance_id": "77",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 13.8,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "74",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 19.4,
+    "t_extract_s": 3.0,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-50.0, Right range: 0.0-18.0, scale ratio: 2.8x."
+    ]
+  },
+  {
+    "instance_id": "75",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis",
+      "inconsistent_binning_size"
+    ],
+    "elapsed_s": 21.4,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-20.0, Right range: -1.0-2.5, scale ratio: 5.7x.",
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 47% from average). Widths: [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 2.0]."
+    ]
+  },
+  {
+    "instance_id": "78",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis",
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 16.3,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      0.3,
+      0.5,
+      0.7,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 0.571 vs avg 0.429).",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-3.0, Right range: 0.0-0.3, scale ratio: 10.0x."
+    ]
+  },
+  {
+    "instance_id": "79",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 14.4,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      1000,
+      900,
+      800,
+      700,
+      600,
+      500,
+      400,
+      300,
+      200,
+      100,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (10 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "81",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 14.5,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      10,
+      9.5,
+      9,
+      8.5,
+      8
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 8.0 instead of 0. Visual differences are exaggerated by ~5.0x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (4 decreasing vs 0 increasing pairs).",
+      "inappropriate_axis_range: Axis range is narrow: 8.0-10.0 (covers only 20% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "80",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate_use_of_line_chart"
+    ],
+    "elapsed_s": 17.6,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      500000,
+      1000000,
+      1500000,
+      2000000,
+      2500000,
+      3000000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "83",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 14.6,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      50000,
+      45000,
+      40000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (2 decreasing vs 0 increasing pairs).",
+      "inappropriate_axis_range: Axis range is narrow: 40000.0-50000.0 (covers only 20% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "82",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "dual_axis"
+    ],
+    "elapsed_s": 17.4,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      400000,
+      420000,
+      440000,
+      460000,
+      480000,
+      500000,
+      520000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 400000.0-520000.0 (covers only 23% of max value). This exaggerates visual differences.",
+      "dual_axis: Dual Y-axis detected. Left range: 400000.0-520000.0, Right range: -5.0-2.0, scale ratio: 17142.9x."
+    ]
+  },
+  {
+    "instance_id": "84",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inverted_axis"
+    ],
+    "elapsed_s": 17.9,
+    "t_extract_s": 2.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      110,
+      100,
+      90,
+      80,
+      70,
+      60,
+      50,
+      40,
+      30,
+      20,
+      10
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (10 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "86",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 15.3,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "87",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 13.9,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "85",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [],
+    "elapsed_s": 17.9,
+    "t_extract_s": 3.8,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "88",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.6,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "89",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.2,
+    "t_extract_s": 2.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "90",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 18.9,
+    "t_extract_s": 4.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "92",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 12.9,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "93",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted_axis",
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 13.7,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      11.9,
+      9.6,
+      8.9,
+      7.6,
+      5.3,
+      2.8,
+      1.7,
+      1.5,
+      0,
+      -6.7
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 4.633 vs avg -2.067).",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (9 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "91",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 19.3,
+    "t_extract_s": 4.1,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "94",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range",
+      "inappropriate item order"
+    ],
+    "elapsed_s": 14.6,
+    "t_extract_s": 1.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "95",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 15.4,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "96",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "dual_axis"
+    ],
+    "elapsed_s": 15.7,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      50,
+      52,
+      54,
+      56,
+      58
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 50.0-58.0 (covers only 14% of max value). This exaggerates visual differences.",
+      "dual_axis: Dual Y-axis detected. Left range: 50.0-58.0, Right range: 120.0-160.0, scale ratio: 5.0x."
+    ]
+  },
+  {
+    "instance_id": "97",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order",
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "dual_axis"
+    ],
+    "elapsed_s": 16.9,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      51.0,
+      51.5,
+      52.0,
+      52.5,
+      53.0,
+      53.5,
+      54.0,
+      54.5,
+      55.0,
+      55.5
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 51.0 instead of 0. Visual differences are exaggerated by ~12.3x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 51.0-55.5 (covers only 8% of max value). This exaggerates visual differences.",
+      "dual_axis: Dual Y-axis detected. Left range: 51.0-55.5, Right range: 51.0-55.5, scale ratio: 1.0x."
+    ]
+  },
+  {
+    "instance_id": "99",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 16.1,
+    "t_extract_s": 3.1,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "101",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 13.5,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "102",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 12.4,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500,
+      4000,
+      4500,
+      5000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "100",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 15.6,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      400,
+      380,
+      360,
+      340,
+      320,
+      300,
+      280
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (6 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "98",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual_axis",
+      "misrepresentation"
+    ],
+    "elapsed_s": 18.1,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100,
+      120,
+      140,
+      160
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "104",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.0,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "103",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 17.5,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      100.0,
+      100.2,
+      100.4,
+      100.6,
+      100.8
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 100.0-100.8 (covers only 1% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "108",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 11.9,
+    "t_extract_s": 1.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "106",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate_use_of_line_chart"
+    ],
+    "elapsed_s": 12.6,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "105",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 18.3,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "scatter",
+    "extracted_y_values": [
+      20,
+      15,
+      10,
+      5,
+      0,
+      -5,
+      -10,
+      -15,
+      -20
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (8 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "107",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.9,
+    "t_extract_s": 3.0,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "109",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.2,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "110",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 16.8,
+    "t_extract_s": 3.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      100.0,
+      96.0,
+      92.0,
+      88.0,
+      84.0,
+      80.0,
+      76.0,
+      72.0,
+      68.0,
+      64.0,
+      60.0,
+      56.0,
+      52.0,
+      48.0,
+      44.0,
+      40.0,
+      36.0,
+      32.0,
+      28.0,
+      24.0,
+      20.0,
+      16.0,
+      12.0,
+      8.0,
+      4.0,
+      0.0,
+      -4.0,
+      -8.0,
+      -12.0,
+      -16.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (29 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "111",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 16.6,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-10.0, Right range: 0.0-100.0, scale ratio: 10.0x."
+    ]
+  },
+  {
+    "instance_id": "112",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inappropriate_item_order"
+    ],
+    "elapsed_s": 18.3,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      108,
+      107,
+      106,
+      105,
+      104
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (4 decreasing vs 0 increasing pairs).",
+      "inappropriate_axis_range: Axis range is narrow: 104.0-108.0 (covers only 4% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "116",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 13.5,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "114",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.9,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      150000,
+      300000,
+      450000,
+      600000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "115",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 15.4,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500,
+      4000,
+      4500
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "118",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.7,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "113",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 21.6,
+    "t_extract_s": 7.0,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      2100,
+      1900,
+      1700,
+      1500,
+      1300,
+      1100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (5 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "120",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 12.2,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "121",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range"
+    ],
+    "elapsed_s": 13.9,
+    "t_extract_s": 1.5,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "119",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 20.1,
+    "t_extract_s": 3.7,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "122",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 15.1,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "123",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 15.2,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "scatter",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "124",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 12.6,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "117",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 30.8,
+    "t_extract_s": 3.7,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "125",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 14.5,
+    "t_extract_s": 1.6,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "126",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 13.8,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "128",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 12.0,
+    "t_extract_s": 1.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "127",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 18.3,
+    "t_extract_s": 3.3,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "130",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 15.7,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "129",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.5,
+    "t_extract_s": 3.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      4500,
+      9000,
+      13500,
+      18000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "131",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 19.0,
+    "t_extract_s": 5.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      200,
+      400,
+      600,
+      800,
+      1000,
+      1200
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "133",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 19.8,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "134",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 18.1,
+    "t_extract_s": 4.2,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "135",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 17.1,
+    "t_extract_s": 4.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0.003,
+      0.0028,
+      0.0026,
+      0.0024,
+      0.0022,
+      0.002,
+      0.0018,
+      0.0016,
+      0.0014,
+      0.0012,
+      0.001,
+      0.0008,
+      0.0006,
+      0.0004,
+      0.0002,
+      0.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (15 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "136",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.7,
+    "t_extract_s": 3.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      0.5,
+      1,
+      1.5
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "132",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inverted_axis"
+    ],
+    "elapsed_s": 30.8,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      20000,
+      18000,
+      16000,
+      14000,
+      12000,
+      10000,
+      8000,
+      6000,
+      4000,
+      2000,
+      0,
+      -2000,
+      -4000,
+      -6000,
+      -8000,
+      -10000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (15 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "138",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 16.5,
+    "t_extract_s": 3.6,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "137",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 17.8,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-1.4, Right range: 0.0-1.4, scale ratio: 1.0x."
+    ]
+  },
+  {
+    "instance_id": "141",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 13.8,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "139",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 18.4,
+    "t_extract_s": 2.9,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      -1,
+      -2,
+      -3,
+      -4,
+      -5,
+      -6,
+      -7
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (7 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "142",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 13.8,
+    "t_extract_s": 1.6,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "143",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 11.5,
+    "t_extract_s": 1.4,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0,
+      12.0,
+      14.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "140",
+    "ground_truth": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 19.7,
+    "t_extract_s": 6.9,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      500,
+      599
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 500.0 instead of 0. Visual differences are exaggerated by ~6.1x.",
+      "broken_scale: Need at least 3 values",
+      "inappropriate_axis_range: Axis range is narrow: 500.0-599.0 (covers only 17% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "146",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 14.8,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "145",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 16.3,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 0.429 vs avg 0.571)."
+    ]
+  },
+  {
+    "instance_id": "147",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 14.8,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "144",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 20.8,
+    "t_extract_s": 4.5,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "148",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 14.7,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "149",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 13.4,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "150",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 14.5,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "151",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 16.0,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "152",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 13.9,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "153",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.4,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "154",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 15.8,
+    "t_extract_s": 3.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      50,
+      100,
+      150
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "158",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range",
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 12.2,
+    "t_extract_s": 1.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "157",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 15.5,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      1,
+      10,
+      100,
+      1000,
+      10000
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 1.0 instead of 0. Visual differences are exaggerated by ~1.0x.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 6500.250 vs avg 2499.750)."
+    ]
+  },
+  {
+    "instance_id": "156",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 17.0,
+    "t_extract_s": 2.8,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (3 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "159",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 12.0,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "160",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.8,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      100000,
+      200000,
+      300000,
+      400000,
+      500000,
+      600000,
+      700000,
+      800000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "155",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 27.0,
+    "t_extract_s": 13.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (8 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "161",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 17.7,
+    "t_extract_s": 3.8,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      1000,
+      2000,
+      3000,
+      4000,
+      5000,
+      6000,
+      7000,
+      8000,
+      9000,
+      10000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "165",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 12.7,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "166",
+    "ground_truth": [
+      "inappropriate axis range",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 12.6,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "163",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 16.2,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "162",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "truncated axis",
+      "inverted axis"
+    ],
+    "elapsed_s": 17.4,
+    "t_extract_s": 4.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "164",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "dual_axis"
+    ],
+    "elapsed_s": 16.2,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-90.0, Right range: 32.0-48.0, scale ratio: 5.6x."
+    ]
+  },
+  {
+    "instance_id": "168",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 14.9,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "167",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inverted_axis"
+    ],
+    "elapsed_s": 16.8,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      110,
+      100,
+      90,
+      80,
+      70,
+      60,
+      50,
+      40,
+      30,
+      20,
+      10,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (11 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "171",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.2,
+    "t_extract_s": 2.8,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-100.0, Right range: 0.0-100.0, scale ratio: 1.0x."
+    ]
+  },
+  {
+    "instance_id": "169",
+    "ground_truth": [
+      "inappropriate use of line chart",
+      "inverted axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 18.8,
+    "t_extract_s": 2.8,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "170",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated_axis",
+      "inverted_axis"
+    ],
+    "elapsed_s": 18.5,
+    "t_extract_s": 3.2,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "173",
+    "ground_truth": [],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 17.0,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-16.0, Right range: 0.11-3.31, scale ratio: 5.0x."
+    ]
+  },
+  {
+    "instance_id": "174",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.8,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "172",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate_axis_range",
+      "misrepresentation",
+      "3d",
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 18.1,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      68000000,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Need at least 3 values"
+    ]
+  },
+  {
+    "instance_id": "177",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 14.9,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      80.0,
+      70.0,
+      60.0,
+      50.0,
+      40.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (4 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "175",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.8,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "176",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.0,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      50,
+      100,
+      150,
+      200,
+      250
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "178",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.1,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      1000,
+      800,
+      600,
+      400,
+      200,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (5 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "179",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.4,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      800,
+      700,
+      600,
+      500,
+      400,
+      300,
+      200,
+      100,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (8 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "181",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.3,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      250,
+      500,
+      750,
+      1000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "180",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.7,
+    "t_extract_s": 4.3,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "182",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.8,
+    "t_extract_s": 2.9,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "183",
+    "ground_truth": [],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 13.7,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "186",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 12.9,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "184",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.0,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "185",
+    "ground_truth": [],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 17.5,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0.2,
+      0.15,
+      0.1,
+      0.05,
+      0.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (4 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "189",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 13.1,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "188",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 15.8,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      600,
+      560,
+      520,
+      480,
+      440,
+      400,
+      360,
+      320,
+      280
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (8 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "190",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate_axis_range",
+      "dual_axis"
+    ],
+    "elapsed_s": 14.8,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100,
+      120
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "187",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 22.9,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "scatter",
+    "extracted_y_values": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "191",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.6,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "192",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 13.5,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "194",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 13.4,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "193",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.8,
+    "t_extract_s": 3.4,
+    "extracted_chart_type": "scatter",
+    "extracted_y_values": [
+      100,
+      90,
+      80,
+      70,
+      60,
+      50,
+      40,
+      30,
+      20,
+      10,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (10 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "195",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.7,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "196",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.9,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100,
+      120,
+      140,
+      160
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "197",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 16.5,
+    "t_extract_s": 3.3,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      95,
+      90,
+      85,
+      80,
+      75,
+      70,
+      65,
+      60,
+      55,
+      50
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (9 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "199",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "elapsed_s": 15.6,
+    "t_extract_s": 2.8,
+    "extracted_chart_type": "scatter",
+    "extracted_y_values": [
+      65,
+      70,
+      75,
+      80,
+      85
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inappropriate_axis_range: Axis range is narrow: 65.0-85.0 (covers only 24% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "202",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 13.4,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "198",
+    "ground_truth": [],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 20.6,
+    "t_extract_s": 3.2,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-3000.0, Right range: 0.0-3.0, scale ratio: 1000.0x."
+    ]
+  },
+  {
+    "instance_id": "200",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.3,
+    "t_extract_s": 3.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": [
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 718% from average). Widths: [0.5, 6.3, 0.7, 3.1, 0.2, 0.8, 1.3, 0.1, 0.7, 4.3, 0.0, 0.9, 0.3, 0.8, 0.0, 0.3, 0.2, 0.2, 0.2, 0.2, 1.2, 0.3, 0.1, 0.5, 0.9, 0.1, 0.9, 0.3, 0.2, 0.3, 1.0, 0.2, 0.6, 0.6, 3.2, 0.3, 0.3, 0.5, 0.3, 0.2, 0.1, 0.6, 0.9, 1.0, 0.1, 11.4, 10.7, 9.0]."
+    ]
+  },
+  {
+    "instance_id": "201",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 18.6,
+    "t_extract_s": 3.2,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      1000,
+      2000,
+      3000,
+      4000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "203",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.6,
+    "t_extract_s": 2.9,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "204",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 19.9,
+    "t_extract_s": 3.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "205",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.7,
+    "t_extract_s": 3.7,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "207",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 12.8,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "206",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.7,
+    "t_extract_s": 2.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "209",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 13.1,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "208",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.8,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "210",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.7,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "213",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 13.8,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "211",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 21.3,
+    "t_extract_s": 3.6,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "212",
+    "ground_truth": [],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 14.4,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      -2,
+      -4,
+      -6,
+      -8
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (4 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "216",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.1,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      5000,
+      10000,
+      15000,
+      20000,
+      25000,
+      30000,
+      35000,
+      40000,
+      45000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "215",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.3,
+    "t_extract_s": 3.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      500000,
+      1000000,
+      1500000,
+      2000000,
+      2500000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "214",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 18.3,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "217",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.0,
+    "t_extract_s": 3.3,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "218",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.6,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      600,
+      1200
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "220",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 12.4,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "221",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.6,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "219",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.8,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "225",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 13.2,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "226",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 12.7,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "223",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.1,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": [
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 218% from average). Widths: [0.3, 2.2, 0.2, 0.0, 3.67, 0.33, 2.3, 0.2, 1.2]."
+    ]
+  },
+  {
+    "instance_id": "224",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.9,
+    "t_extract_s": 2.8,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "222",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 20.2,
+    "t_extract_s": 2.8,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      [
+        25,
+        20,
+        15,
+        10,
+        5,
+        0
+      ],
+      [
+        40,
+        35,
+        30,
+        25,
+        20,
+        15,
+        10,
+        5,
+        0
+      ],
+      [
+        30,
+        25,
+        20,
+        15,
+        10,
+        5,
+        0
+      ],
+      [
+        60000,
+        50000,
+        40000,
+        30000,
+        20000,
+        10000,
+        0
+      ]
+    ],
+    "rule_results": []
+  },
+  {
+    "instance_id": "228",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.3,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "227",
+    "ground_truth": [],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 18.5,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      120,
+      100,
+      80,
+      60,
+      40,
+      20,
+      0,
+      -20
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (7 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "229",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.0,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "230",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 13.4,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      250,
+      500,
+      750,
+      1000,
+      1250,
+      1500
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "233",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.8,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "238",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.8,
+    "t_extract_s": 1.6,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "234",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 18.3,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      10000,
+      20000,
+      30000,
+      40000,
+      50000,
+      100000,
+      150000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are inconsistent (max deviation 28571.429 vs avg 21428.571)."
+    ]
+  },
+  {
+    "instance_id": "231",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent_binning_size",
+      "inconsistent_tick_intervals"
+    ],
+    "elapsed_s": 22.9,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 63% from average). Widths: [5.0, 16.0, 16.0, 16.0, 16.0, 15.0, 16.0, 8.0]."
+    ]
+  },
+  {
+    "instance_id": "235",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate_use_of_pie_chart"
+    ],
+    "elapsed_s": 16.8,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "237",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.3,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (7 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "236",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.6,
+    "t_extract_s": 3.5,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "232",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 25.1,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      50,
+      100,
+      150,
+      200,
+      250,
+      300,
+      350
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "239",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.1,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      34.83,
+      42.16,
+      49.5,
+      56.83,
+      64.17,
+      71.5,
+      78.84,
+      86.18,
+      93.51,
+      100.85,
+      108.19
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "240",
+    "ground_truth": [],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 14.2,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "241",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 12.0,
+    "t_extract_s": 1.7,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "242",
+    "ground_truth": [],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 15.8,
+    "t_extract_s": 2.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-2.0, Right range: 0.0-2.0, scale ratio: 1.0x."
+    ]
+  },
+  {
+    "instance_id": "243",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.7,
+    "t_extract_s": 2.9,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "244",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.0,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      200000,
+      400000,
+      600000,
+      800000,
+      1000000,
+      1200000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "245",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.8,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "246",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 17.2,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [
+      [
+        110,
+        90,
+        70,
+        50,
+        30
+      ],
+      [
+        600,
+        500,
+        400,
+        300,
+        200,
+        100,
+        0
+      ],
+      [
+        180,
+        150,
+        120,
+        90,
+        60,
+        30,
+        0
+      ],
+      [
+        300,
+        200,
+        100,
+        0
+      ],
+      [
+        80,
+        60,
+        40,
+        20,
+        0
+      ]
+    ],
+    "rule_results": []
+  },
+  {
+    "instance_id": "247",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 19.6,
+    "t_extract_s": 8.4,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      200000,
+      400000,
+      600000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "249",
+    "ground_truth": [],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 18.7,
+    "t_extract_s": 1.8,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      100,
+      200,
+      300,
+      400
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-400.0, Right range: 0.0-80.0, scale ratio: 5.0x."
+    ]
+  },
+  {
+    "instance_id": "250",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 14.7,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "pie",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "251",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.3,
+    "t_extract_s": 2.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "248",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 21.5,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "252",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.5,
+    "t_extract_s": 2.7,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "254",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.9,
+    "t_extract_s": 3.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "253",
+    "ground_truth": [],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 23.9,
+    "t_extract_s": 8.4,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-800.0, Right range: 0.0-30000.0, scale ratio: 37.5x."
+    ]
+  },
+  {
+    "instance_id": "255",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.6,
+    "t_extract_s": 2.2,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "258",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 14.0,
+    "t_extract_s": 1.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "257",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.2,
+    "t_extract_s": 3.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "256",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 17.5,
+    "t_extract_s": 3.0,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "259",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.3,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "260",
+    "ground_truth": [],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 16.2,
+    "t_extract_s": 2.3,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (10 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "261",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 16.3,
+    "t_extract_s": 2.5,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      1020,
+      1010,
+      1000,
+      990,
+      980,
+      970,
+      960,
+      950
+    ],
+    "rule_results": [
+      "truncated_axis: Y-axis starts at 950.0 instead of 0. Visual differences are exaggerated by ~14.6x.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (7 decreasing vs 0 increasing pairs).",
+      "inappropriate_axis_range: Axis range is narrow: 950.0-1020.0 (covers only 7% of max value). This exaggerates visual differences."
+    ]
+  },
+  {
+    "instance_id": "266",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 12.5,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "263",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.9,
+    "t_extract_s": 2.0,
+    "extracted_chart_type": "other",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "265",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 15.4,
+    "t_extract_s": 1.9,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "264",
+    "ground_truth": [],
+    "predicted": [
+      "inverted_axis"
+    ],
+    "elapsed_s": 16.6,
+    "t_extract_s": 3.3,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      100,
+      90,
+      80,
+      70,
+      60,
+      50,
+      40,
+      30,
+      20,
+      10,
+      0,
+      -10,
+      -20
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inverted_axis: Y-axis appears inverted: values decrease from bottom to top (12 decreasing vs 0 increasing pairs)."
+    ]
+  },
+  {
+    "instance_id": "267",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent_binning_size"
+    ],
+    "elapsed_s": 19.0,
+    "t_extract_s": 3.4,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [
+      0,
+      1000000000,
+      2000000000,
+      3000000000,
+      4000000000,
+      5000000000,
+      6000000000,
+      7000000000
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "inconsistent_binning: Bin widths are inconsistent (max deviation 69% from average). Widths: [30.0, 50.0, 50.0, 40.0, 10.0, 11.0]."
+    ]
+  },
+  {
+    "instance_id": "268",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 16.5,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [
+      0,
+      50,
+      100,
+      150,
+      200,
+      250
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent."
+    ]
+  },
+  {
+    "instance_id": "262",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 26.8,
+    "t_extract_s": 13.1,
+    "extracted_chart_type": "bar",
+    "extracted_y_values": [],
+    "rule_results": []
+  },
+  {
+    "instance_id": "269",
+    "ground_truth": [],
+    "predicted": [
+      "dual_axis"
+    ],
+    "elapsed_s": 17.3,
+    "t_extract_s": 3.6,
+    "extracted_chart_type": "line",
+    "extracted_y_values": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70
+    ],
+    "rule_results": [
+      "truncated_axis: Axis is not truncated.",
+      "broken_scale: Tick intervals are consistent.",
+      "dual_axis: Dual Y-axis detected. Left range: 0.0-70.0, Right range: 0.0-70.0, scale ratio: 1.0x."
+    ]
+  },
+  {
+    "instance_id": "270",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 18.0,
+    "t_extract_s": 2.4,
+    "extracted_chart_type": "area",
+    "extracted_y_values": [],
+    "rule_results": []
+  }
+]

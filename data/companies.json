@@ -1,0 +1,150 @@
+{
+  "NVS": {
+    "ticker": "NVS",
+    "cik": "0001114448",
+    "name": "Novartis AG",
+    "sector": "Life Science",
+    "comment_letter_years": [
+      "2022"
+    ],
+    "filings_downloaded": [],
+    "notes": "[备选组] 非GAAP表格底部小字脚注标注"
+  },
+  "UDMY": {
+    "ticker": "UDMY",
+    "cik": "0001607939",
+    "name": "Udemy, Inc.",
+    "sector": "Technology",
+    "comment_letter_years": [
+      "2023"
+    ],
+    "filings_downloaded": [],
+    "notes": "[备选组] 完整非GAAP损益表，违反C&DI 102.10(c)"
+  },
+  "SOPH": {
+    "ticker": "SOPH",
+    "cik": "0001840706",
+    "name": "SOPHiA GENETICS SA",
+    "sector": "Life Science",
+    "comment_letter_years": [
+      "2023"
+    ],
+    "filings_downloaded": [],
+    "notes": "[备选组] 完整非IFRS损益表"
+  },
+  "HURN": {
+    "ticker": "HURN",
+    "cik": "0001289848",
+    "name": "Huron Consulting Group Inc.",
+    "sector": "Professional Service",
+    "comment_letter_years": [
+      "2023"
+    ],
+    "filings_downloaded": [],
+    "notes": "[备选组] Adjusted EBITDA无GAAP对照"
+  },
+  "ALV": {
+    "ticker": "ALV",
+    "cik": "0001034670",
+    "name": "Autoliv, Inc.",
+    "sector": "Manufacturing",
+    "comment_letter_years": [
+      "2022"
+    ],
+    "filings_downloaded": [],
+    "notes": "[案例组] 柱状图混合展示非GAAP指标未配套GAAP柱状图"
+  },
+  "MYE": {
+    "ticker": "MYE",
+    "cik": "0000069488",
+    "name": "Myers Industries, Inc.",
+    "sector": "Manufacturing",
+    "comment_letter_years": [
+      "2022"
+    ],
+    "filings_downloaded": [],
+    "notes": "[案例组] 非GAAP利润率视觉突出，无GAAP对照"
+  },
+  "FXLV": {
+    "ticker": "FXLV",
+    "cik": "0001788717",
+    "name": "F45 Training Holdings Inc.",
+    "sector": "Consumer Service",
+    "comment_letter_years": [
+      "2021"
+    ],
+    "filings_downloaded": [],
+    "notes": "[案例组] Adjusted EBITDA margin无对应GAAP净利润率"
+  },
+  "UIS": {
+    "ticker": "UIS",
+    "cik": "0000746838",
+    "name": "Unisys Corporation",
+    "sector": "IT Service",
+    "comment_letter_years": [
+      "2022"
+    ],
+    "filings_downloaded": [],
+    "notes": "[案例组] TSR对比图遗漏横轴年份标签"
+  },
+  "OC": {
+    "ticker": "OC",
+    "cik": "0001370946",
+    "name": "Owens Corning",
+    "sector": "Manufacturing",
+    "comment_letter_years": [
+      "2024"
+    ],
+    "filings_downloaded": [],
+    "notes": "[案例组] Adjusted EBIT/EBITDA Margin未展示GAAP Net Earnings Margin"
+  },
+  "CNM": {
+    "ticker": "CNM",
+    "cik": "0001856525",
+    "name": "Core & Main, Inc.",
+    "sector": "Industrial Distribution",
+    "comment_letter_years": [
+      "2023"
+    ],
+    "filings_downloaded": [],
+    "notes": "[案例组] 投资者PPT仅展示非GAAP指标无GAAP图表"
+  },
+  "AAP": {
+    "ticker": "AAP",
+    "cik": "0001158449",
+    "name": "Advance Auto Parts, Inc.",
+    "sector": "Retail Auto Parts",
+    "comment_letter_years": [
+      "2024"
+    ],
+    "filings_downloaded": [],
+    "notes": "[案例组] 多个非GAAP YoY变化无对应GAAP数字"
+  },
+  "CTAS": {
+    "ticker": "CTAS",
+    "cik": "0000723254",
+    "name": "Cintas Corporation",
+    "sector": "Professional Service",
+    "comment_letter_years": [],
+    "filings_downloaded": [],
+    "notes": "[干净组]"
+  },
+  "SHW": {
+    "ticker": "SHW",
+    "cik": "0000089800",
+    "name": "Sherwin-Williams Company",
+    "sector": "Consumer Service",
+    "comment_letter_years": [],
+    "filings_downloaded": [],
+    "notes": "[干净组]"
+  },
+  "ROK": {
+    "ticker": "ROK",
+    "cik": "0001024478",
+    "name": "Rockwell Automation",
+    "sector": "Industrial Automation",
+    "comment_letter_years": [],
+    "filings_downloaded": [],
+    "notes": "[干净组]"
+  }
+}

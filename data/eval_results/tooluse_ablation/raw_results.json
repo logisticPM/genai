@@ -1,0 +1,118 @@
+[
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "findings_count": 7,
+    "elapsed_s": 21.0
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated_axis",
+      "inappropriate_axis_range"
+    ],
+    "findings_count": 5,
+    "elapsed_s": 20.6
+  },
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated_axis",
+      "inappropriate_axis_range"
+    ],
+    "findings_count": 3,
+    "elapsed_s": 117.0
+  },
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "findings_count": 3,
+    "elapsed_s": 51.5
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "findings_count": 4,
+    "elapsed_s": 23.8
+  },
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "truncated_axis",
+      "inappropriate_use_of_line_chart",
+      "dual_axis"
+    ],
+    "findings_count": 8,
+    "elapsed_s": 43.7
+  },
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "findings_count": 5,
+    "elapsed_s": 111.6
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "inconsistent tick intervals",
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated_axis",
+      "inappropriate_axis_range",
+      "misrepresentation",
+      "inconsistent_tick_intervals"
+    ],
+    "findings_count": 8,
+    "elapsed_s": 155.6
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d",
+      "inappropriate_use_of_pie_chart"
+    ],
+    "findings_count": 5,
+    "elapsed_s": 135.3
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "findings_count": 5,
+    "elapsed_s": 143.5
+  }
+]

@@ -1,0 +1,56 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.claude/
+
+# Large data files
+data/misviz_synth/
+data/misviz/
+data/arxiv2025-misviz/
+data/misviz_download/
+data/filings/
+data/annotations/
+
+# Keep eval results and charts (small)
+# data/eval_results/ -- tracked
+# data/charts/ -- tracked
+# data/companies.json -- tracked
+
+# Temp files
+~$*
+*.tmp
+_pipeline_worker.py
+
+# Binary docs (large)
+*.docx
+*.xlsx
+*.pdf
+
+# Images
+*.png
+*.gif
+architecture_diagram.png
+v2_architecture.png
+
+# SEC info file
+SEC*.xlsx
+
+# Proposal files
+FinChartAudit_*
+XDCV-*
+DATA_REQUEST_*
+
+# Embedded git repos
+memory/
+
+# OCR cache (large)
+data/eval_results/pipeline_full/
+
+# Gen scripts (not core)
+gen_*.py
+generate_*.py

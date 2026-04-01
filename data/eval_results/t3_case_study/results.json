@@ -1,0 +1,1116 @@
+{
+  "ALV/2022_8-K.htm": {
+    "ticker": "ALV",
+    "file": "2022_8-K.htm",
+    "findings_count": 29,
+    "elapsed_s": 27.9,
+    "findings": [
+      {
+        "finding_id": "db232db6",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Organic Sales presented without corresponding GAAP metric (Total Revenue)",
+        "correction": "Present Total Revenue with equal or greater prominence alongside Organic Sales.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "86b160ed",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Organic Sales has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "f35e723f",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted Operating Income presented without corresponding GAAP metric (Operating Income (GAAP))",
+        "correction": "Present Operating Income (GAAP) with equal or greater prominence alongside Adjusted Operating Income.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "0f060ba5",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted Operating Income has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "ba6700bd",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted Operating Margin presented without corresponding GAAP metric (Operating Margin (GAAP))",
+        "correction": "Present Operating Margin (GAAP) with equal or greater prominence alongside Adjusted Operating Margin.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "170209b6",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted Operating Margin has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "a214c641",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Trade Working Capital presented without corresponding GAAP metric (Working Capital (GAAP))",
+        "correction": "Present Working Capital (GAAP) with equal or greater prominence alongside Trade Working Capital.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "3e52ade6",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Trade Working Capital has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "4bb79341",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted Earnings Per Share presented without corresponding GAAP metric (GAAP EPS)",
+        "correction": "Present GAAP EPS with equal or greater prominence alongside Adjusted Earnings Per Share.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "5af83002",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted Earnings Per Share has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "355beb8f",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Net Debt presented without corresponding GAAP metric (Total Debt (GAAP))",
+        "correction": "Present Total Debt (GAAP) with equal or greater prominence alongside Net Debt.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "491c2b5f",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Net Debt has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "1d05bd8a",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted EBITDA presented without corresponding GAAP metric (Net Income)",
+        "correction": "Present Net Income with equal or greater prominence alongside Adjusted EBITDA.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "e46075dd",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted EBITDA has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "841fee74",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Net Cash Before Financing presented without corresponding GAAP metric (Net Cash from Operations (GAAP))",
+        "correction": "Present Net Cash from Operations (GAAP) with equal or greater prominence alongside Net Cash Before Financing.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "608ee814",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Net Cash Before Financing has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "8f1f3e7d",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Free Cash Flow presented without corresponding GAAP metric (Net Cash from Operations (GAAP))",
+        "correction": "Present Net Cash from Operations (GAAP) with equal or greater prominence alongside Free Cash Flow.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "faa9852b",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Free Cash Flow has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "9c53b863",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Cash Conversion presented without corresponding GAAP metric (N/A - Ratio metric)",
+        "correction": "Present N/A - Ratio metric with equal or greater prominence alongside Cash Conversion.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "e16a525d",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Cash Conversion has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "be0b822b",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Leverage Ratio presented without corresponding GAAP metric (N/A - Ratio metric)",
+        "correction": "Present N/A - Ratio metric with equal or greater prominence alongside Leverage Ratio.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "e91479ac",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Leverage Ratio has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Mentioned in 8-K Item 2.02 as Non-GAAP measure. Actual reconciliation not visible in 8-K body; referenced in press release (Exhibit 99.1).",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "5ba70c34",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "VIOLATION 1: Adjusted EBITDA mentioned without visible reconciliation to Net Income in 8-K body",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "efbb4578",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "VIOLATION 2: Adjusted Operating Income mentioned without visible reconciliation to GAAP Operating Income in 8-K body",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "bc074a56",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "VIOLATION 3: Adjusted EPS mentioned without visible reconciliation to GAAP EPS in 8-K body",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "f4812c2e",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "VIOLATION 4: Free Cash Flow mentioned without visible reconciliation to Operating Cash Flow in 8-K body",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "4d483503",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "VIOLATION 5: Organic Sales mentioned without visible reconciliation to Total Revenue in 8-K body",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "8f871dc8",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "VIOLATION 6: Net Debt mentioned without visible reconciliation to Total Debt in 8-K body",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "8f641d51",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "VIOLATION 7: All 11 Non-GAAP measures lack reconciliation tables in the 8-K document itself",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      }
+    ],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 29,
+      "findings_by_tier": {
+        "T3": 29
+      },
+      "findings_by_risk": {
+        "HIGH": 22,
+        "MEDIUM": 7
+      },
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 11
+  },
+  "MYE/2022_8-K.htm": {
+    "ticker": "MYE",
+    "file": "2022_8-K.htm",
+    "findings_count": 0,
+    "elapsed_s": 38.2,
+    "findings": [],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 0,
+      "findings_by_tier": {},
+      "findings_by_risk": {},
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 9
+  },
+  "FXLV/2021_10-K.htm": {
+    "ticker": "FXLV",
+    "file": "2021_10-K.htm",
+    "findings_count": 0,
+    "elapsed_s": 47.9,
+    "findings": [],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 0,
+      "findings_by_tier": {},
+      "findings_by_risk": {},
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 3
+  },
+  "UIS/2022_DEF14A.htm": {
+    "ticker": "UIS",
+    "file": "2022_DEF14A.htm",
+    "findings_count": 4,
+    "elapsed_s": 17.2,
+    "findings": [
+      {
+        "finding_id": "6a464b96",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Non-GAAP Operating Profit presented without corresponding GAAP metric (Operating Income (GAAP))",
+        "correction": "Present Operating Income (GAAP) with equal or greater prominence alongside Non-GAAP Operating Profit.",
+        "evidence": [
+          "SEC Staff comment indicates Non-GAAP Operating Profit was included as Company-Selected Measure per Reg S-K Item 402(v)(2)(vi) but was NOT included in the Tabular List of Most Important Financial Measures per Reg S-K Item 402(v)(6). This indicates incomplete presentation and potential prominence violation.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "2a468fe4",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Non-GAAP Operating Profit has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "SEC Staff comment indicates Non-GAAP Operating Profit was included as Company-Selected Measure per Reg S-K Item 402(v)(2)(vi) but was NOT included in the Tabular List of Most Important Financial Measures per Reg S-K Item 402(v)(6). This indicates incomplete presentation and potential prominence violation.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "1505e8de",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "Non-GAAP Operating Profit presented without corresponding GAAP Operating Income in the Tabular List",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "3b393a68",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "Non-GAAP measure not properly paired with GAAP counterpart in required disclosure format",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      }
+    ],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 4,
+      "findings_by_tier": {
+        "T3": 4
+      },
+      "findings_by_risk": {
+        "HIGH": 2,
+        "MEDIUM": 2
+      },
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 1
+  },
+  "OC/2024_8-K.htm": {
+    "ticker": "OC",
+    "file": "2024_8-K.htm",
+    "findings_count": 4,
+    "elapsed_s": 33.1,
+    "findings": [
+      {
+        "finding_id": "64450da7",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted EBIT has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Adjusted EBIT appears in headline and main performance table with equal prominence to Net Earnings. EBIT is presented in reconciliation table (Table 2) but not in the headline Enterprise Performance table. Non-GAAP metric is more prominent.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "ef7cf999",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted EBITDA has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Adjusted EBITDA appears in headline and main performance table. EBITDA is presented in reconciliation table (Table 2) but not in the headline Enterprise Performance table. Non-GAAP metric is more prominent.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "9d3c4a87",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "Adjusted EBIT shown in headline/main table without corresponding GAAP EBIT in same location",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "8d93c75f",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "Adjusted EBITDA shown in headline/main table without corresponding GAAP EBITDA in same location",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      }
+    ],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 4,
+      "findings_by_tier": {
+        "T3": 4
+      },
+      "findings_by_risk": {
+        "HIGH": 2,
+        "MEDIUM": 2
+      },
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 5
+  },
+  "CNM/2023_8-K.htm": {
+    "ticker": "CNM",
+    "file": "2023_8-K.htm",
+    "findings_count": 1,
+    "elapsed_s": 19.7,
+    "findings": [
+      {
+        "finding_id": "a6238f7d",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "CRITICAL: Cannot assess Non-GAAP compliance without access to Exhibits 99.1 and 99.2",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      }
+    ],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 1,
+      "findings_by_tier": {
+        "T3": 1
+      },
+      "findings_by_risk": {
+        "MEDIUM": 1
+      },
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 0
+  },
+  "AAP/2024_8-K.htm": {
+    "ticker": "AAP",
+    "file": "2024_8-K.htm",
+    "findings_count": 16,
+    "elapsed_s": 26.1,
+    "findings": [
+      {
+        "finding_id": "ae3c502f",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted Gross Profit presented without corresponding GAAP metric (Gross Profit (GAAP))",
+        "correction": "Present Gross Profit (GAAP) with equal or greater prominence alongside Adjusted Gross Profit.",
+        "evidence": [
+          "Filing states: 'you present prior quarter/year adjusted gross profit, adjusted gross profit margin... without comparable disclosure for the GAAP measures.' This is a VIOLATION - Non-GAAP presented without GAAP counterpart.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "b1097ea8",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted Gross Profit has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Filing states: 'you present prior quarter/year adjusted gross profit, adjusted gross profit margin... without comparable disclosure for the GAAP measures.' This is a VIOLATION - Non-GAAP presented without GAAP counterpart.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "cd6db4c6",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted SG&A presented without corresponding GAAP metric (SG&A (GAAP))",
+        "correction": "Present SG&A (GAAP) with equal or greater prominence alongside Adjusted SG&A.",
+        "evidence": [
+          "Filing states: 'adjusted SG&A, adjusted SG&A margin' presented without comparable GAAP disclosure. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "81e527f1",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted SG&A has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Filing states: 'adjusted SG&A, adjusted SG&A margin' presented without comparable GAAP disclosure. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "d48e8878",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted Operating Loss presented without corresponding GAAP metric (Operating Loss (GAAP))",
+        "correction": "Present Operating Loss (GAAP) with equal or greater prominence alongside Adjusted Operating Loss.",
+        "evidence": [
+          "Filing states: 'adjusted operating loss, adjusted operating margin' presented without comparable GAAP measures. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "22ecd467",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted Operating Loss has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Filing states: 'adjusted operating loss, adjusted operating margin' presented without comparable GAAP measures. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "a1afb14f",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted Operating Margin presented without corresponding GAAP metric (Operating Margin (GAAP))",
+        "correction": "Present Operating Margin (GAAP) with equal or greater prominence alongside Adjusted Operating Margin.",
+        "evidence": [
+          "Filing states: 'adjusted operating margin' presented without comparable GAAP disclosure. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "81429a66",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted Operating Margin has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Filing states: 'adjusted operating margin' presented without comparable GAAP disclosure. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "811a5d70",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted Loss Per Share presented without corresponding GAAP metric (Loss Per Share (GAAP))",
+        "correction": "Present Loss Per Share (GAAP) with equal or greater prominence alongside Adjusted Loss Per Share.",
+        "evidence": [
+          "Filing states: 'adjusted loss per share' presented without comparable GAAP disclosure. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "becc38fc",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted Loss Per Share has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Filing states: 'adjusted loss per share' presented without comparable GAAP disclosure. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "b802b738",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Adjusted Debt to Adjusted EBITDAR Ratio presented without corresponding GAAP metric (Debt to Net Income Ratio (GAAP))",
+        "correction": "Present Debt to Net Income Ratio (GAAP) with equal or greater prominence alongside Adjusted Debt to Adjusted EBITDAR Ratio.",
+        "evidence": [
+          "Filing states: 'Adjusted debt to adjusted EBITDAR ratio appears to represent a non-GAAP valuation measure' presented without comparable GAAP debt to net income ratio. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "e44808d8",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Adjusted Debt to Adjusted EBITDAR Ratio has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Filing states: 'Adjusted debt to adjusted EBITDAR ratio appears to represent a non-GAAP valuation measure' presented without comparable GAAP debt to net income ratio. VIOLATION - Missing GAAP counterpart.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "9a50ed48",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Pro Forma Cash Availability presented without corresponding GAAP metric (Cash Availability (GAAP))",
+        "correction": "Present Cash Availability (GAAP) with equal or greater prominence alongside Pro Forma Cash Availability.",
+        "evidence": [
+          "Filing references: 'do not refer to non-GAAP amounts as \"pro forma\" (e.g., pro forma cash availability, pro forma liquidity)' - VIOLATION: Improper use of 'pro forma' terminology for non-GAAP measures not computed per Regulation S-X Article 11.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "f786ae93",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Pro Forma Cash Availability has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Filing references: 'do not refer to non-GAAP amounts as \"pro forma\" (e.g., pro forma cash availability, pro forma liquidity)' - VIOLATION: Improper use of 'pro forma' terminology for non-GAAP measures not computed per Regulation S-X Article 11.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "614f5f80",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "missing_gaap_counterpart",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.8,
+        "description": "Pro Forma Liquidity presented without corresponding GAAP metric (Liquidity (GAAP))",
+        "correction": "Present Liquidity (GAAP) with equal or greater prominence alongside Pro Forma Liquidity.",
+        "evidence": [
+          "Filing references: 'pro forma liquidity' - VIOLATION: Improper use of 'pro forma' terminology for non-GAAP measures.",
+          "SEC basis: Reg S-K Item 10(e)(1)(i)(A) \u2014 GAAP comparison required"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "3ead92fe",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "undue_prominence",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "HIGH",
+        "confidence": 0.7,
+        "description": "Pro Forma Liquidity has undue prominence over GAAP counterpart",
+        "correction": "Ensure Non-GAAP measures are not presented more prominently than GAAP.",
+        "evidence": [
+          "Filing references: 'pro forma liquidity' - VIOLATION: Improper use of 'pro forma' terminology for non-GAAP measures.",
+          "SEC basis: C&DI 102.10 \u2014 Non-GAAP must not have undue prominence"
+        ],
+        "tool_calls": [],
+        "trace": []
+      }
+    ],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 16,
+      "findings_by_tier": {
+        "T3": 16
+      },
+      "findings_by_risk": {
+        "HIGH": 16
+      },
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 8
+  }
+}

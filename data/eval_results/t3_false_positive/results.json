@@ -1,0 +1,123 @@
+{
+  "CTAS/2025-07-28_10-K.htm": {
+    "ticker": "CTAS",
+    "file": "2025-07-28_10-K.htm",
+    "findings_count": 0,
+    "elapsed_s": 23.1,
+    "findings": [],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 0,
+      "findings_by_tier": {},
+      "findings_by_risk": {},
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 1
+  },
+  "CTAS/2026-03-25_8-K.htm": {
+    "ticker": "CTAS",
+    "file": "2026-03-25_8-K.htm",
+    "findings_count": 2,
+    "elapsed_s": 11.1,
+    "findings": [
+      {
+        "finding_id": "e21c4b0f",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "CRITICAL: Press release (Exhibit 99) containing financial metrics not available for analysis",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      },
+      {
+        "finding_id": "0824c70f",
+        "tier": "T3",
+        "category": "pairing",
+        "subcategory": "pairing_violation",
+        "page": 0,
+        "chart_id": null,
+        "risk_level": "MEDIUM",
+        "confidence": 0.6,
+        "description": "Cannot assess Non-GAAP compliance without access to the actual financial data in the press release",
+        "correction": "Ensure all Non-GAAP metrics have corresponding GAAP measures.",
+        "evidence": [
+          "SEC basis: Reg S-K Item 10(e)"
+        ],
+        "tool_calls": [],
+        "trace": []
+      }
+    ],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 2,
+      "findings_by_tier": {
+        "T3": 2
+      },
+      "findings_by_risk": {
+        "MEDIUM": 2
+      },
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 0
+  },
+  "SHW/2026-02-09_8-K.htm": {
+    "ticker": "SHW",
+    "file": "2026-02-09_8-K.htm",
+    "findings_count": 0,
+    "elapsed_s": 13.2,
+    "findings": [],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 0,
+      "findings_by_tier": {},
+      "findings_by_risk": {},
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 0
+  },
+  "SHW/2026-02-19_10-K.htm": {
+    "ticker": "SHW",
+    "file": "2026-02-19_10-K.htm",
+    "error": "Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "ROK/2025-11-12_10-K.htm": {
+    "ticker": "ROK",
+    "file": "2025-11-12_10-K.htm",
+    "error": "Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "ROK/2026-02-17_8-K.htm": {
+    "ticker": "ROK",
+    "file": "2026-02-17_8-K.htm",
+    "findings_count": 0,
+    "elapsed_s": 12.3,
+    "findings": [],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 0,
+      "findings_by_tier": {},
+      "findings_by_risk": {},
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    },
+    "pairing_count": 0
+  }
+}

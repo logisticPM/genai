@@ -1,0 +1,445 @@
+[
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.2
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.5
+  },
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.9
+  },
+  {
+    "instance_id": "14",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 5.3
+  },
+  {
+    "instance_id": "12",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.4
+  },
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.0
+  },
+  {
+    "instance_id": "13",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.6
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.5
+  },
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 2.9
+  },
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.3
+  },
+  {
+    "instance_id": "33",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 3.8
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.9
+  },
+  {
+    "instance_id": "19",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.4
+  },
+  {
+    "instance_id": "26",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.0
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 2.8
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 3.4
+  },
+  {
+    "instance_id": "52",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 4.5
+  },
+  {
+    "instance_id": "10",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 4.3
+  },
+  {
+    "instance_id": "29",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.8
+  },
+  {
+    "instance_id": "128",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.1
+  },
+  {
+    "instance_id": "17",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 2.5
+  },
+  {
+    "instance_id": "112",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.6
+  },
+  {
+    "instance_id": "60",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 2.7
+  },
+  {
+    "instance_id": "18",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 2.6
+  },
+  {
+    "instance_id": "50",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.6
+  },
+  {
+    "instance_id": "24",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 2.7
+  },
+  {
+    "instance_id": "70",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.3
+  },
+  {
+    "instance_id": "79",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.3
+  },
+  {
+    "instance_id": "67",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.0
+  },
+  {
+    "instance_id": "89",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.7
+  },
+  {
+    "instance_id": "30",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.3
+  },
+  {
+    "instance_id": "32",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.4
+  },
+  {
+    "instance_id": "171",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.6
+  },
+  {
+    "instance_id": "49",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.9
+  },
+  {
+    "instance_id": "173",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.8
+  },
+  {
+    "instance_id": "172",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.5
+  },
+  {
+    "instance_id": "175",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.1
+  },
+  {
+    "instance_id": "174",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.6
+  },
+  {
+    "instance_id": "177",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.0
+  },
+  {
+    "instance_id": "176",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.1
+  },
+  {
+    "instance_id": "179",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0
+  },
+  {
+    "instance_id": "178",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 4.3
+  },
+  {
+    "instance_id": "180",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.3
+  },
+  {
+    "instance_id": "181",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.1
+  },
+  {
+    "instance_id": "182",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.7
+  },
+  {
+    "instance_id": "183",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.9
+  },
+  {
+    "instance_id": "185",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.2
+  },
+  {
+    "instance_id": "184",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.4
+  },
+  {
+    "instance_id": "186",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.4
+  },
+  {
+    "instance_id": "187",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.4
+  }
+]

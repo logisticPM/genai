@@ -89,6 +89,8 @@ class T2PipelineAgent:
         ocr_text = ""
         ocr_axis = ""
         axis_values = []
+        right_axis_values = []
+        x_axis_values = []
 
         if self._ocr_tool and Path(image_path).exists():
             try:
@@ -98,25 +100,81 @@ class T2PipelineAgent:
                 y_result = self._ocr_tool.run(image_path, "y_axis", "text")
                 ocr_axis = self._format_ocr(y_result)
                 axis_values = self._extract_numbers(y_result)
+
+                # Right Y-axis for dual axis detection
+                right_result = self._ocr_tool.run(image_path, "right_axis", "text")
+                right_axis_values = self._extract_numbers(right_result)
+
+                # X-axis for binning detection
+                x_result = self._ocr_tool.run(image_path, "x_axis", "text")
+                x_axis_values = self._extract_numbers(x_result)
             except Exception as e:
                 ocr_text = f"OCR failed: {e}"
 
-            self.memory.audit_trace.log_tool_call("t2_pipeline", "traditional_ocr", "full+y_axis")
+            self.memory.audit_trace.log_tool_call("t2_pipeline", "traditional_ocr", "full+y_axis+right+x")
             self.memory.audit_trace.log_tool_result("t2_pipeline", "traditional_ocr", ocr_text[:200])
 
         # Step 2: Run rule checks (deterministic)
         rule_results = []
         if axis_values:
+            # Truncated axis & broken scale
             for check_type in ["truncated_axis", "broken_scale"]:
                 try:
                     result = self._rule_engine.run_check(check_type, {
                         "axis_values": axis_values,
-                        "chart_type": "bar",  # conservative default
+                        "chart_type": "bar",
                     })
                     rule_results.append(f"{check_type}: {result['explanation']}")
                     self.memory.audit_trace.log_tool_call("t2_pipeline", "rule_check", check_type)
                 except Exception:
                     pass
+
+            # Inverted axis
+            try:
+                result = self._rule_engine.run_check("inverted_axis", {
+                    "axis_values": axis_values,
+                })
+                if result["is_inverted"]:
+                    rule_results.append(f"inverted_axis: {result['explanation']}")
+                self.memory.audit_trace.log_tool_call("t2_pipeline", "rule_check", "inverted_axis")
+            except Exception:
+                pass
+
+            # Inappropriate axis range
+            try:
+                result = self._rule_engine.run_check("inappropriate_axis_range", {
+                    "axis_values": axis_values,
+                })
+                if result["is_inappropriate"]:
+                    rule_results.append(f"inappropriate_axis_range: {result['explanation']}")
+                self.memory.audit_trace.log_tool_call("t2_pipeline", "rule_check", "inappropriate_axis_range")
+            except Exception:
+                pass
+
+        # Dual axis (needs both left and right)
+        if axis_values and right_axis_values:
+            try:
+                result = self._rule_engine.run_check("dual_axis", {
+                    "left_axis_values": axis_values,
+                    "right_axis_values": right_axis_values,
+                })
+                if result["has_dual_axis"]:
+                    rule_results.append(f"dual_axis: {result['explanation']}")
+                self.memory.audit_trace.log_tool_call("t2_pipeline", "rule_check", "dual_axis")
+            except Exception:
+                pass
+
+        # Inconsistent binning (from X-axis)
+        if len(x_axis_values) >= 3:
+            try:
+                result = self._rule_engine.run_check("inconsistent_binning", {
+                    "bin_edges": x_axis_values,
+                })
+                if result["is_inconsistent"]:
+                    rule_results.append(f"inconsistent_binning: {result['explanation']}")
+                self.memory.audit_trace.log_tool_call("t2_pipeline", "rule_check", "inconsistent_binning")
+            except Exception:
+                pass
 
         # Step 3: Build prompt with evidence
         misleader_list = "\n".join(f"- {k}: {v}" for k, v in MISLEADER_DEFINITIONS.items())

@@ -1,0 +1,570 @@
+[
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "findings_count": 5,
+    "elapsed_s": 49.1,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "findings_count": 6,
+    "elapsed_s": 43.3,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "findings_count": 3,
+    "elapsed_s": 75.4,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "findings_count": 3,
+    "elapsed_s": 38.5,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "truncated axis",
+      "inconsistent tick intervals"
+    ],
+    "findings_count": 6,
+    "elapsed_s": 67.9,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inappropriate_use_of_line_chart",
+      "dual_axis"
+    ],
+    "findings_count": 10,
+    "elapsed_s": 59.7,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated_axis"
+    ],
+    "findings_count": 6,
+    "elapsed_s": 61.4,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "inconsistent tick intervals",
+      "truncated axis"
+    ],
+    "predicted": [],
+    "findings_count": 0,
+    "elapsed_s": 96.2,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate_use_of_pie_chart",
+      "3d",
+      "misrepresentation"
+    ],
+    "findings_count": 4,
+    "elapsed_s": 70.0,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "findings_count": 5,
+    "elapsed_s": 106.7,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "10",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "11",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "findings_count": 6,
+    "elapsed_s": 81.8,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "12",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "13",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "14",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "findings_count": 4,
+    "elapsed_s": 45.8,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "15",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "17",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "findings_count": 5,
+    "elapsed_s": 42.5,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "18",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "19",
+    "ground_truth": [
+      "discretized continuous variable",
+      "misrepresentation"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "22",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated_axis"
+    ],
+    "findings_count": 6,
+    "elapsed_s": 75.6,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "23",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "24",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "findings_count": 1,
+    "elapsed_s": 69.6,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "28",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "30",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis",
+      "inconsistent_tick_intervals",
+      "inappropriate_use_of_line_chart"
+    ],
+    "findings_count": 8,
+    "elapsed_s": 65.8,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "31",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "findings_count": 2,
+    "elapsed_s": 54.6,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "32",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual_axis"
+    ],
+    "findings_count": 6,
+    "elapsed_s": 35.1,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "35",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "inconsistent tick intervals",
+      "truncated axis"
+    ],
+    "findings_count": 6,
+    "elapsed_s": 60.3,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "36",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "37",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "38",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "39",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "truncated_axis",
+      "dual_axis",
+      "inappropriate_axis_range"
+    ],
+    "findings_count": 7,
+    "elapsed_s": 41.0,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "40",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "truncated axis"
+    ],
+    "findings_count": 3,
+    "elapsed_s": 68.0,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "41",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "43",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "44",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "61",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "62",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "65",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "67",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate use of pie chart"
+    ],
+    "findings_count": 3,
+    "elapsed_s": 39.7,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "75",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "findings_count": 6,
+    "elapsed_s": 62.7,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "86",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "findings_count": 2,
+    "elapsed_s": 93.8,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "91",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate_axis_range",
+      "truncated_axis"
+    ],
+    "findings_count": 3,
+    "elapsed_s": 75.6,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "92",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "100",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "110",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "findings_count": 5,
+    "elapsed_s": 86.6,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "116",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "119",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "findings_count": 2,
+    "elapsed_s": 80.2,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  },
+  {
+    "instance_id": "126",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "130",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "error": "timeout"
+  },
+  {
+    "instance_id": "132",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "truncated_axis",
+      "inappropriate_axis_range",
+      "inappropriate_use_of_line_chart"
+    ],
+    "findings_count": 7,
+    "elapsed_s": 20.3,
+    "ocr_text_len": 0,
+    "axis_values_count": 0
+  }
+]
