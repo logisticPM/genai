@@ -282,16 +282,112 @@ def load_ocr_cache() -> dict:
 
 # ── Phase 2: Multi-threaded VLM ─────────────────────────────────────────────
 
+def build_rule_verdicts(axis_values: list, right_axis_values: list,
+                        x_axis_values: list, raw_rule_results: list[str]) -> str:
+    """Build tiered rule verdicts (V3 prompt format).
+
+    RELIABLE rules → [CLEAN]/[FLAGGED] (VLM must respect)
+    UNRELIABLE rules → [INFO] (VLM decides on its own)
+    """
+    lines = []
+    has_y = len(axis_values) > 0
+
+    if not has_y:
+        lines.append("No numeric Y-axis values extracted by OCR. Rule checks could not run.")
+        lines.append("Use your visual analysis only.")
+        return "\n".join(lines)
+
+    # RELIABLE: truncated_axis
+    trunc_flagged = any("instead of 0" in r.lower() or "exaggerated" in r.lower()
+                        for r in raw_rule_results if r.startswith("truncated_axis:"))
+    if trunc_flagged:
+        lines.append(f"[FLAGGED] truncated_axis: Y-axis starts at {min(axis_values)}, not 0.")
+    elif axis_values and min(axis_values) <= 0:
+        lines.append(f"[CLEAN] truncated_axis: Y-axis includes 0 (min={min(axis_values)}). NOT truncated.")
+    else:
+        lines.append(f"[CLEAN] truncated_axis: Y-axis min={min(axis_values)}. Rule did not flag.")
+
+    # RELIABLE: dual_axis
+    dual_flagged = any(r.startswith("dual_axis:") for r in raw_rule_results)
+    if dual_flagged:
+        lines.append("[FLAGGED] dual_axis: Left and right Y-axes detected with different scales.")
+    elif right_axis_values:
+        lines.append(f"[INFO] dual_axis: Right Y-axis values found: {right_axis_values[:6]}. Verify visually.")
+    else:
+        lines.append("[CLEAN] dual_axis: No right Y-axis detected by OCR.")
+
+    # UNRELIABLE: inverted_axis
+    inv_flagged = any(r.startswith("inverted_axis:") for r in raw_rule_results)
+    if inv_flagged:
+        lines.append(f"[INFO] inverted_axis: OCR reads values top-to-bottom as increasing "
+                     f"({axis_values[:4]}...). This MAY indicate inverted axis, or normal read order. "
+                     f"Check the image: do smaller values appear at the TOP of the Y-axis?")
+    else:
+        lines.append(f"[INFO] inverted_axis: Y-axis values {axis_values[:6]}. "
+                     f"Use image to determine if axis direction is correct.")
+
+    # UNRELIABLE: inappropriate_axis_range
+    iar_flagged = any(r.startswith("inappropriate_axis_range:") for r in raw_rule_results)
+    val_range = max(axis_values) - min(axis_values) if axis_values else 0
+    if iar_flagged:
+        lines.append(f"[INFO] inappropriate_axis_range: Range {min(axis_values)}-{max(axis_values)} "
+                     f"(span={val_range:.1f}) flagged as narrow. Verify: is this a bar/area chart?")
+    else:
+        lines.append(f"[INFO] inappropriate_axis_range: Range {min(axis_values)}-{max(axis_values)} "
+                     f"(span={val_range:.1f}). Use image to judge if range exaggerates differences.")
+
+    # UNRELIABLE: inconsistent tick intervals
+    broken_flagged = any("inconsistent" in r.lower() and r.startswith("broken_scale:")
+                         for r in raw_rule_results)
+    if broken_flagged:
+        lines.append(f"[INFO] inconsistent_tick_intervals: Rule detected uneven spacing in "
+                     f"values {axis_values[:8]}. Verify visually.")
+    else:
+        lines.append(f"[INFO] inconsistent_tick_intervals: Values {axis_values[:8]}. "
+                     f"Check image for even tick spacing.")
+
+    # Inconsistent binning
+    bin_flagged = any(r.startswith("inconsistent_binning:") for r in raw_rule_results)
+    if bin_flagged:
+        lines.append("[INFO] inconsistent_binning: X-axis bin widths appear unequal.")
+
+    return "\n".join(lines)
+
+
+def apply_rule_veto(predicted: list[str], axis_values: list,
+                    right_axis_values: list, rule_results: list[str]) -> list[str]:
+    """Post-processing: veto VLM findings that contradict reliable rules.
+
+    - truncated_axis: require rule confirmation
+    - dual_axis: require OCR detection of right Y-axis
+    """
+    if not axis_values:
+        return predicted
+
+    trunc_flagged = any("instead of 0" in r.lower() or "exaggerated" in r.lower()
+                        for r in rule_results if r.startswith("truncated_axis:"))
+    dual_flagged = any(r.startswith("dual_axis:") for r in rule_results)
+
+    vetoed = []
+    for name in predicted:
+        if name == "truncated axis" and not trunc_flagged:
+            continue
+        if name == "dual axis" and not dual_flagged and not right_axis_values:
+            continue
+        vetoed.append(name)
+    return vetoed
+
+
 def run_phase2(samples: list[dict], workers: int = 8):
-    """Parallel VLM calls using pre-computed OCR + rules."""
+    """Parallel VLM calls using pre-computed OCR + rules (V3 tiered verdicts + rule veto)."""
     from finchartaudit.config import get_config
     from finchartaudit.agents.t2_pipeline import PIPELINE_SYSTEM_PROMPT, PIPELINE_PROMPT
-    from finchartaudit.prompts.t2_visual import MISLEADER_DEFINITIONS, COMPLETENESS_CHECKS
+    from finchartaudit.prompts.t2_visual import COMPLETENESS_CHECKS
     from data_tools.misviz.evaluator import MisvizEvaluator
 
     get_config.cache_clear()
     config = get_config()
-    print(f"Phase 2: VLM calls with {workers} threads")
+    print(f"Phase 2: VLM calls with {workers} threads (V3 tiered verdicts + rule veto)")
     print(f"Model: {config.vlm_model}")
 
     ocr_cache = load_ocr_cache()
@@ -318,11 +414,8 @@ def run_phase2(samples: list[dict], workers: int = 8):
         print("All done!")
         return
 
-    # Build prompts
-    misleader_list = "\n".join(f"- {k}: {v}" for k, v in MISLEADER_DEFINITIONS.items())
     completeness_list = "\n".join(f"- {k}: {v}" for k, v in COMPLETENESS_CHECKS.items())
 
-    # Use OpenAI client directly for thread safety (like B does)
     from openai import OpenAI
     import base64
     from PIL import Image
@@ -341,22 +434,30 @@ def run_phase2(samples: list[dict], workers: int = 8):
         ocr_data = ocr_cache.get(iid, {})
 
         if "error" in ocr_data:
-            ocr_text = f"OCR failed: {ocr_data['error']}"
-            ocr_axis = ""
-            rule_results_str = "No rule checks (OCR failed)."
+            ocr_axis = "OCR failed."
+            ocr_x_str = "OCR failed."
+            rule_verdicts = "No rule checks (OCR failed)."
+            axis_values = []
+            right_axis_values = []
+            rule_results = []
         else:
-            ocr_text = ocr_data.get("ocr_text", "No OCR results.")
             ocr_axis = ocr_data.get("ocr_axis", "No axis values.")
+            axis_values = ocr_data.get("axis_values", [])
+            right_axis_values = ocr_data.get("right_axis_values", [])
+            x_axis_values = ocr_data.get("x_axis_values", [])
             rule_results = ocr_data.get("rule_results", [])
-            rule_results_str = "\n".join(rule_results) if rule_results else "No rule checks applicable."
+
+            ocr_x_str = (", ".join(str(v) for v in x_axis_values[:15])
+                         if x_axis_values else "Not extracted")
+            rule_verdicts = build_rule_verdicts(
+                axis_values, right_axis_values, x_axis_values, rule_results)
 
         prompt = PIPELINE_PROMPT.format(
             chart_id=f"eval_{iid}",
             page=1,
-            ocr_text=ocr_text,
             ocr_axis=ocr_axis,
-            rule_results=rule_results_str,
-            misleader_list=misleader_list,
+            ocr_x_axis=ocr_x_str,
+            rule_verdicts=rule_verdicts,
             completeness_list=completeness_list,
         )
 
@@ -386,15 +487,19 @@ def run_phase2(samples: list[dict], workers: int = 8):
             elapsed = time.time() - start
             raw_text = response.choices[0].message.content or ""
 
-            # Parse response (reuse pipeline logic)
             predicted = _parse_predicted(raw_text)
+
+            # V3: apply rule veto post-processing
+            predicted = apply_rule_veto(
+                predicted, axis_values, right_axis_values, rule_results)
 
             result = {
                 "instance_id": iid,
                 "ground_truth": sample["ground_truth"],
                 "predicted": predicted,
                 "elapsed_s": round(elapsed, 1),
-                "rule_evidence": ocr_data.get("rule_results", []),
+                "rule_verdicts": rule_verdicts if isinstance(rule_verdicts, str) else "",
+                "rule_evidence": rule_results,
             }
         except Exception as e:
             errors += 1
@@ -414,13 +519,11 @@ def run_phase2(samples: list[dict], workers: int = 8):
             else:
                 print(f"[{completed}/{len(samples)}] id={iid} gt={sample['ground_truth']} -> {status} ({result.get('elapsed_s', '?')}s)")
 
-            # Save every 20
             if completed % 20 == 0:
                 _save(results)
 
         return result
 
-    # Run with thread pool
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = [executor.submit(process_one, s) for s in remaining]
         for future in as_completed(futures):
@@ -439,7 +542,7 @@ def run_phase2(samples: list[dict], workers: int = 8):
                 instance_id=r["instance_id"],
                 ground_truth=r["ground_truth"],
                 predicted=r["predicted"],
-                condition="pipeline",
+                condition="pipeline_v3",
                 model="claude_haiku",
             )
 

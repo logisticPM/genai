@@ -21,45 +21,75 @@ from finchartaudit.tools.rule_check import RuleEngine
 from finchartaudit.prompts.t2_visual import MISLEADER_DEFINITIONS, COMPLETENESS_CHECKS, SEC_RULE_MAPPING
 
 
-PIPELINE_SYSTEM_PROMPT = """You are a financial chart auditor. You detect TWO categories of issues:
+PIPELINE_SYSTEM_PROMPT = """You are a financial chart auditor detecting misleading visual encodings and completeness issues.
 
-PART A — Misleading visual encoding (12 Misviz types): Does the chart visually distort the data?
-PART B — Completeness issues (11 types): Is required information missing from the chart?
+RULES FOR SECTION A (structural issues with OCR data):
+- Trust [CLEAN] verdicts — do NOT override them unless you see a clear discrepancy in the image.
+- Trust [FLAGGED] verdicts — include them.
+- For [INFO] items — make your OWN judgment based on the image. The rule engine is uncertain.
+- Do NOT confuse: "truncated axis" (Y starts above 0 in bar chart) vs "inappropriate axis range" (range too narrow).
+- Line/scatter charts are ALLOWED to have non-zero Y-axis origins.
 
-You have been given PRE-EXTRACTED evidence from OCR and rule checks.
-Use this evidence together with your own visual analysis to make your final judgment.
-Be precise — only flag issues you have evidence for."""
+RULES FOR SECTION B (visual issues — your eyes only):
+- Look carefully at the chart. Flag issues you can see.
+- "misrepresentation" = bar heights/pie angles don't match the data labels.
+- "3d" = 3D perspective distorts perception of values.
+- Be thorough — these issues can only be detected visually."""
 
 
 PIPELINE_PROMPT = """Analyze this chart image (chart_id: {chart_id}, page: {page}).
 
-=== PRE-EXTRACTED EVIDENCE ===
+=== SECTION A: STRUCTURAL ISSUES (use OCR evidence) ===
 
-OCR Text (full image):
-{ocr_text}
+OCR extracted Y-axis values: {ocr_axis}
+OCR extracted X-axis values: {ocr_x_axis}
+Rule engine verdicts:
+{rule_verdicts}
 
-OCR Axis Values (Y-axis region):
-{ocr_axis}
+Based on the OCR data AND the image, check these structural issues:
+- truncated axis: Y-axis does not start from 0 in a bar/area chart, exaggerating differences. (Line charts are exempt.)
+- inverted axis: Axis values run in reverse order (e.g., decreasing from bottom to top).
+- inappropriate axis range: Y-axis range is extremely narrow relative to values, exaggerating tiny differences.
+- dual axis: Two Y-axes with different scales suggesting false correlations.
+- inconsistent tick intervals: Tick marks not evenly spaced.
+- discretized continuous variable: Continuous data forced into discrete categories.
+- inconsistent binning size: Histogram bins with unequal widths.
 
-Rule Check Results:
-{rule_results}
+IMPORTANT: If the rule engine says "not truncated" or "axis is normal", you should AGREE unless
+you can point to a SPECIFIC discrepancy between the OCR values and what you see in the image.
 
-=== PART A: Misleading Visual Encoding ===
-Check each of these 12 misleader types:
-{misleader_list}
+=== SECTION B: VISUAL ISSUES (use your eyes only — be thorough) ===
 
-=== PART B: Completeness Issues ===
-Check each of these 11 completeness items:
+Carefully examine the chart image for these visual issues. Do NOT reference the OCR data above.
+For each, look at the actual visual rendering:
+- misrepresentation: Do bar heights, pie slice angles, or area sizes MATCH the data labels shown?
+  Compare specific values: if a label says "50" and another says "100", is the second bar exactly 2x taller?
+- 3d: Is this a 3D chart? Does the perspective make front bars/slices appear larger than back ones?
+- inappropriate use of pie chart: Is this a pie chart showing values that don't sum to a whole, or with too many slices?
+- inappropriate use of line chart: Is this a line chart connecting categorical (non-sequential) data points?
+- inappropriate item order: Are items arranged to create a false visual trend (e.g., ascending order suggesting growth)?
+
+=== SECTION C: COMPLETENESS ===
 {completeness_list}
 
-Based on the image AND the pre-extracted evidence, respond with this JSON:
+Respond with this JSON:
 {{
   "chart_type": "...",
   "metric_name": "...",
   "is_gaap": true/false,
   "misleaders": {{
     "truncated axis": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
-    ...
+    "inverted axis": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "misrepresentation": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "3d": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "dual axis": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "inappropriate use of pie chart": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "inappropriate use of line chart": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "inconsistent binning size": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "inconsistent tick intervals": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "discretized continuous variable": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "inappropriate item order": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
+    "inappropriate axis range": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}}
   }},
   "completeness": {{
     "missing_chart_title": {{"present": true/false, "confidence": 0.0-1.0, "evidence": "..."}},
@@ -176,17 +206,21 @@ class T2PipelineAgent:
             except Exception:
                 pass
 
-        # Step 3: Build prompt with evidence
-        misleader_list = "\n".join(f"- {k}: {v}" for k, v in MISLEADER_DEFINITIONS.items())
+        # Step 3: Build structured rule verdicts (not raw strings)
+        rule_verdicts = self._build_rule_verdicts(
+            axis_values, right_axis_values, x_axis_values, rule_results)
+
         completeness_list = "\n".join(f"- {k}: {v}" for k, v in COMPLETENESS_CHECKS.items())
+
+        # Format X-axis values
+        ocr_x_str = ", ".join(str(v) for v in x_axis_values[:15]) if x_axis_values else "Not extracted"
 
         prompt = PIPELINE_PROMPT.format(
             chart_id=chart_id,
             page=page,
-            ocr_text=ocr_text or "No OCR results available.",
-            ocr_axis=ocr_axis or "No axis values extracted.",
-            rule_results="\n".join(rule_results) if rule_results else "No rule checks applicable (no numeric axis values found).",
-            misleader_list=misleader_list,
+            ocr_axis=ocr_axis or "No Y-axis values extracted.",
+            ocr_x_axis=ocr_x_str,
+            rule_verdicts=rule_verdicts,
             completeness_list=completeness_list,
         )
 
@@ -198,6 +232,9 @@ class T2PipelineAgent:
 
         # Step 5: Parse response
         findings = self._parse_response(response.text, chart_id, page)
+
+        # Step 6: Post-processing — rule veto for structural types
+        findings = self._apply_rule_veto(findings, axis_values, rule_results)
 
         # Register chart
         chart_record = ChartRecord(chart_id=chart_id, page=page, image_path=image_path)
@@ -264,6 +301,121 @@ class T2PipelineAgent:
             self.memory.add_finding(f)
 
         return findings
+
+    # Rules where we trust the verdict enough to label [CLEAN]/[FLAGGED]
+    # (validated by routing simulation: veto improves F1)
+    RELIABLE_RULES = {"truncated_axis", "dual_axis"}
+
+    def _build_rule_verdicts(self, axis_values: list, right_axis_values: list,
+                              x_axis_values: list, raw_rule_results: list[str]) -> str:
+        """Build structured rule verdicts that guide the VLM.
+
+        Only RELIABLE rules get [CLEAN]/[FLAGGED] labels.
+        Unreliable rules get neutral [INFO] labels — VLM decides on its own.
+        """
+        lines = []
+        has_y = len(axis_values) > 0
+
+        if not has_y:
+            lines.append("No numeric Y-axis values extracted by OCR. Rule checks could not run.")
+            lines.append("Use your visual analysis only.")
+            return "\n".join(lines)
+
+        # === RELIABLE: truncated_axis — rule verdict is authoritative ===
+        trunc_flagged = any("instead of 0" in r.lower() or "exaggerated" in r.lower()
+                           for r in raw_rule_results if r.startswith("truncated_axis:"))
+        if trunc_flagged:
+            lines.append(f"[FLAGGED] truncated_axis: Y-axis starts at {min(axis_values)}, not 0.")
+        elif axis_values and min(axis_values) <= 0:
+            lines.append(f"[CLEAN] truncated_axis: Y-axis includes 0 (min={min(axis_values)}). NOT truncated.")
+        else:
+            lines.append(f"[CLEAN] truncated_axis: Y-axis min={min(axis_values)}. Rule did not flag.")
+
+        # === RELIABLE: dual_axis — presence of right Y-axis is objective ===
+        dual_flagged = any(r.startswith("dual_axis:") for r in raw_rule_results)
+        if dual_flagged:
+            lines.append(f"[FLAGGED] dual_axis: Left and right Y-axes detected with different scales.")
+        elif right_axis_values:
+            lines.append(f"[INFO] dual_axis: Right Y-axis values found: {right_axis_values[:6]}. Verify visually.")
+        else:
+            lines.append(f"[CLEAN] dual_axis: No right Y-axis detected by OCR.")
+
+        # === UNRELIABLE: inverted_axis — OCR read order ≠ axis direction ===
+        # Rule has high FP (28/32 rule-caused). Give raw data, let VLM judge.
+        inv_flagged = any(r.startswith("inverted_axis:") for r in raw_rule_results)
+        if inv_flagged:
+            lines.append(f"[INFO] inverted_axis: OCR reads values top-to-bottom as increasing "
+                        f"({axis_values[:4]}...). This MAY indicate inverted axis, or normal read order. "
+                        f"Check the image: do smaller values appear at the TOP of the Y-axis?")
+        else:
+            lines.append(f"[INFO] inverted_axis: Y-axis values {axis_values[:6]}. "
+                        f"Use image to determine if axis direction is correct.")
+
+        # === UNRELIABLE: inappropriate_axis_range — rule rarely fires correctly ===
+        iar_flagged = any(r.startswith("inappropriate_axis_range:") for r in raw_rule_results)
+        val_range = max(axis_values) - min(axis_values) if axis_values else 0
+        if iar_flagged:
+            lines.append(f"[INFO] inappropriate_axis_range: Range {min(axis_values)}-{max(axis_values)} "
+                        f"(span={val_range:.1f}) flagged as narrow. Verify: is this a bar/area chart?")
+        else:
+            lines.append(f"[INFO] inappropriate_axis_range: Range {min(axis_values)}-{max(axis_values)} "
+                        f"(span={val_range:.1f}). Use image to judge if range exaggerates differences.")
+
+        # === UNRELIABLE: inconsistent tick intervals — broken_scale rule noisy ===
+        broken_flagged = any("inconsistent" in r.lower() and r.startswith("broken_scale:")
+                            for r in raw_rule_results)
+        if broken_flagged:
+            lines.append(f"[INFO] inconsistent_tick_intervals: Rule detected uneven spacing in "
+                        f"values {axis_values[:8]}. Verify visually.")
+        else:
+            lines.append(f"[INFO] inconsistent_tick_intervals: Values {axis_values[:8]}. "
+                        f"Check image for even tick spacing.")
+
+        # Inconsistent binning
+        bin_flagged = any(r.startswith("inconsistent_binning:") for r in raw_rule_results)
+        if bin_flagged:
+            lines.append(f"[INFO] inconsistent_binning: X-axis bin widths appear unequal.")
+
+        return "\n".join(lines)
+
+    def _apply_rule_veto(self, findings: list[AuditFinding],
+                         axis_values: list, rule_results: list[str]) -> list[AuditFinding]:
+        """Post-processing: veto VLM findings that contradict rule verdicts.
+
+        Strategy F from routing simulation:
+        - truncated_axis: require rule confirmation (F1: 35.7% → 69.0%)
+        - dual_axis: veto if rule says no dual axis detected
+        """
+        if not axis_values:
+            return findings  # No OCR → can't veto
+
+        # Parse which rules flagged
+        trunc_flagged = any("instead of 0" in r.lower() or "exaggerated" in r.lower()
+                           for r in rule_results if r.startswith("truncated_axis:"))
+        dual_flagged = any(r.startswith("dual_axis:") for r in rule_results)
+
+        vetoed = []
+        for f in findings:
+            if f.category != "misleader":
+                vetoed.append(f)
+                continue
+
+            name = f.subcategory
+            # Truncated axis: strict — must have rule confirmation
+            if name == "truncated axis" and not trunc_flagged:
+                self.memory.audit_trace.log_decision(
+                    "t2_pipeline", f"VETO truncated_axis: rule says clean, VLM confidence={f.confidence}")
+                continue
+
+            # Dual axis: veto if rule didn't detect right Y-axis
+            if name == "dual axis" and not dual_flagged:
+                self.memory.audit_trace.log_decision(
+                    "t2_pipeline", f"VETO dual_axis: no right Y-axis in OCR")
+                continue
+
+            vetoed.append(f)
+
+        return vetoed
 
     def _format_ocr(self, result: dict) -> str:
         blocks = result.get("text_blocks", [])
