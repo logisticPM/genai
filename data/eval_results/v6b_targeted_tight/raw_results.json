@@ -1,0 +1,3179 @@
+[
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 5.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 5.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 6.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced. The intervals pro",
+      "CALL2_ADD axis_range: The Y-axis range spans from 19400 to 21200 (a 1800-unit rang"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "elapsed_s": 8.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "11",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 4.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "10",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate item order",
+      "misrepresentation"
+    ],
+    "elapsed_s": 5.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "13",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The X-axis tick marks show uneven spacing: 87.4, 87.5, 87.6,",
+      "CALL2_ADD axis_range: The X-axis range spans from approximately 87.4 to 89.2 fps, "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "15",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "14",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "12",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced. The gaps progress"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "17",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 5.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "16",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "20",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 4.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "19",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "23",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.8,
+    "pp_log": [
+      "ADD axis_range: narrow range (5.5% of max, min=94.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "18",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "25",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "26",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 5.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "21",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "28",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "22",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.6,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis range starts at 3000 MW rather than 0 MW, which c"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "24",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [
+      "ADD axis_range: narrow range (1.6% of max, min=98.4%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "27",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.7,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis range spans from 9100 to 9800, which is a narrow "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "30",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "35",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "29",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 8.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "32",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 5.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "31",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [
+      "ADD axis_range: narrow range (4.2% of max, min=95.8%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "37",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "36",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 5.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis ticks are unevenly spaced: 196, 198, 200, 202, 20",
+      "CALL2_ADD axis_range: The Y-axis range (196 to 210) is extremely narrow, covering "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "39",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 3.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "33",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks show uneven spacing: 0, 5, 20, 35, 50,"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "34",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 8.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "41",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "42",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "38",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [
+      "CALL2_ADD axis_range: The X-axis range appears to start at 0 and goes to 600,000, "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "40",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 5.9,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis range spans only from 249000 to 253000 (a 4000-un"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "43",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD inverted_axis: The Y-axis runs from 0 at the top to -1,400,000 at the botto"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "46",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "44",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced: 0.5, 0.525, 0.55,",
+      "CALL2_ADD axis_range: The Y-axis range is 0.5 to 0.625, showing only a narrow slic"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "45",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.1% of max, min=99.9%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "47",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "48",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis ticks are unevenly spaced: 48, 51, 54, 57, 60% sh",
+      "CALL2_ADD axis_range: The Y-axis range spans from 48% to 60%, which is a narrow sl"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "50",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "49",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 9.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "51",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 5.8,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis range (50-64) shows only a narrow slice of the fu"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "54",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "53",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis range spans from 3000 to 3600, representing only "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "52",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 9.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "55",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "ADD axis_range: narrow range (14.3% of max, min=85.7%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "56",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 8.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "57",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [
+      "CALL2_ADD binning: This chart displays categorical bins (energy efficiency rati"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "58",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 8.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "62",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "elapsed_s": 5.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "60",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "61",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis range (81% to 88%) shows only a narrow 7-percenta"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "65",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "59",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 11.9,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.5% of max, min=99.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "64",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "69",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "66",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "68",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "70",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis range spans only 34-40 (a 6-unit range) for tax r"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "71",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "73",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "75",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.6,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.6% of max, min=99.4%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "63",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 14.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "76",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 5.3,
+    "pp_log": [
+      "ADD axis_range: narrow range (1.5% of max, min=98.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "74",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "ADD axis_range: narrow range (3.7% of max, min=96.3%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "72",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 10.3,
+    "pp_log": [
+      "CALL2_ADD axis_range: The visual scale is misleading. The bottom bar (1.2 billion)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "67",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 13.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "78",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "79",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced. The gaps between "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "77",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [
+      "CALL2_ADD binning: This is a stacked horizontal bar chart showing age groups wi"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "80",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "81",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced: 8%, 8.5%, 9%, 9.5",
+      "CALL2_ADD axis_range: The Y-axis range spans only 8% to 10% (a 2-percentage-point "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "83",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "82",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 8.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "84",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis spans 10\u00b0 to 110\u00b0, but the actual data only fluct"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "86",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 4.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "85",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "88",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "87",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 8.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "89",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 8.3,
+    "pp_log": [
+      "CALL2_ADD binning: This is not a histogram but a line chart. The X-axis shows i"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "94",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "91",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "92",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "90",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 8.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "97",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order",
+      "truncated axis"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "93",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced: 0, 2500, 5000, 75"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "95",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "100",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 5.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "96",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 8.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "99",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "101",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "102",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "98",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 10.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "103",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced. The visible ticks",
+      "CALL2_ADD axis_range: The Y-axis range spans only from 100.0 to 100.8, a very narr"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "104",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "106",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "108",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "105",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 9.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "109",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "111",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "110",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "VETO truncated_axis: axis includes 0",
+      "ADD axis_range: narrow range (5.4% of max, min=94.6%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "107",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 10.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "112",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "CALL2_ADD inverted_axis: The Y-axis numbers run from 108 at the top to 104 at the bot",
+      "CALL2_ADD axis_range: The Y-axis range spans only 104 to 108 (a 4-point range), wh",
+      "VETO truncated_axis: axis includes 0"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "115",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.3,
+    "pp_log": [
+      "VETO truncated_axis: axis includes 0",
+      "ADD axis_range: narrow range (13.5% of max, min=86.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "114",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "113",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "117",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 5.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "118",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 5.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "116",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD binning: The map uses unequal binning intervals in the legend: 1-9, 1"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "120",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "121",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "inverted axis"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [
+      "CALL2_ADD inverted_axis: The Y-axis numbers run from 20000 at the top down to -10000 "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "122",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "124",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 5.7,
+    "pp_log": [
+      "CALL2_ADD binning: The legend shows uneven binning: '<10%' represents a range f",
+      "ADD axis_range: narrow range (4.5% of max, min=95.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "119",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 10.3,
+    "pp_log": [
+      "CALL2_ADD binning: The legend shows binned categories with unequal width ranges"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "123",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 8.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "126",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "125",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 9.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "128",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.1% of max, min=99.9%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "127",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "129",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "130",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 6.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "132",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD axis_range: The Y-axis range spans from 0 to 110\u00b0F, but the actual data ",
+      "VETO truncated_axis: axis includes 0"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "131",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced. The intervals app"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "133",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "136",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.6,
+    "pp_log": [
+      "VETO truncated_axis: axis includes 0"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "135",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "ADD axis_range: narrow range (6.7% of max, min=93.3%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "134",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "141",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "142",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "elapsed_s": 2.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "139",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 8.8,
+    "pp_log": [
+      "CALL2_ADD inverted_axis: Both Y-axes show numbers increasing from top to bottom (0 at"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "140",
+    "ground_truth": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.0% of max, min=100.0%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "145",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "truncated axis"
+    ],
+    "elapsed_s": 3.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "137",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 11.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "143",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 4.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "149",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "elapsed_s": 3.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "138",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 14.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "148",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 4.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "144",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The left Y-axis shows uneven intervals: 0, 500,000, 1,000,00",
+      "VETO dual_axis: no right Y-axis in OCR"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "150",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "elapsed_s": 4.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "146",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "147",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "152",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 4.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "151",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "157",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 4.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "159",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "156",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate item order",
+      "truncated axis"
+    ],
+    "elapsed_s": 5.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "155",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "154",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "153",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "162",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 2.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "158",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "160",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 5.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "163",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 5.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "165",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "161",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "166",
+    "ground_truth": [
+      "inappropriate axis range",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inverted axis"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis ticks show uneven spacing: 0, 1, 2, 3, 4, 5, 6 ap",
+      "CALL2_ADD inverted_axis: The X-axis (Years before present) runs from HIGH on the left"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "167",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "164",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis on the left shows tick marks at 0, 10, 20, 30, 40",
+      "CALL2_ADD axis_range: The right Y-axis range (32-48) represents only a narrow slic"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "168",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "172",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "169",
+    "ground_truth": [
+      "inappropriate use of line chart",
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The X-axis tick intervals are uneven. The spacing progresses",
+      "ADD axis_range: narrow range (0.0% of max, min=100.0%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "171",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "170",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "173",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "175",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "174",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "176",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "177",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "178",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "179",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "180",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "ADD axis_range: narrow range (4.4% of max, min=95.6%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "181",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 7.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "182",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "183",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "185",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "186",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 5.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "184",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "187",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "188",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.2,
+    "pp_log": [
+      "ADD axis_range: narrow range (5.4% of max, min=94.6%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "190",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.0,
+    "pp_log": [
+      "VETO dual_axis: no right Y-axis in OCR"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "189",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "193",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "192",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "191",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "194",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "195",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "196",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "199",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "198",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "197",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "200",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 8.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "203",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "202",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The X-axis tick marks are unevenly spaced: 0, 5000000, 10000"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "201",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 9.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "210",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "206",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "208",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "209",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "205",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 10.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "204",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 11.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "207",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 9.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "212",
+    "ground_truth": [],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 5.6,
+    "pp_log": [
+      "CALL2_ADD inverted_axis: The Y-axis (Log death rate) runs from 0 at the top to -8 at "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "213",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.3,
+    "pp_log": [
+      "CALL2_ADD axis_range: The legend range spans only 1.58 to 1.838 meters (a 0.258m o"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "211",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 11.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "216",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "217",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "214",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "218",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "215",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [
+      "ADD axis_range: narrow range (5.7% of max, min=94.3%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "224",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "221",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "219",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 9.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "220",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.3,
+    "pp_log": [
+      "ADD axis_range: narrow range (1.2% of max, min=98.8%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "225",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "222",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "223",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "227",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 4.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "226",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "229",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "230",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks show uneven spacing: 0, 250, 500, 750,"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "228",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "231",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "232",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "233",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [
+      "ADD axis_range: narrow range (1.3% of max, min=98.7%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "234",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced. The intervals pro"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "237",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 5.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "235",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "238",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 5.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "236",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The X-axis tick marks show uneven spacing: 780, 810, 840, 87",
+      "CALL2_ADD axis_range: The X-axis range spans 780 to 1020, representing only a narr"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "241",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 5.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "240",
+    "ground_truth": [],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "239",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced. The gaps between "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "242",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "244",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "243",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "250",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "245",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "247",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick marks are unevenly spaced. The intervals jum"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "248",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "246",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Multiple charts show uneven Y-axis tick spacing. For example"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "249",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "251",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "252",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "253",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "256",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "255",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "257",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "254",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 9.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "258",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "259",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "260",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "261",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [
+      "ADD axis_range: narrow range (5.1% of max, min=94.9%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "265",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "262",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "263",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "266",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "264",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "268",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "267",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 10.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "269",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "270",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 13.6,
+    "pp_log": [
+      "ADD axis_range: narrow range (5.1% of max, min=94.9%)"
+    ],
+    "had_call2": true
+  }
+]

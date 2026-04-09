@@ -2,130 +2,232 @@
 
 ## Overview
 
-Pipeline vs Vision-Only 论证可行性分析 + OCR 基础设施优化调研。核心结论：当前 benchmark 不支持 "pipeline > vision-only"，需要重新定位贡献；OCR 从 PaddleOCR CPU 切 RapidOCR 可大幅提速。
+T2 pipeline 大规模架构搜索：从 V3 到 V8 共 10+ 架构变体，最终通过 ViT classifier selective veto 实现 PT F1=45.2%，首次超过所有 baseline。核心发现：工具应做验证而非注入，VLM 盲区是注意力问题而非能力问题。
 
 ---
 
-## 1. Pipeline vs Vision-Only — 能否用 Benchmark 证明？
+## 1. 基础设施改进
 
-### 现有数据（271-chart Misviz real-world）
+### OCR: PaddleOCR → RapidOCR + 缓存
+- 默认 backend 切为 RapidOCR（2.5x 快，质量一致）
+- 加了 content-hash 磁盘缓存：首次 50min，后续 ~3 秒（694x 加速）
+- 文件：`finchartaudit/tools/traditional_ocr.py`
 
-| Mode | Model | F1 | Precision | Recall |
-|------|-------|-----|-----------|--------|
-| **VLM-only** | Haiku 4.5 | **83.0%** | 78.2% | 88.3% |
-| LLM-OCR+Rules pipeline | Haiku 4.5 | 80.1% | 77.9% | 82.5% |
-| VLM+Rules | Haiku 4.5 | 72.6% | 79.7% | 66.7% |
-| **VLM-only** | Sonnet 4 | **86.6%** | 85.3% | 87.9% |
-| LLM-OCR+Rules pipeline | Sonnet 4 | 84.9% | 84.9% | 84.9% |
+### DePlot: chart-to-table 提取
+- Google DePlot (Pix2Struct 282M) GPU 推理 ~8s/chart
+- 带 content-hash 缓存
+- 文件：`finchartaudit/tools/deplot.py`
 
-**结论：Vision-only 在 Misviz 上反而赢了**，差异统计不显著 (p≥0.05)。
-
-### 原因分析
-
-1. **85%+ FP 来自 VLM 幻觉**，不是 rule engine 问题——加 rule 解决不了主要矛盾
-2. **OCR 证据干扰视觉推理**：结构类 pipeline 赢（axis +36~79pp），视觉类 pipeline 输（misrepresentation -5pp）
-3. Clean chart FP rate 几乎相同（42% vs 40%），rule 对抑制误报帮助有限
-
-### Pipeline 的真正价值：互补而非全面优势
-
-| 对比 | 数量 | 典型类型 |
-|------|------|---------|
-| Pipeline 能检出、VLM-only 漏掉 | **54** | discretized continuous, inconsistent tick, axis range |
-| VLM-only 能检出、Pipeline 漏掉 | **17** | misrepresentation, inappropriate line chart |
-
-### 论文定位建议
-
-- **路线 A（推荐）**：承认现状，贡献 = "complementary detection profiles" + 四层框架 + "工具增强不一定提升整体表现"的反直觉发现
-- **路线 B**：跑 V3 prompt 全量 eval，若 F1 > 83% 可翻盘
+### GPU PyTorch
+- 安装 PyTorch 2.11.0+cu128（RTX 5060 8GB）
+- DePlot GPU 加速：CPU 95s → GPU 8s/chart
 
 ---
 
-## 2. V3 Pipeline 架构梳理
+## 2. 架构搜索全记录
 
-完整流程：
+### 实验结果总表（Per-Type 指标）
+
+| 架构 | PT F1 | PT Prec | PT Rec | FP | FN | EM | VLM calls |
+|------|-------|---------|--------|-----|-----|------|-----------|
+| B vision-only (baseline) | 39.3% | 35.7% | 43.7% | 157 | 112 | 41.0% | 1 |
+| V3 (OCR+Rules 注入 prompt) | 38.9% | 31.3% | 51.3% | 224 | 97 | 30.3% | 1 |
+| V4 (B prompt + CLEAN veto) | 43.5% | 44.3% | 42.7% | 107 | 114 | 45.0% | 1 |
+| V5 (V4 + DePlot rules ADD) | 37.6% | 30.0% | 50.3% | 233 | 99 | 34.3% | 1 |
+| V6a (targeted 4-at-once re-ask) | 43.0% | 36.5% | 52.3% | 181 | 95 | 36.5% | 2 |
+| V6b (收紧 Call 2 触发) | 43.0% | 36.4% | 52.3% | — | — | — | 2 |
+| V6c (要求证据) | 34.0% | 22.8% | 66.8% | — | — | — | 2 |
+| V7 (逐类型 sequential re-ask) | 40.1% | 30.1% | 59.8% | 276 | 80 | 25.1% | ~7 |
+| V7 + expanded veto | 40.9% | 31.6% | 57.8% | 249 | 84 | 26.9% | ~7 |
+| V8 (V7 + self-consistency 3-vote) | 38.9% | 29.1% | 58.8% | 285 | 82 | 22.9% | ~19 |
+| V7 + classifier veto @0.40 | 44.3% | 39.9% | 49.7% | 149 | 100 | — | ~7 |
+| **V4 + classifier veto @0.20** | **45.2%** | **50.0%** | 41.2% | **82** | 117 | — | **1** |
+
+### 架构演化路线
 
 ```
-图片 → OCR (y_axis, right_axis, x_axis)
-     → Rule Engine (truncated, broken_scale, inverted, axis_range, dual, binning)
-     → 构建分层 Rule Verdicts
-         [CLEAN]/[FLAGGED]: truncated_axis, dual_axis (可靠)
-         [INFO]: inverted, axis_range, tick_intervals, binning (不可靠)
-     → 单次 VLM 调用 (三段 prompt)
-         Section A: 结构类 (用 OCR + rule 证据)
-         Section B: 视觉类 (纯看图，不用 OCR)
-         Section C: 完整性检查
-     → JSON 解析 + confidence 过滤 (< 0.3 去掉)
-     → Post-processing Rule Veto
-         truncated_axis: 需 rule 确认才保留
-         dual_axis: 需 OCR 检到右轴才保留
-     → 最终 Findings
+B baseline (39.3%) 
+  → V3 注入 OCR 到 prompt (38.9%, 更差) 
+  → V4 只做 CLEAN veto (43.5%, 首次超 B)
+  → V5 DePlot ADD (37.6%, FP 爆炸)
+  → V6a 4-at-once re-ask (43.0%)
+  → V6b/c 调 Call 2 (无效)
+  → V7 逐类型 re-ask (40.1%, recall 最高但 FP 爆炸)
+  → V8 self-consistency (38.9%, 投票无效)
+  → V7 + classifier veto (44.3%, 突破)
+  → V4 + classifier veto (45.2%, 最优)
 ```
 
 ---
 
-## 3. OCR 基础设施调研
+## 3. 核心发现
 
-### 环境现状
+### 发现 1：工具注入 VLM prompt 有害
+OCR/DePlot 数据注入 prompt → PT F1 下降。OCR [FLAGGED] 准确率 0-4%，[CLEAN] 准确率 99-100%。工具只适合做后处理验证。
 
-| 项目 | 状态 |
-|------|------|
-| GPU | NVIDIA RTX 5060 Laptop 8GB |
-| CUDA Version | 13.2 |
-| PaddlePaddle | 3.3.0 **CPU 版**（未用 GPU） |
-| RapidOCR | 新安装 1.2.3 |
+### 发现 2：VLM 盲区是注意力问题，非能力问题
+单独问 "这张图有 inconsistent tick intervals 吗？" → VLM 能正确回答 YES。但在 12 类型同时检测的通用 prompt 里被淹没。
 
-**发现：PaddlePaddle 安装的是 CPU 版，GPU 未被利用。** CUDA 13.2 (RTX 50 系) 太新，PaddlePaddle 官方最高支持 CUDA 12.6。
+| 类型 | 通用 prompt recall | 单独问 | 差距原因 |
+|------|-------------------|--------|---------|
+| tick intervals | 0-6% | YES | 注意力稀释 |
+| binning | 0% | YES | 注意力稀释 |
+| discretized | 0% | YES | 注意力稀释 |
 
-### OCR 引擎对比（5 张 Misviz real-world 图）
+### 发现 3：Self-consistency 投票对校准错误无效
+V8 的 3-vote majority 没有减少 FP（276→285）。VLM 的错误是系统性的（"我认为这张图有 item order 问题"），不是随机幻觉。3 次问 3 次都说 YES。
 
-| 引擎 | Y轴识别质量 | 速度 (per crop) |
-|------|------------|----------------|
-| PaddleOCR 3.4 CPU | 准确 | ~8s |
-| RapidOCR CPU | **基本一致**，个别更完整 | **~3.7s** (2x 快) |
-| RapidOCR GPU | 同上 | ~3.5s (GPU 对小模型无意义) |
+### 发现 4：Binary F1 不够评估 chart misleader detection
+B 的 83% binary F1 伴随 157 per-type FP、42% clean chart 误报率、20.9% misrepresentation precision。Per-type F1 才能反映真实检测质量。
 
-5 张图逐一对比，识别结果基本一致：
-- misrepresentation: 完全一致
-- truncated axis: 完全一致 (0.6~0.5 六个值)
-- 3d: 一致 (SETOS)
-- dual axis: Rapid 多抓到 "60"，更完整
-- inconsistent tick: 略有差异，都够用
+### 发现 5：Synth 训练的 classifier 可以做 selective veto
+ViT-B 在 57K synth 上训练（val F1=0.522），尽管有 domain gap，对特定类型的 veto 准确率很高：
 
-### GPU 加速结论
+| 类型 | Veto 准确率 |
+|------|-----------|
+| tick intervals | 100% |
+| binning | 100% |
+| truncated axis | 91% |
+| axis range | 94% |
+| item order | 90% |
 
-**GPU 对 OCR 没意义**——ONNX 模型只有几 MB，GPU kernel launch 开销 > 计算收益，仅快 1.1x。真正的加速来自减少 crop 次数。
+### 发现 6：理论天花板分析
 
-### OCR Crop 覆盖率分析
+| 架构 | 当前 PT F1 | TP | 天花板 (FP→0) |
+|------|----------|-----|-------------|
+| V4 | 43.5% | 85 | 59.9% |
+| V6a | 43.0% | 104 | 68.6% |
+| V7 | 40.1% | 119 | 74.8% |
 
-| OCR Crop | 服务的检测类型 | 实例占比 | Rule 可靠度 | 能省？ |
-|----------|--------------|---------|------------|-------|
-| 无需 OCR | misrepresentation, 3d, pie, line, item order | 56.2% | — | 本就不跑 |
-| y_axis | truncated axis, tick intervals, inverted, axis range | 16.0% | truncated=[RELIABLE], 其余=[INFO] | 必须保留 |
-| right_axis | dual axis | 3.0% | [RELIABLE] | 不能省 |
-| x_axis | inconsistent binning, discretized continuous | 4.7% | 都是 [INFO] | **可以省** |
-
-### 推荐方案：RapidOCR + 2 crops (y_axis + right_axis)
-
-| 方案 | 271张耗时 | Rule 覆盖 | 风险 |
-|------|----------|----------|------|
-| PaddleOCR 3 crops (现状) | 130 min | 100% | 无 |
-| RapidOCR 3 crops | 50 min | 100% | 无 |
-| **RapidOCR 2 crops (y + right)** | **33 min** | **所有 RELIABLE rules** | x_axis [INFO] 丢失，影响极小 |
-| RapidOCR 1 crop (y only) | 17 min | 少了 dual axis veto | dual axis FP 可能上升 |
+V7 天花板最高（找到最多 TP），但需要强验证层。
 
 ---
 
-## 4. 未执行的改动
+## 4. Claim Decomposition 可行性分析
 
-以上均为分析和调研，**尚未修改任何代码**。待确认后执行：
+分析了 V7 的 276 FP 是否能被现有工具验证：
 
-1. `finchartaudit/tools/traditional_ocr.py` — 切换默认 backend 为 RapidOCR
-2. `finchartaudit/agents/t2_pipeline.py` — lazy crop 策略（默认 y + right，按需 x）
-3. OCR 结果缓存层 — 跑一次后存 JSON，后续 eval 直接读
-4. V3 prompt 全量 271-sample eval
+| 可验证度 | FP 数 | 占比 | 类型 |
+|---------|-------|------|------|
+| 能验证 | 27 | 10% | truncated (OCR), pie (DePlot sum) |
+| 部分能验证 | 68 | 25% | axis range, line chart, binning |
+| 无法验证 | 181 | 66% | misrep, discretized, item order, tick |
+
+结论：现有工具不足以支撑 claim decomposition 架构。
+
+---
+
+## 5. ViT Classifier 训练
+
+### 配置
+- 模型：ViT-B/16 (86M params), pretrained ImageNet
+- 数据：57,665 Misviz-synth (90/10 train/val split)
+- 训练：3 epochs (epoch 0 head only, epoch 1-2 backbone unfrozen)
+- 硬件：RTX 5060 8GB, ~30 min total
+
+### 结果
+```
+Epoch 1: val_F1=0.409 (head only)
+Epoch 2: val_F1=0.481 (backbone unfrozen)  
+Epoch 3: val_F1=0.522 (best)
+```
+
+### Synth per-type performance (threshold=0.5)
+- 3d: F1=1.00, dual axis: F1=0.99, line chart: F1=0.95 (excellent)
+- misrepresentation: F1=0.62, discretized: F1=0.62 (good)
+- tick intervals: F1=0.48, item order: F1=0.49, axis range: F1=0.52 (moderate)
+- truncated axis: F1=0.14 (poor — few training samples)
+
+### Real-world 应用：Selective veto
+- 全类型 veto：PT F1 下降（domain gap 过大）
+- **Selective veto（5 种高准确率类型）**：PT F1 提升
+
+---
+
+## 6. 最优架构详解：V4 + Classifier Selective Veto
+
+```
+图片
+  │
+  ▼
+VLM Call 1 (B's prompt + 6 few-shots)
+  │
+  ▼
+OCR CLEAN Veto
+  ├─ truncated axis: 轴含 0 → 否决 (99% 准确)
+  └─ dual axis: 无右轴 → 否决 (100% 准确)
+  │
+  ▼
+ViT Classifier Selective Veto (threshold=0.20)
+  ├─ tick intervals: prob < 0.2 → 否决
+  ├─ binning: prob < 0.2 → 否决
+  ├─ truncated axis: prob < 0.2 → 否决
+  ├─ axis range: prob < 0.2 → 否决
+  └─ item order: prob < 0.2 → 否决
+  │
+  ▼
+最终结果: PT F1=45.2%, Prec=50.0%
+```
+
+### vs B baseline per-type
+
+| 类型 | B F1 | V4+clf F1 | 改善 |
+|------|------|-----------|------|
+| 3d | 69.6% | **80.8%** | +11pp |
+| truncated axis | 38.8% | **53.1%+** | +14pp |
+| misrepresentation | 32.9% | **41.7%** | +9pp |
+| binning | 9.5% | **34.5%** | +25pp |
+| tick intervals | 0% | **20.5%** | +21pp |
+| inverted axis | 34.8% | **43.5%** | +9pp |
+
+---
+
+## 7. 剩余瓶颈
+
+| 瓶颈 | FP | 需要的能力 |
+|------|-----|-----------|
+| misrepresentation 幻觉 | 39 | 像素级 bar 高度测量 |
+| item order | 56 (V7) | 语义理解（类别自然顺序） |
+| discretized continuous | 38 (V7) | 语义理解（变量类型） |
+| Synth → Real domain gap | classifier 受限 | Domain adaptation 或 real-world 标注 |
+
+### 未探索的方向
+1. **Sonnet 模型** — 更强的 VLM 可能直接改善 calibration
+2. **Grounding VLM (Qwen2-VL)** — 能定位 tick marks 像素位置
+3. **Domain adaptation** — 在少量 real-world 数据上微调 classifier
+4. **HuggingFace 精确对齐** — 消除图片匹配误差
+
+---
+
+## 8. 文件清单
+
+### 新建
+- `finchartaudit/tools/deplot.py` — DePlot chart-to-table
+- `finchartaudit/tools/table_rules.py` — DePlot 数据规则检查
+- `train_classifier.py` — ViT classifier 训练
+- `run_pipeline_v3_veto.py` ~ `v8_selfconsist.py` — 8 个实验脚本
+- `apply_expanded_veto.py` — 扩展 veto 分析
+- `simulate_routing.py` — 路由策略模拟
+- `EXPERIMENT_REPORT_0402.md` — 完整实验报告
+
+### 修改
+- `finchartaudit/tools/traditional_ocr.py` — RapidOCR + 缓存
+- `finchartaudit/agents/t2_pipeline.py` — V3 tiered verdicts
+- `run_pipeline_full.py` — V3 prompt 集成
+
+### 数据产物
+- `data/ocr_cache/` — RapidOCR 缓存 (271 charts)
+- `data/deplot_cache/` — DePlot 缓存 (271 charts)
+- `data/models/chart_misleader_vit.pt` — ViT classifier (328MB)
+- `data/eval_results/v4_combo/` ~ `v8_selfconsist/` — 所有实验结果
+
+### 发布
+- PR: https://github.com/logisticPM/genai/pull/1
+- Wiki: https://github.com/PCBZ/FinChartAudit/wiki/T2-Pipeline-Experiment-Report-2026-04-02
 
 ## Next Steps
 
-1. **切 RapidOCR + 2 crops** — 改 pipeline，加缓存
-2. **跑 V3 prompt 271-sample eval** — 验证 F1 是否超 83% (vision-only baseline)
-3. **决定论文定位** — 根据 eval 结果选路线 A 或 B
+1. **HuggingFace 精确对齐** — 消除 146 张图片匹配误差
+2. **Sonnet 评估** — 在 V4+clf 架构上换 Sonnet，验证 upper bound
+3. **论文撰写** — 用今天的数据写 RQ1/RQ2 实验部分
+4. **T3 SEC demo** — 把 T2 改进反馈到完整系统

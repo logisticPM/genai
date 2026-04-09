@@ -1,0 +1,2981 @@
+[
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis uses a logarithmic scale (1, 3, 12, 42, 148, 516,",
+      "SEQ_ADD discretized continuous variable: Time is inherently continuous, but the chart discretizes it ",
+      "VETO axis_range: DePlot spread=1.00>0.5"
+    ]
+  },
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size",
+      "inappropriate axis range",
+      "discretized continuous variable",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent binning size: This is a histogram showing age ranges with different bar wi",
+      "SEQ_ADD inappropriate axis range: The Y-axis range appears to span from 0% to approximately 30",
+      "SEQ_ADD discretized continuous variable: Age is inherently continuous data, but it's displayed in dis",
+      "SEQ_ADD inappropriate item order: The age groups are ordered by their prevalence values in des"
+    ]
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 19,400 to 21,200 (a span of 1,800 stu"
+    ]
+  },
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "discretized continuous variable",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: This histogram displays a continuous variable (likely age, g",
+      "SEQ_ADD inappropriate item order: The items are sorted by their values in descending order (le"
+    ]
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks are at 0, 5, 10, 15, 20, 25 with consi",
+      "SEQ_ADD discretized continuous variable: Salary is inherently continuous (money can take any value), "
+    ]
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "11",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "13",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis shows a range from approximately 67.4 to 68.2 fps",
+      "SEQ_ADD discretized continuous variable: Frame rate (fps) is inherently continuous data, but it's dis"
+    ]
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The legend shows uneven intervals between consecutive percen",
+      "SEQ_ADD inappropriate axis range: The legend shows a very narrow range from <38.07% to >47.26%",
+      "SEQ_ADD discretized continuous variable: The underlying data is a continuous variable (a percentage r",
+      "VETO axis_range: DePlot spread=0.97>0.5"
+    ]
+  },
+  {
+    "instance_id": "16",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items are arranged in a circular/radial pattern around t"
+    ]
+  },
+  {
+    "instance_id": "12",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 950 to 1,400 deals, showing only a na"
+    ]
+  },
+  {
+    "instance_id": "14",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "15",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "10",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The legend shows tick intervals of (-47,-3), (-3,48), (48,80",
+      "SEQ_ADD discretized continuous variable: Crime rates are inherently continuous variables (homicides p",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "21",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": [
+      "VETO misrep: co-occurs with pie chart issue"
+    ]
+  },
+  {
+    "instance_id": "25",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "23",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "17",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "28",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "20",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "18",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "19",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The countries are ordered by descending bank asset values (G"
+    ]
+  },
+  {
+    "instance_id": "24",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "26",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The hotel complaint categories are sorted by frequency (desc"
+    ]
+  },
+  {
+    "instance_id": "22",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis starts at 3000 MW instead of 0, showing only the ",
+      "VETO axis_range: DePlot spread=1.00>0.5"
+    ]
+  },
+  {
+    "instance_id": "27",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 9100 to 9800, showing only a narrow s",
+      "SEQ_ADD inappropriate item order: The items (A, B, C, D, E) are sorted by their values in asce"
+    ]
+  },
+  {
+    "instance_id": "29",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "discretized continuous variable",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The fraud rate is inherently a continuous variable (any perc",
+      "SEQ_ADD inappropriate item order: The states are sorted by fraud rate in descending order (hig"
+    ]
+  },
+  {
+    "instance_id": "30",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "31",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axes use narrow ranges (83-87% for John and 55-95% for"
+    ]
+  },
+  {
+    "instance_id": "32",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The pie chart segments are arranged in descending order by v"
+    ]
+  },
+  {
+    "instance_id": "37",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "39",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "41",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "pp_log": [
+      "VETO axis_range: DePlot spread=0.99>0.5"
+    ]
+  },
+  {
+    "instance_id": "34",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "42",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "33",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick values are: 0, 5, 20, 35, 50, 65k. The inter"
+    ]
+  },
+  {
+    "instance_id": "35",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "36",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 196 to 210, which is a narrow slice o",
+      "SEQ_ADD discretized continuous variable: Cholesterol is an inherently continuous variable that can ta"
+    ]
+  },
+  {
+    "instance_id": "38",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick values are 0, 170, 200,000, 500,000, and 600",
+      "SEQ_ADD inappropriate item order: The items (One, Two, Three, Four, Five) are ordered by their"
+    ]
+  },
+  {
+    "instance_id": "40",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show values: 249000, 250000, 251000, 2",
+      "SEQ_ADD inappropriate axis range: The Y-axis range spans from 249,000 to 252,000 USD, showing "
+    ]
+  },
+  {
+    "instance_id": "44",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show values: 0.5, 0.525, 0.55, 0.575, ",
+      "SEQ_ADD inappropriate axis range: The Y-axis range spans from 0.5 to 0.625, displaying only a "
+    ]
+  },
+  {
+    "instance_id": "43",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inverted axis: The Y-axis values decrease from bottom to top: starting at 0"
+    ]
+  },
+  {
+    "instance_id": "46",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "45",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "48",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show: 48, 51, 54, 57, 60% with interva",
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 48% to 60%, showing only a 12 percent"
+    ]
+  },
+  {
+    "instance_id": "47",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The damage values are sorted in descending order (9879, 8538"
+    ]
+  },
+  {
+    "instance_id": "51",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 50% to 64%, which is only a 14-percen"
+    ]
+  },
+  {
+    "instance_id": "50",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The countries are sorted by their total values in descending"
+    ]
+  },
+  {
+    "instance_id": "53",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 3000 to 3600, showing only a narrow s",
+      "SEQ_ADD inappropriate item order: The libraries are ordered by descending values (Library A > "
+    ]
+  },
+  {
+    "instance_id": "52",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Time is inherently continuous, but the chart displays it in "
+    ]
+  },
+  {
+    "instance_id": "54",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "55",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis appears to range from approximately 0 to 7-8 mill"
+    ]
+  },
+  {
+    "instance_id": "49",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The pie chart segments are arranged in descending order by v"
+    ]
+  },
+  {
+    "instance_id": "56",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "62",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted axis",
+      "3d"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "65",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "58",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items are sorted by value in descending order (Handguns "
+    ]
+  },
+  {
+    "instance_id": "57",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size",
+      "inverted axis",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent binning size: This is a histogram showing energy efficiency ratings across",
+      "SEQ_ADD inverted axis: The Y-axis values decrease from bottom to top: starting at G",
+      "SEQ_ADD discretized continuous variable: Energy efficiency ratings are based on continuous energy con"
+    ]
+  },
+  {
+    "instance_id": "61",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 81% to 88%, showing only a 7 percenta"
+    ]
+  },
+  {
+    "instance_id": "69",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "60",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d",
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show: $0, $5,000,000, $10,000,000, $15"
+    ]
+  },
+  {
+    "instance_id": "64",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show values: 10, 20, 30, 40, 50, 60, 7"
+    ]
+  },
+  {
+    "instance_id": "66",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "67",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The animals are arranged vertically in an arbitrary order th"
+    ]
+  },
+  {
+    "instance_id": "59",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "68",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "70",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 34 to 40, showing only a 6-percentage"
+    ]
+  },
+  {
+    "instance_id": "75",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "63",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "71",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "73",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "72",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items are sorted by bar length (descending) rather than ",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "76",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from $0.00 to $0.45, which is a very narro",
+      "SEQ_ADD discretized continuous variable: The x-axis shows dates (time) grouped into discrete month-lo",
+      "SEQ_ADD inappropriate item order: The items appear to be sorted by value in ascending order (l",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "74",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "78",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The right Y-axis for '% Change' ranges from approximately -5"
+    ]
+  },
+  {
+    "instance_id": "84",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "77",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent binning size: This is a horizontal bar chart showing age groups, and the a",
+      "SEQ_ADD discretized continuous variable: Age is inherently continuous data, but the chart bins it int"
+    ]
+  },
+  {
+    "instance_id": "79",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The chart displays time (an inherently continuous variable) "
+    ]
+  },
+  {
+    "instance_id": "80",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The left Y-axis ranges from 50-58 (for white line) and the r",
+      "VETO axis_range: DePlot spread=0.86>0.5"
+    ]
+  },
+  {
+    "instance_id": "86",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "90",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": [
+      "VETO axis_range: DePlot spread=0.91>0.5"
+    ]
+  },
+  {
+    "instance_id": "82",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: Both charts use narrow Y-axis ranges that exaggerate small f",
+      "VETO axis_range: DePlot spread=0.99>0.5"
+    ]
+  },
+  {
+    "instance_id": "81",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 8% to 10%, showing only a 2 percentag",
+      "VETO axis_range: DePlot spread=0.95>0.5"
+    ]
+  },
+  {
+    "instance_id": "83",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show values of 40,000, 41,000, 45,000,"
+    ]
+  },
+  {
+    "instance_id": "85",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items are ordered by descending values (14 qt \u2192 17.5 qt "
+    ]
+  },
+  {
+    "instance_id": "94",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": [
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "87",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "97",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order",
+      "truncated axis"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "89",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Household income is inherently continuous (can take any valu"
+    ]
+  },
+  {
+    "instance_id": "88",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Population growth is inherently continuous data (it can take"
+    ]
+  },
+  {
+    "instance_id": "92",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The pie chart segments are arranged in a seemingly random or",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "91",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show values at 0%, 20%, 40%, 60%, 80%,",
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 0% to 80%, but the data only varies b",
+      "SEQ_ADD inappropriate item order: The items are sorted by value (ascending from left to right)"
+    ]
+  },
+  {
+    "instance_id": "93",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "95",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items (TV channels) are not ordered by any natural or lo"
+    ]
+  },
+  {
+    "instance_id": "100",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 10 to 16 percent, which is a narrow s"
+    ]
+  },
+  {
+    "instance_id": "96",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "98",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "102",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "103",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis range spans only from 100.0 to 100.8, showing a n",
+      "VETO axis_range: DePlot spread=0.99>0.5"
+    ]
+  },
+  {
+    "instance_id": "101",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Age is inherently continuous (people have exact ages), but t"
+    ]
+  },
+  {
+    "instance_id": "99",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "104",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Time is an inherently continuous variable, but it's been dis"
+    ]
+  },
+  {
+    "instance_id": "106",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "truncated axis",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Productivity is a continuous variable (measured on a scale) "
+    ]
+  },
+  {
+    "instance_id": "108",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "109",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "105",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inverted axis: The Y-axis values decrease from bottom to top: starting at -"
+    ]
+  },
+  {
+    "instance_id": "111",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The departments are sorted by their bar values in descending"
+    ]
+  },
+  {
+    "instance_id": "110",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "VETO truncated_axis",
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "112",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 104 to 108, a span of only 4 points o",
+      "VETO truncated_axis"
+    ]
+  },
+  {
+    "instance_id": "107",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The legend shows case count ranges with uneven intervals: BE",
+      "SEQ_ADD discretized continuous variable: Confirmed COVID cases are inherently continuous count data, "
+    ]
+  },
+  {
+    "instance_id": "113",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis starts at 1,100 instead of 0, showing only the ra"
+    ]
+  },
+  {
+    "instance_id": "114",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent binning size",
+      "discretized continuous variable",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent binning size: This is a histogram showing income ranges on the x-axis and ",
+      "SEQ_ADD discretized continuous variable: Income is inherently continuous, but the chart displays it i",
+      "SEQ_ADD inappropriate item order: The items are ordered by income level (left to right: $0, $5"
+    ]
+  },
+  {
+    "instance_id": "115",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis appears to range from approximately 0.200 to 0.30",
+      "VETO truncated_axis"
+    ]
+  },
+  {
+    "instance_id": "117",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "118",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "discretized continuous variable",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Age is inherently continuous data, but the chart groups it i",
+      "SEQ_ADD inappropriate item order: The legend items are ordered by value (56%, 35%, 8%, 1%) rat"
+    ]
+  },
+  {
+    "instance_id": "116",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The legend shows ranges with inconsistent intervals: 1-9 (ga",
+      "SEQ_ADD discretized continuous variable: The underlying data is a continuous variable (count/quantity"
+    ]
+  },
+  {
+    "instance_id": "120",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The legend shows tick intervals of: < 1%, 1-1.5%, 1.5-2%, 2-",
+      "SEQ_ADD discretized continuous variable: Linux desktop market share is inherently continuous (percent"
+    ]
+  },
+  {
+    "instance_id": "119",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent binning size: This is a choropleth map, not a histogram. It uses color to ",
+      "SEQ_ADD discretized continuous variable: The underlying data (evapotranspiration to precipitation rat"
+    ]
+  },
+  {
+    "instance_id": "121",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "pp_log": [
+      "VETO axis_range: DePlot spread=0.91>0.5"
+    ]
+  },
+  {
+    "instance_id": "122",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The legend shows conflict distribution ranges with uneven in",
+      "SEQ_ADD discretized continuous variable: Conflict count is inherently continuous numerical data (0, 1"
+    ]
+  },
+  {
+    "instance_id": "126",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "123",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Age is displayed in broad ranges (18-24, 25-30, 31-45, 46-65"
+    ]
+  },
+  {
+    "instance_id": "125",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The data shows COVID-19 case counts (inherently continuous n"
+    ]
+  },
+  {
+    "instance_id": "124",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inverted axis",
+      "discretized continuous variable",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inverted axis: The Y-axis (color scale legend on the right) shows values th",
+      "SEQ_ADD discretized continuous variable: The left map discretizes a continuous variable (share of vot",
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "128",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "129",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Age is inherently continuous data (people can be any age wit"
+    ]
+  },
+  {
+    "instance_id": "130",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "127",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The legend shows case count ranges with uneven intervals: 75",
+      "SEQ_ADD discretized continuous variable: COVID-19 case counts are inherently continuous data (exact n"
+    ]
+  },
+  {
+    "instance_id": "132",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "pp_log": [
+      "VETO truncated_axis"
+    ]
+  },
+  {
+    "instance_id": "133",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The categories (A, B, C, D) are arranged in descending order"
+    ]
+  },
+  {
+    "instance_id": "131",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The countries are arranged alphabetically rather than by the"
+    ]
+  },
+  {
+    "instance_id": "141",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": [
+      "VETO misrep: co-occurs with pie chart issue"
+    ]
+  },
+  {
+    "instance_id": "134",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "135",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 0 to 1.5 meters, but all data values "
+    ]
+  },
+  {
+    "instance_id": "136",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The complaint rate is inherently continuous data (it can the"
+    ]
+  },
+  {
+    "instance_id": "142",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "145",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "pp_log": [
+      "VETO axis_range: DePlot spread=1.00>0.5"
+    ]
+  },
+  {
+    "instance_id": "137",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent binning size: This is a histogram with inconsistent binning sizes. The fir",
+      "SEQ_ADD discretized continuous variable: Economic growth rate is an inherently continuous variable, b"
+    ]
+  },
+  {
+    "instance_id": "148",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "138",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "139",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inverted axis: In both panels A and B, the Y-axis values DECREASE from bott"
+    ]
+  },
+  {
+    "instance_id": "149",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "140",
+    "ground_truth": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals",
+      "inappropriate item order",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The X-axis tick marks show values: $500, $1,000, $1,500, $2,",
+      "SEQ_ADD inappropriate item order: The items are sorted by value in ascending order ($599 \u2192 $79",
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "150",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "143",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "152",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "144",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: Countries are sorted by AC ownership percentage (line chart)",
+      "VETO dual_axis"
+    ]
+  },
+  {
+    "instance_id": "146",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The Hofstede Individualism score is a continuous variable (r"
+    ]
+  },
+  {
+    "instance_id": "147",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items in the legend are sorted by percentage value in de"
+    ]
+  },
+  {
+    "instance_id": "159",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": [
+      "VETO misrep: co-occurs with pie chart issue"
+    ]
+  },
+  {
+    "instance_id": "151",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The chart plots retailers on two continuous variables (Diffe"
+    ]
+  },
+  {
+    "instance_id": "154",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "156",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "155",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "162",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "153",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "157",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "inconsistent tick intervals",
+      "inverted axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis uses a logarithmic scale with tick marks at 1, 10",
+      "SEQ_ADD inverted axis: The Y-axis numbers decrease from bottom to top: 10000 (botto"
+    ]
+  },
+  {
+    "instance_id": "160",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The products are ordered by descending value (left to right)"
+    ]
+  },
+  {
+    "instance_id": "158",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from approximately 20% to 30.5%, displayin"
+    ]
+  },
+  {
+    "instance_id": "163",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items are arranged by their values in a way that creates"
+    ]
+  },
+  {
+    "instance_id": "165",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 0% to 49.0%, which is a narrow slice ",
+      "SEQ_ADD inappropriate item order: The players are sorted by their dropout percentages in desce"
+    ]
+  },
+  {
+    "instance_id": "164",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The metropolitan areas are sorted by the red line (% Afforda"
+    ]
+  },
+  {
+    "instance_id": "161",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "172",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "166",
+    "ground_truth": [
+      "inappropriate axis range",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inverted axis",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The X-axis tick marks show uneven intervals: 500,000 \u2192 10,00",
+      "SEQ_ADD inverted axis: The Y-axis (Revenue in billions) increases from bottom to to",
+      "SEQ_ADD discretized continuous variable: Time is inherently continuous, but it's displayed in discret"
+    ]
+  },
+  {
+    "instance_id": "167",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks are at 0, 30, 60, 90, 120, which repre"
+    ]
+  },
+  {
+    "instance_id": "169",
+    "ground_truth": [
+      "inappropriate use of line chart",
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "168",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The chart is sorted by descending percentage values (78% the"
+    ]
+  },
+  {
+    "instance_id": "170",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "178",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": [
+      "VETO misrep: co-occurs with pie chart issue"
+    ]
+  },
+  {
+    "instance_id": "171",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "173",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The countries are sorted by total plastic surgery procedures"
+    ]
+  },
+  {
+    "instance_id": "174",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 0% to 1.4%, showing only a narrow sli",
+      "SEQ_ADD discretized continuous variable: Time is inherently continuous, but commenting activity is bi",
+      "VETO axis_range: DePlot spread=0.87>0.5"
+    ]
+  },
+  {
+    "instance_id": "175",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "176",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Age is an inherently continuous variable, but it is displaye"
+    ]
+  },
+  {
+    "instance_id": "177",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "179",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks are at 0, 100, 200, 300, 400, 500, 600",
+      "SEQ_ADD inappropriate item order: The items are sorted by viewership values in descending orde",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "181",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks are at 0, 250, 500, 750, 1,000, which "
+    ]
+  },
+  {
+    "instance_id": "180",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "182",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The right chart (Median age of religious groups) is sorted b",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "183",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show values at 0, 10, 20, and 30, but ",
+      "SEQ_ADD inappropriate item order: The ingredients are sorted by frequency/popularity in descen"
+    ]
+  },
+  {
+    "instance_id": "184",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "185",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items are sorted by value in descending order (from high"
+    ]
+  },
+  {
+    "instance_id": "186",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "187",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "189",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The Windows operating systems are sorted by market share val"
+    ]
+  },
+  {
+    "instance_id": "188",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "190",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The countries are sorted by download speed (yellow bars) in ",
+      "VETO dual_axis"
+    ]
+  },
+  {
+    "instance_id": "191",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "192",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "193",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "200",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "VETO truncated_axis"
+    ]
+  },
+  {
+    "instance_id": "194",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "195",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: Countries are sorted by favorability percentage in descendin"
+    ]
+  },
+  {
+    "instance_id": "196",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "197",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "198",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The chart displays data aggregated by year (1970-2012), whic"
+    ]
+  },
+  {
+    "instance_id": "199",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "202",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The X-axis tick marks show intervals of: 0, 5M, 10M, 15M, 20"
+    ]
+  },
+  {
+    "instance_id": "203",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The items are sorted by bar length in descending order (long"
+    ]
+  },
+  {
+    "instance_id": "201",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "210",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "pp_log": [
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "206",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "208",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "205",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Age is inherently continuous, but the chart aggregates exact"
+    ]
+  },
+  {
+    "instance_id": "204",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The languages in the left chart are sorted by number of spea"
+    ]
+  },
+  {
+    "instance_id": "207",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "209",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "212",
+    "ground_truth": [],
+    "predicted": [
+      "inverted axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inverted axis: Reading the Y-axis from bottom to top, the values go: 0, -2,"
+    ]
+  },
+  {
+    "instance_id": "213",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis (color scale) ranges from 1.58 to 1.838 meters, w"
+    ]
+  },
+  {
+    "instance_id": "211",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: All three charts display discretized continuous variables. A",
+      "SEQ_ADD inappropriate item order: All three charts sort items by their numeric values in desce"
+    ]
+  },
+  {
+    "instance_id": "214",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "216",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "217",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 4% to 12%, which is a narrow slice of",
+      "VETO axis_range: DePlot spread=0.99>0.5"
+    ]
+  },
+  {
+    "instance_id": "218",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "215",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "222",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate item order"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "219",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The movies are sorted by adjusted gross revenue in descendin"
+    ]
+  },
+  {
+    "instance_id": "221",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Age is inherently continuous data, but the chart displays it"
+    ]
+  },
+  {
+    "instance_id": "220",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "225",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "224",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "227",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent binning size",
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent binning size: This is a histogram showing numeric ranges (time periods of ",
+      "SEQ_ADD discretized continuous variable: Average income growth is inherently continuous, but the char",
+      "VETO truncated_axis"
+    ]
+  },
+  {
+    "instance_id": "223",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "228",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The bar chart items are sorted by value in descending order "
+    ]
+  },
+  {
+    "instance_id": "226",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "229",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The pie chart segments are arranged in descending order by v"
+    ]
+  },
+  {
+    "instance_id": "230",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "231",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "232",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "235",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The bottom chart orders eyesight categories (Perfect vision,"
+    ]
+  },
+  {
+    "instance_id": "240",
+    "ground_truth": [],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "233",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The x-axis represents % Alcohol by volume, which is inherent",
+      "DEPLOT_ADD axis_range"
+    ]
+  },
+  {
+    "instance_id": "234",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "236",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The X-axis tick marks show values: 780, 810, 840, 870, 900, ",
+      "SEQ_ADD inappropriate axis range: The Y-axis (color scale) ranges from 780 to 1020 girls per 1",
+      "VETO axis_range: DePlot spread=0.99>0.5"
+    ]
+  },
+  {
+    "instance_id": "237",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "239",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "SEQ_ADD inconsistent tick intervals: The Y-axis tick marks show uneven intervals: 34.83, 42.16, 4",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "238",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "246",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "pp_log": [
+      "VETO axis_range: DePlot spread=0.87>0.5"
+    ]
+  },
+  {
+    "instance_id": "241",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "242",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "250",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "pp_log": [
+      "VETO misrep: co-occurs with pie chart issue"
+    ]
+  },
+  {
+    "instance_id": "243",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "244",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The top-left chart displays population projections for 2010-"
+    ]
+  },
+  {
+    "instance_id": "247",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "245",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "248",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: Countries are sorted by the length of the blue bar (resolve "
+    ]
+  },
+  {
+    "instance_id": "249",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "251",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The subreddits are sorted by their values in ascending order",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "253",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "252",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: Time (date of submission) is inherently continuous, but the "
+    ]
+  },
+  {
+    "instance_id": "254",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "258",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "257",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The sports events are sorted by viewership in descending ord",
+      "VETO item_order: temporal labels detected"
+    ]
+  },
+  {
+    "instance_id": "256",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "255",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "260",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "261",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate axis range: The Y-axis ranges from 950 to 1020 millibars, showing only a"
+    ]
+  },
+  {
+    "instance_id": "262",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "263",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The underlying data is a continuous variable: the correlatio"
+    ]
+  },
+  {
+    "instance_id": "264",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "266",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "259",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "265",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "pp_log": [
+      "SEQ_ADD inappropriate item order: The sports are ordered by decreasing 'Amount of Action' (gre"
+    ]
+  },
+  {
+    "instance_id": "269",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "pp_log": []
+  },
+  {
+    "instance_id": "268",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The x-axis displays time as discrete four-week groups rather"
+    ]
+  },
+  {
+    "instance_id": "267",
+    "ground_truth": [],
+    "predicted": [],
+    "pp_log": []
+  },
+  {
+    "instance_id": "270",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable",
+      "inappropriate axis range"
+    ],
+    "pp_log": [
+      "SEQ_ADD discretized continuous variable: The x-axis displays 'like ratio' as a percentage (0-100%), w",
+      "DEPLOT_ADD axis_range"
+    ]
+  }
+]

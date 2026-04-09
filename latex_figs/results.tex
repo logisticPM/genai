@@ -1,0 +1,153 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\definecolor{dblue}{HTML}{1F4E79}
+\definecolor{dgreen}{HTML}{2E7D32}
+\definecolor{dred}{HTML}{C62828}
+\definecolor{dpurple}{HTML}{755882}
+\definecolor{lblue}{HTML}{E3F2FD}
+\definecolor{lgreen}{HTML}{E8F5E9}
+\definecolor{lred}{HTML}{FFEBEE}
+
+\begin{document}
+
+\begin{minipage}{16cm}
+
+% ── HEADLINE ──
+\begin{center}
+{\bfseries\LARGE\textcolor{dgreen}{Tools as verifiers: +5.9 pp}}\\[4pt]
+{\bfseries\LARGE\textcolor{dred}{Tools as augmenters: --1.7 pp}}
+\end{center}
+
+\vspace{8pt}
+
+% ══════════════════════════════════════════════════════
+% RQ1/RQ2
+% ══════════════════════════════════════════════════════
+\begin{tcolorbox}[colback=dblue!5, colframe=dblue, arc=6pt,
+  title={\large\bfseries Baseline Results (RQ1/RQ2)},
+  fonttitle=\color{white}, coltitle=white, colbacktitle=dblue]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lcccc}
+\toprule
+& \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
+\midrule
+\textbf{Claude} vision-only & 0.771 & 0.782 & \textbf{0.883} & \textbf{0.830} \\
+\textbf{Claude} vision+text & 0.779 & \textbf{0.832} & 0.813 & 0.822 \\
+\textbf{Qwen} vision-only & 0.672 & 0.773 & 0.678 & 0.723 \\
+\textbf{Qwen} vision+text & 0.664 & 0.845 & 0.573 & 0.683 \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+\textcolor{dgreen}{\textbf{RQ1:}} Claude outperforms Qwen by +10.7 pp \quad
+\textcolor{dblue}{\textbf{RQ2:}} Vision+text: precision $\uparrow$, recall $\downarrow$, marginal net
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% ══════════════════════════════════════════════════════
+% RQ3: PIPELINE
+% ══════════════════════════════════════════════════════
+\begin{tcolorbox}[colback=dgreen!5, colframe=dgreen, arc=6pt,
+  title={\large\bfseries Pipeline Ablation Results (RQ3)},
+  fonttitle=\color{white}, coltitle=white, colbacktitle=dgreen]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Architecture} & \textbf{PT F1} & \textbf{PT Prec} & \textbf{Bin F1} & \textbf{FP} & \textbf{VLM calls} \\
+\midrule
+VLM-only baseline & 39.3\% & 35.7\% & 83.0\% & 157 & 1 \\
+\rowcolor{lred}
+\textcolor{dred}{OCR-Injected} & \textcolor{dred}{38.9\%} & \textcolor{dred}{31.3\%} & \textcolor{dred}{80.1\%} & \textcolor{dred}{224} & \textcolor{dred}{1} \\
+\rowcolor{lred}
+\textcolor{dred}{DePlot-Injected} & \textcolor{dred}{37.6\%} & \textcolor{dred}{30.0\%} & \textcolor{dred}{79.1\%} & \textcolor{dred}{233} & \textcolor{dred}{1} \\
+\rowcolor{lgreen}
+CLEAN Veto & 43.5\% & 44.3\% & 77.0\% & 107 & 1 \\
+Sequential Re-ask & 40.1\% & 30.1\% & 80.5\% & 276 & $\sim$7 \\
+Self-Consistency (3$\times$) & 38.9\% & 29.1\% & 80.4\% & 285 & $\sim$19 \\
+\rowcolor{lgreen}
+\textcolor{dgreen}{\textbf{CLEAN Veto + Clf $\bigstar$}} & \textcolor{dgreen}{\textbf{45.2\%}} & \textcolor{dgreen}{\textbf{50.0\%}} & \textcolor{dgreen}{\textbf{77.0\%}} & \textcolor{dgreen}{\textbf{82}} & \textcolor{dgreen}{\textbf{1}} \\
+\bottomrule
+\end{tabular}
+
+\vspace{8pt}
+\begin{flushleft}
+\textcolor{dred}{\textbf{Tool injection degrades:}} OCR --0.4 pp, DePlot --1.7 pp\\[3pt]
+\textcolor{dgreen}{\textbf{Post-processing improves:}} CLEAN Veto +4.2 pp, +Classifier +5.9 pp\\[3pt]
+\textbf{Self-consistency fails:} 3-vote majority increases FP (systematic errors)\\[3pt]
+\textbf{Attention dilution:} VLM detects subtle types individually but misses\\
+\quad them in 12-type prompt --- an attention problem, not capability gap
+\end{flushleft}
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% ══════════════════════════════════════════════════════
+% SEC CASE STUDY
+% ══════════════════════════════════════════════════════
+\begin{tcolorbox}[colback=dpurple!5, colframe=dpurple, arc=6pt,
+  title={\large\bfseries SEC Case Study: STZ (Constellation Brands)},
+  fonttitle=\color{white}, coltitle=white, colbacktitle=dpurple]
+
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../data/sec_charts/STZ/stz-20240229_g22.jpg}\\[4pt]
+{\small\textbf{Truncated axis:} Y starts at \$11,500}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../data/sec_charts/STZ/stz-20240229_g10.jpg}\\[4pt]
+{\small\textbf{Truncated axis:} Y range 42\%--45\%}
+\end{minipage}
+
+\vspace{10pt}
+
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Method} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{TP} & \textbf{FP} \\
+\midrule
+VLM-only baseline & 0.33 & \textbf{1.00} & 0.50 & 3 & 6 \\
+\rowcolor{lgreen}
+\textcolor{dgreen}{\textbf{CLEAN Veto (pipeline)}} & \textcolor{dgreen}{\textbf{1.00}} & \textcolor{dgreen}{0.67} & \textcolor{dgreen}{\textbf{0.80}} & \textcolor{dgreen}{2} & \textcolor{dgreen}{\textbf{0}} \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+Pipeline eliminates all 6 false positives (pie charts, hallucinated misrepresentation).\\
+Precision: 0.33 $\rightarrow$ \textcolor{dgreen}{\textbf{1.00}} \quad F1: 0.50 $\rightarrow$ \textcolor{dgreen}{\textbf{0.80}} \quad FP: 6 $\rightarrow$ \textcolor{dgreen}{\textbf{0}}
+
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% ══════════════════════════════════════════════════════
+% CONCLUSION
+% ══════════════════════════════════════════════════════
+\begin{tcolorbox}[colback=dblue!5, colframe=dblue, arc=6pt,
+  title={\large\bfseries Conclusion \& Future Work},
+  fonttitle=\color{white}, coltitle=white, colbacktitle=dblue]
+\begin{itemize}\setlength{\itemsep}{2pt}
+\item Post-processing verifiers improve PT F1 by +15\%; tool injection degrades it
+\item Claude outperforms Qwen (+10.7 pp); textual context: marginal net effect
+\item SEC case study: pipeline eliminates all FP while maintaining detection of truncated axes
+\item \textbf{Future:} fine-tune VLM on financial charts; domain adaptation; scale SEC coverage
+\end{itemize}
+\end{tcolorbox}
+
+\end{minipage}
+
+\end{document}

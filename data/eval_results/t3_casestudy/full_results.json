@@ -1,0 +1,126 @@
+{
+  "ALV/2022_8-K.htm": {
+    "findings": 12,
+    "time": 12.4,
+    "details": [
+      "missing_gaap_counterpart: organic sales presented without corresponding GAAP metric (Total Revenue / Net S",
+      "undue_prominence: organic sales has undue prominence over GAAP counterpart",
+      "undue_prominence: adjusted operating income has undue prominence over GAAP counterpart",
+      "missing_gaap_counterpart: adjusted operating margin presented without corresponding GAAP metric (Operating",
+      "undue_prominence: adjusted operating margin has undue prominence over GAAP counterpart",
+      "undue_prominence: adjusted EBITDA has undue prominence over GAAP counterpart",
+      "missing_gaap_counterpart: free cash flow presented without corresponding GAAP metric (Net Cash from Operat",
+      "undue_prominence: free cash flow has undue prominence over GAAP counterpart",
+      "undue_prominence: adjusted earnings per share has undue prominence over GAAP counterpart",
+      "pairing_violation: adjusted operating margin: Non-GAAP ratio metric presented without corresponding",
+      "pairing_violation: free cash flow: Expected GAAP counterpart 'Net Cash from Operating Activities' n",
+      "pairing_violation: Incomplete extraction: Press release (Exhibit 99.1) containing actual reconcilia"
+    ]
+  },
+  "MYE/2022_8-K.htm": {
+    "findings": 2,
+    "time": 11.9,
+    "details": [
+      "pairing_violation: Adjusted Operating Income Margin (ratio) presented without corresponding GAAP Op",
+      "pairing_violation: Adjusted EBITDA Margin (ratio) presented without corresponding GAAP EBITDA Margi"
+    ]
+  },
+  "FXLV/2021_10-K.htm": {
+    "findings": 7,
+    "time": 11.0,
+    "details": [
+      "undue_prominence: Adjusted EBITDA has undue prominence over GAAP counterpart",
+      "missing_gaap_counterpart: Adjusted EBITDA margin presented without corresponding GAAP metric (Net Income M",
+      "undue_prominence: Adjusted EBITDA margin has undue prominence over GAAP counterpart",
+      "pairing_violation: CRITICAL: Adjusted EBITDA margin (38.8%) presented WITHOUT corresponding GAAP Ne",
+      "pairing_violation: CRITICAL: No reconciliation table provided in MD&A or financial statements recon",
+      "pairing_violation: Adjusted EBITDA presented with GREATER prominence than GAAP Net Income in busine",
+      "pairing_violation: Constant currency metric mentioned but lacks detailed reconciliation to GAAP rep"
+    ]
+  },
+  "UIS/2022_DEF14A.htm": {
+    "findings": 6,
+    "time": 5.6,
+    "details": [
+      "missing_gaap_counterpart: Non-GAAP Operating Profit presented without corresponding GAAP metric (Operating",
+      "undue_prominence: Non-GAAP Operating Profit has undue prominence over GAAP counterpart",
+      "pairing_violation: Non-GAAP Operating Profit referenced but no GAAP Operating Income reconciliation",
+      "pairing_violation: This is a correspondence letter, not the actual proxy statement containing the d",
+      "pairing_violation: SEC staff comment indicates the Company-Selected Measure was not properly includ",
+      "pairing_violation: Compliance deficiency acknowledged by company in response"
+    ]
+  },
+  "OC/2024_8-K.htm": {
+    "findings": 2,
+    "time": 9.3,
+    "details": [
+      "pairing_violation: Adjusted EBITDA Margin (24%) presented without corresponding GAAP Net Profit Mar",
+      "pairing_violation: Adjusted EBIT Margin (19%) presented without corresponding GAAP Operating Income"
+    ]
+  },
+  "CNM/2023_8-K.htm": {
+    "findings": 0,
+    "time": 3.9,
+    "details": []
+  },
+  "AAP/2024_8-K.htm": {
+    "findings": 19,
+    "time": 10.6,
+    "details": [
+      "undue_prominence: Adjusted Gross Profit has undue prominence over GAAP counterpart",
+      "missing_gaap_counterpart: Adjusted Gross Profit Margin presented without corresponding GAAP metric (Gross ",
+      "undue_prominence: Adjusted Gross Profit Margin has undue prominence over GAAP counterpart",
+      "undue_prominence: Adjusted SG&A has undue prominence over GAAP counterpart",
+      "missing_gaap_counterpart: Adjusted SG&A Margin presented without corresponding GAAP metric (SG&A Margin (G",
+      "undue_prominence: Adjusted SG&A Margin has undue prominence over GAAP counterpart",
+      "undue_prominence: Adjusted Operating Loss has undue prominence over GAAP counterpart",
+      "missing_gaap_counterpart: Adjusted Operating Margin presented without corresponding GAAP metric (Operating",
+      "undue_prominence: Adjusted Operating Margin has undue prominence over GAAP counterpart",
+      "undue_prominence: Adjusted Loss Per Share has undue prominence over GAAP counterpart",
+      "missing_gaap_counterpart: Adjusted Debt to Adjusted EBITDAR Ratio presented without corresponding GAAP met",
+      "undue_prominence: Adjusted Debt to Adjusted EBITDAR Ratio has undue prominence over GAAP counterpa",
+      "pairing_violation: Adjusted Gross Profit Margin - missing GAAP Gross Profit Margin (ratio) counterp",
+      "pairing_violation: Adjusted SG&A Margin - missing GAAP SG&A Margin (ratio) counterpart",
+      "pairing_violation: Adjusted Operating Margin - missing GAAP Operating Margin (ratio) counterpart",
+      "pairing_violation: Adjusted Debt to Adjusted EBITDAR Ratio - missing GAAP Debt to Net Income Ratio ",
+      "pairing_violation: All metrics presented with LESS prominence than required - SEC Staff explicitly ",
+      "pairing_violation: Year-over-year changes (bps, dollars, percent) and percentage of sales presented",
+      "pairing_violation: Improper use of 'pro forma' terminology for non-Article 11 measures (pro forma c"
+    ]
+  },
+  "CTAS/2025-07-28_10-K.htm": {
+    "findings": 4,
+    "time": 8.7,
+    "details": [
+      "undue_prominence: Organic revenue has undue prominence over GAAP counterpart",
+      "pairing_violation: Organic revenue metric lacks explicit 'Non-GAAP' or 'Adjusted' label in the extr",
+      "pairing_violation: No detailed reconciliation table found in pre-extracted data showing organic rev",
+      "pairing_violation: Prominence concern: organic revenue percentage (8.0%) presented without showing "
+    ]
+  },
+  "CTAS/2026-03-25_8-K.htm": {
+    "findings": 0,
+    "time": 3.4,
+    "details": []
+  },
+  "SHW/2026-02-09_8-K.htm": {
+    "findings": 0,
+    "time": 3.8,
+    "details": []
+  },
+  "SHW/2026-02-19_10-K.htm": {
+    "findings": 0,
+    "time": 11.3,
+    "details": []
+  },
+  "ROK/2025-11-12_10-K.htm": {
+    "findings": 0,
+    "time": 8.7,
+    "details": []
+  },
+  "ROK/2026-02-17_8-K.htm": {
+    "findings": 0,
+    "time": 3.8,
+    "details": []
+  }
+}
