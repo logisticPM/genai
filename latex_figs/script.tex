@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\definecolor{dblue}{HTML}{1F4E79}
+\definecolor{dgreen}{HTML}{2E7D32}
+\definecolor{dred}{HTML}{C62828}
+\definecolor{dpurple}{HTML}{755882}
+
+\titleformat{\section}{\Large\bfseries\color{dblue}}{}{0em}{}
+\titleformat{\subsection}{\large\bfseries\color{dblue!80}}{}{0em}{}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+{\LARGE\bfseries\color{dblue} FinChartAudit --- Presentation Script}\\[4pt]
+{\large Total time: \textasciitilde4 minutes $\cdot$ 5 slides}
+
+\vspace{12pt}
+\hrule
+\vspace{12pt}
+
+%------------------------------------------------------
+\section{Slide 1: Title \textnormal{\small(20 sec)}}
+
+Hi everyone. Our project is \textbf{FinChartAudit} --- detecting misleading financial charts using Vision-Language Models.
+
+I'm [name], working with Mengshan Li, Wenshuang Zhou, and Tong Wu from Khoury College at Northeastern.
+
+%------------------------------------------------------
+\section{Slide 2: Background \& Research Questions \textnormal{\small(50 sec)}}
+
+Why does this matter? \textbf{86\% of S\&P 500 companies} include at least one misleading chart in their annual reports --- truncated axes, selective time windows, Non-GAAP metrics without GAAP context. Non-GAAP prominence has been the \textbf{\#1 SEC comment letter topic for nine years}, yet detection is entirely manual.
+
+No prior work applies VLMs to this. We asked three questions:
+
+\begin{itemize}[nosep,leftmargin=1.5em]
+\item \textbf{RQ1:} How accurately can VLMs detect 12 misleader types?
+\item \textbf{RQ2:} Does textual context improve detection?
+\item \textbf{RQ3:} Can tools reduce false positives and improve per-type quality?
+\end{itemize}
+
+%------------------------------------------------------
+\section{Slide 3: Methodology \textnormal{\small(1 min)}}
+
+Three phases.
+
+\textbf{Phase 1:} 2$\times$2 baseline --- Claude and Qwen, vision-only and vision-plus-text, on 271 Misviz charts. We found Claude achieves 83\% binary F1 --- sounds great. But \textcolor{dred}{\textbf{per-type F1 is only 39.3\%}} with 42\% false positive rate on clean charts. Binary F1 masks poor type accuracy.
+
+\textbf{Phase 2:} Pipeline ablation. We tested six tool-use strategies on the same charts. Key question: \textit{should tools inject data into the prompt, or verify VLM output afterward?} Tools include RapidOCR, DePlot, and a ViT classifier trained on 57K synthetic charts.
+
+\textbf{Phase 3:} Validated the best pipeline on real SEC charts from Constellation Brands' 10-K filing.
+
+%------------------------------------------------------
+\section{Slide 4: Results \textnormal{\small(1 min 20 sec)}}
+
+\textbf{RQ1/2:} Claude outperforms Qwen by 10.7 points. Textual context: marginal net effect.
+
+\textbf{RQ3} --- our main contribution. \textcolor{dred}{Tool injection hurts}: OCR-Injected drops 0.4 points, DePlot drops 1.7 points. Noisy OCR data misleads the VLM. But \textcolor{dgreen}{post-processing works}: CLEAN Veto adds 4.2 points, and adding the ViT classifier reaches \textcolor{dgreen}{\textbf{45.2\% per-type F1}} --- a 5.9 point gain with false positives cut from 157 to 82.
+
+Self-consistency voting \textit{increased} FP --- VLM errors are systematic, not random.
+
+\textbf{SEC case study:} On 9 STZ charts, baseline flagged all 9 but 6 were false positives --- precision just 33\%. Our pipeline \textcolor{dgreen}{\textbf{eliminated all 6 FP}}: precision 33\% $\rightarrow$ 100\%, F1 0.50 $\rightarrow$ 0.80.
+
+%------------------------------------------------------
+\section{Slide 5: Conclusion \textnormal{\small(30 sec)}}
+
+Core insight: \textbf{tools work as verifiers, not augmenters}. Post-processing improves per-type F1 by 15\%; injection degrades it.
+
+We discovered \textbf{attention dilution}: the VLM detects subtle types individually but misses them in a 12-type prompt. This explains why per-type verifiers are effective.
+
+Future work: fine-tune VLMs on financial charts, close the synth-to-real classifier gap, and build a chart-specific SEC dataset.
+
+Thank you.
+
+\vspace{12pt}
+\hrule
+\vspace{8pt}
+{\small\color{gray} \textit{Tip: practice 2--3 times to hit the 4-minute target. Cut the SEC case study detail if running long.}}
+
+\end{document}

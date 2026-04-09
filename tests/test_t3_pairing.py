@@ -26,7 +26,7 @@ class TestT3ParseResponse:
             }],
             "pairing_matrix": {"total_nongaap": 1, "paired": 0, "missing": 1, "violations": []},
         })
-        findings = agent._parse_response(text, "MYE", 1)
+        findings = agent._build_findings(json.loads(text),"MYE", 1)
         assert len(findings) == 1
         assert findings[0].subcategory == "missing_gaap_counterpart"
         assert findings[0].risk_level == "HIGH"
@@ -43,7 +43,7 @@ class TestT3ParseResponse:
             }],
             "pairing_matrix": {"total_nongaap": 1, "paired": 1, "missing": 0, "violations": []},
         })
-        findings = agent._parse_response(text, "MYE", 1)
+        findings = agent._build_findings(json.loads(text),"MYE", 1)
         assert len(findings) == 1
         assert findings[0].subcategory == "undue_prominence"
 
@@ -59,7 +59,7 @@ class TestT3ParseResponse:
             }],
             "pairing_matrix": {"total_nongaap": 1, "paired": 1, "missing": 0, "violations": []},
         })
-        findings = agent._parse_response(text, "CTAS", 1)
+        findings = agent._build_findings(json.loads(text),"CTAS", 1)
         assert len(findings) == 0
 
 

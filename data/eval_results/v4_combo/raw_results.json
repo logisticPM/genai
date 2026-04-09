@@ -1,0 +1,2910 @@
+[
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "This is a histogram showing a distribution of values from approximately 15 to 87. The y-axis starts at 0 and uses consistent tick intervals (5 units), the bins appear to have equal widths, and the chart type is appropriate for displaying frequency distributions. No misleading elements are detected."
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis ranges from 0-60 for assignment scores, while the right axis ranges from 10%-100% for heterozygosity. This dual-axis setup can mislead viewers by allowing visual comparison between variables measured on fundamentally different scales, making it difficult to accurately assess the relationship between the two metrics."
+  },
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The visual heights of the figures do not accurately represent the labeled percentages. For example, the 35-44 age group (21%) appears taller than the 45-54 age group (20%), and the 55-64 group (16%) appears nearly as tall as the 45-54 group (20%), contradicting the labeled values. The bar heights should be proportional to their percentages."
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 0.38 instead of 0, which exaggerates the visual difference between the Fox News bar (approximately 0.6) and the Others bar (approximately 0.4). This truncation makes the Fox News value appear roughly 1.5 times larger visually when the actual ratio is much smaller."
+  },
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This pie chart displays three distinct categorical varieties (SETOSA, VIRGINICA, VERSICOLOR) with their counts, which are not parts of a meaningful whole. Pie charts should only be used for part-to-whole relationships where all segments sum to 100% of a single entity. A bar chart would be more appropriate for comparing counts across categories."
+  },
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The 3D pie chart distorts visual comparison through perspective effects, making the front segments (YES at 47%) appear larger than the back segments (NO at 43%) despite only a 4 percentage point difference. Additionally, the 3D rendering causes the slice sizes to not accurately represent their labeled values due to the spherical/dome-like distortion."
+  },
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.7,
+    "veto_log": [],
+    "explanation": "The y-axis uses a logarithmic scale (1, 3, 12, 42, 148, 516, 1803) rather than a linear scale, which is not clearly indicated. This logarithmic scaling distorts the visual comparison between opens and clicks, making the differences appear smaller than they actually are in linear terms. For a chart comparing two metrics, a linear scale with proper labeling would be more appropriate and transparent."
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.7,
+    "veto_log": [],
+    "explanation": "This is a properly constructed horizontal bar chart comparing claims paid versus claims received across multiple years. The x-axis starts at 0, has consistent tick intervals (50 units), and the bar lengths accurately represent the labeled values. The chart type is appropriate for comparing two categorical variables across time periods."
+  },
+  {
+    "instance_id": "13",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.3,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 19,400 instead of 0, exaggerating the visual differences between bars. While the enrollment values range from approximately 19,900 to 21,000 (a ~5% variation), the truncated axis makes these differences appear much more dramatic than they actually are."
+  },
+  {
+    "instance_id": "12",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This is an area chart showing overall crime trends from 2003 to 2013 with a y-axis starting at 60,000. The y-axis range (60,000 to 92,000) is appropriate for the data being displayed, as the values span this range. The axis ticks are evenly spaced, and the chart type is suitable for showing trends over time. No misleading elements are detected."
+  },
+  {
+    "instance_id": "11",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The 3D pie chart perspective distorts visual comparison of the slices. The Television slice (50%) appears disproportionately large due to the 3D tilt, while the Magazine/Newspaper slice (12%) appears smaller than its actual proportion. The 3D effect creates a false visual hierarchy that doesn't accurately represent the labeled percentages."
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The bar chart displays labeled values (e.g., 22, 8, 6, 4, 3, 1) that do not accurately correspond to the visual heights of the bars. For example, the bar labeled '22' appears significantly taller than twice the height of bars labeled '8', and the proportional relationships between labeled values and bar heights are inconsistent throughout the chart, creating a visual misrepresentation of the data."
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.8,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing regional data distribution across Indonesia with a clear, well-defined legend. The color gradations are consistent with the binned percentage ranges, the legend is properly labeled with non-overlapping intervals, and the geographic representation is appropriate for this type of data. No misleading elements are detected."
+  },
+  {
+    "instance_id": "10",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 4.2,
+    "veto_log": [],
+    "explanation": "The map uses color intensity to represent homicide rate ranges, but the placement of red stars on the map appears strategically positioned to emphasize certain regions, combined with the overlay text making a political argument. The visual presentation conflates geographic data with a political narrative about S\u00e3o Paulo Forum governance, creating an inappropriate ordering/framing that suggests causation rather than presenting neutral data visualization."
+  },
+  {
+    "instance_id": "15",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.3,
+    "veto_log": [],
+    "explanation": "The bar lengths do not accurately represent the labeled values. The Star Wars bar (53,636) appears only about 3.5 times longer than the Star Trek bar (15,904), but the actual ratio should be approximately 3.37:1. The visual encoding of the bars does not proportionally match their numerical values, creating a misrepresentation of the data comparison."
+  },
+  {
+    "instance_id": "14",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.5,
+    "veto_log": [],
+    "explanation": "The bar heights do not accurately represent the labeled values. The Private sector bar (1,444 cases) appears roughly 5 times taller than the Public sector bar (285 cases), but the actual ratio should be approximately 5.07:1. The visual encoding exaggerates the difference through the rounded rectangular shapes and proportions, making the Private bar appear disproportionately larger than the numerical ratio warrants."
+  },
+  {
+    "instance_id": "16",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "This pie chart displays fraud detection categories that do not represent parts of a meaningful whole. The percentages (6.9%, 2.6%, 2.1%, 7.5%) sum to only 18.6%, suggesting missing data or incomplete representation. Pie charts should show how parts compose a complete whole (100%), making this chart inappropriate for displaying these fraud metrics."
+  },
+  {
+    "instance_id": "20",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "The bar lengths do not accurately represent the labeled values. The AMD TV (red bar) is labeled as 66 fps but appears visually shorter than the Intel Core i9 (blue bar) labeled as 69 fps, when the difference should be minimal (only 3 fps). The visual encoding misrepresents the actual data values."
+  },
+  {
+    "instance_id": "18",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "This is a grouped bar chart showing COVID-19 cases across five counties over time with a y-axis starting at 0 and evenly spaced tick intervals. The chart appropriately uses grouped bars for comparing multiple categories (counties) across time periods, and the axis scaling is standard for case count data. No misleading elements are detected."
+  },
+  {
+    "instance_id": "17",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The y-axis is inverted, with values increasing downward (0 at top, 35 at bottom) rather than the standard convention of increasing upward. This reverses the perceived trend, making declining values appear to rise visually, which is counterintuitive and misleading for interpreting COVID-19 case data."
+  },
+  {
+    "instance_id": "22",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.0,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 50 instead of 0, exaggerating the visual differences between the bars. The differences between Middle school (~68), High school (~60), and College/University (~60) appear much more dramatic than they actually are when the axis is truncated."
+  },
+  {
+    "instance_id": "21",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.0,
+    "veto_log": [],
+    "explanation": "The pie chart shows three segments with labeled percentages (1%, 92%, and 7%), which sum to 100%. However, the visual sizes of the pie slices do not accurately match these percentages. The 92% segment appears disproportionately large relative to the 1% segment, and the 7% segment's visual representation does not correspond to its labeled value, creating a misalignment between labeled data and visual encoding."
+  },
+  {
+    "instance_id": "23",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "The bar chart shows 3744 MW for 2014-15 and 6753 MW for 2015-16, representing an 80.4% increase. However, the visual height of the red bar (6753 MW) appears to be nearly double the blue bar (3744 MW), which would represent approximately a 100% increase. The bar sizes do not accurately match the labeled values and stated percentage increase, exaggerating the visual growth."
+  },
+  {
+    "instance_id": "24",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "A line chart is used to display what appears to be a single categorical variable (Year A.D.) with a nearly flat trend across centuries. Line charts are designed for sequential continuous data showing trends over time, but this visualization shows minimal variation and would be better represented as a simple value display or table. The line chart format misleadingly suggests a meaningful trend when there is essentially none."
+  },
+  {
+    "instance_id": "26",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.4,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis shows complaint counts (0-50) while the right axis shows cumulative percentage (0%-100%). This dual-axis design makes it difficult to fairly compare the relative magnitudes of the two metrics and can mislead viewers about their relationship."
+  },
+  {
+    "instance_id": "19",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 5.4,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales (left axis: 0-9,000 Euros billions for bank assets; right axis: 0-3,000 Euros billions for GDP), making direct visual comparison between the two metrics misleading. The different scales distort the relative magnitudes of bank assets versus GDP across countries."
+  },
+  {
+    "instance_id": "27",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "truncated axis"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The bar chart visually exaggerates the difference between 35% and 39.6% by using a truncated y-axis that starts at 34% instead of 0%, making a 4.6 percentage point increase appear as a dramatic visual jump. Additionally, the bar heights do not accurately represent the labeled values\u2014the right bar appears roughly 4x taller than the left bar, when the actual increase is only ~13% relative to the starting value, creating severe misrepresentation of the data."
+  },
+  {
+    "instance_id": "25",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The 3D pie chart distorts visual comparison\u2014the large red slice appears even larger due to perspective effects, exaggerating the visual difference between 72% and 28%. Additionally, pie charts are inappropriate for comparing accuracy vs. misleading content, as these are not parts of a meaningful whole but rather two distinct categorical outcomes that would be better represented in a bar chart."
+  },
+  {
+    "instance_id": "28",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 4.4,
+    "veto_log": [],
+    "explanation": "The 3D perspective distorts visual comparison\u2014the front slice (Question 1 at 32.1%) appears larger than the back slice (Question 5 at 22.6%) due to depth effects, even though they should be proportionally comparable. Additionally, without context about what these survey questions represent, using a pie chart implies these are parts of a whole (totaling 100%), which may not be appropriate if these are independent survey responses or satisfaction ratings."
+  },
+  {
+    "instance_id": "31",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.5,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis ranges from 0 to 180,000 for Hertz and GNC Holdings, while the right axis ranges from 0 to 60,000 for Valaris. This dual-axis setup with different scales makes visual comparison between the three lines misleading, as identical visual heights represent different values depending on which axis is used."
+  },
+  {
+    "instance_id": "33",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 0 but the chart area begins well above zero, with the actual data visualization occupying only the upper portion of the graph. This compresses the visual representation and exaggerates the growth trajectory of COVID-19 cases by not utilizing the full available space proportionally. The effect makes the curve appear steeper and more dramatic than it would if the chart properly scaled the data across the entire axis range."
+  },
+  {
+    "instance_id": "32",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "A pie chart is inappropriate here because these percentages do not represent parts of a single whole\u2014they are independent statistics about different buyer outcomes that can overlap or exceed 100% in total. Additionally, the 3D perspective distorts visual comparison, making front slices appear larger than back slices regardless of their actual values."
+  },
+  {
+    "instance_id": "29",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The choropleth map uses a sequential color gradient appropriately scaled from <8% to >20% fraud rates, with consistent binning intervals (8 percentage point ranges). The accompanying table provides exact fraud rates for all states, allowing verification of the visual encoding. The map and data are aligned and suitable for geographic comparison of fraud rates."
+  },
+  {
+    "instance_id": "35",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis measures millions of victims (0-16) while the right axis measures billions in fraud losses ($0-$50). This dual-axis design makes it difficult to fairly compare the trends of the two metrics and can create false impressions about their relative magnitudes and relationships."
+  },
+  {
+    "instance_id": "30",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 4.1,
+    "veto_log": [],
+    "explanation": "This pie chart displays pizza topping preferences as percentages that sum to well over 100% (totaling 515%), which violates the fundamental principle of pie charts showing parts of a whole. Pie charts are inappropriate for this data because respondents could select multiple toppings, making these independent preference rates rather than mutually exclusive segments of a single total."
+  },
+  {
+    "instance_id": "34",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.9,
+    "veto_log": [],
+    "explanation": "The bar chart appropriately starts at 0% on the y-axis, uses consistent tick intervals (10% increments), and displays literacy rates as percentages with labeled values matching bar heights. The chart type is suitable for comparing categorical data across time periods, and the axis range (0-60%) is appropriate for the data range shown (16.40%-55.20%)."
+  },
+  {
+    "instance_id": "39",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.1,
+    "veto_log": [],
+    "explanation": "The chart uses a 3D spherical representation for the $3328 figure, which distorts visual comparison by making the circular shape appear larger than its actual value relative to the $1404 figure. The 3D perspective effect exaggerates the perceived difference between the two salary increases, even though $3328 is only about 2.4 times larger than $1404."
+  },
+  {
+    "instance_id": "37",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.9,
+    "veto_log": [],
+    "explanation": "The 3D perspective distorts visual comparison, making the front slice (Financial Institution Fraud at 31%) appear disproportionately larger than back slices. Additionally, while the data sums to 100%, a pie chart is less effective for comparing multiple similar-sized categories; a bar chart would allow more accurate visual comparison of the fraud program categories."
+  },
+  {
+    "instance_id": "40",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The x-axis starts at 6,000 instead of 0, exaggerating the visual differences between the players' point totals. This truncation makes the gap between James Harden (8,306) and Kevin Durant (5,200) appear much larger than it actually is, distorting the relative comparison of their achievements."
+  },
+  {
+    "instance_id": "44",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.1,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 196 instead of 0, visually exaggerating the differences between the cholesterol point drops across weeks. The actual range is only 196-209 mg/dL, but the truncated axis makes Week 1 appear dramatically larger than Week 4."
+  },
+  {
+    "instance_id": "42",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The 3D pie chart perspective distorts visual comparison, with the front-facing red slice (TIMES NOW at 34%) appearing disproportionately larger than its labeled value due to the 3D angle. Additionally, the visual sizes of the slices do not accurately match their labeled percentages\u2014the cyan slice (20%) and yellow slice (30%) appear smaller than their values suggest relative to the red slice."
+  },
+  {
+    "instance_id": "41",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The 3D map visualization distorts visual comparison of birth rate differences across regions. The three-dimensional perspective causes states at different depths to appear visually larger or smaller than their actual data values warrant, making it difficult to accurately compare relative birth rates between states. The extrusion effect creates false visual hierarchy based on geographic position rather than data magnitude."
+  },
+  {
+    "instance_id": "43",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The y-axis is inverted, with negative values increasing downward (from 0 at top to -1,400,000 at bottom). This reverses the typical convention where larger magnitudes appear higher, making the worsening deficit trend appear visually inverted and potentially confusing to readers accustomed to standard axis orientation."
+  },
+  {
+    "instance_id": "38",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 5.3,
+    "veto_log": [],
+    "explanation": "The bar lengths do not accurately represent the labeled values. For example, the 'One' bar (600,000) appears visually similar in length to the 'Two' bar (500,000), but should be noticeably longer. The 'Five' bar (170) is barely visible despite being labeled, while 'Four' (170,000) appears much larger, indicating the visual encoding does not match the data values."
+  },
+  {
+    "instance_id": "36",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 5.7,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 9100 instead of 0, exaggerating the visual differences between bars. The data ranges from approximately 9350 to 9750, but the truncated axis makes these relatively small differences appear much more dramatic than they actually are."
+  },
+  {
+    "instance_id": "45",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "The 'Chefs Plate' item shows a strikethrough price of $9.99 and a new price of $5 per serving, but the visual size of the burger and fries portion appears disproportionately small compared to the other menu items (Goodfood, Chef CookIt, MissFresh) which are priced at $11.49-$11.50. The image sizing creates a false impression that the Chefs Plate offers significantly less food value despite the lower price point."
+  },
+  {
+    "instance_id": "48",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The y-axis of the bar chart starts at approximately \u00a3190m instead of \u00a30, exaggerating the visual differences between the three years. The decline from \u00a3208m to \u00a3194m appears much more dramatic than it actually is (a ~7% decrease), making the reduction seem more significant than the data warrants."
+  },
+  {
+    "instance_id": "51",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.3,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 249,000 instead of 0, dramatically exaggerating the visual difference between the 2014 and 2015 prices. The actual increase from approximately $250,000 to $252,000 (less than 1%) appears as a massive spike due to the compressed axis range."
+  },
+  {
+    "instance_id": "50",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The stacked bar chart uses colored segments to represent country distributions, but the visual heights of individual segments do not consistently match their labeled values. For example, the USA bar shows multiple stacked segments that appear disproportionate to what would be expected from equal or clearly differentiated values. The stacking makes it difficult to accurately compare values across categories, particularly for segments that don't share a common baseline."
+  },
+  {
+    "instance_id": "52",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The line chart appropriately displays obesity trends over time with a y-axis starting at 0, consistent tick intervals, and suitable chart type for sequential temporal data. The labeled values (14.5, 15.5, 34.3) match the visual positions of the data points, and the axis range is appropriate for the data range shown."
+  },
+  {
+    "instance_id": "47",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.0,
+    "veto_log": [],
+    "explanation": "The bar chart showing 'DAMAGE IN LAST TEAM FIGHT' has misaligned bar lengths relative to their labeled values. For example, the bar labeled 1463 appears visually shorter than the bar labeled 3023, despite 1463 being a smaller value. The bars do not accurately represent the numerical differences between the damage values shown."
+  },
+  {
+    "instance_id": "49",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.9,
+    "veto_log": [],
+    "explanation": "A pie chart represents parts of a whole that sum to 100%, but these percentages (10% + 18% + 27% + 46% + 66% + 78% = 245%) do not sum to 100%. The data shows independent agreement rates by country, not proportional segments of a single whole, making a pie chart inappropriate for this comparison."
+  },
+  {
+    "instance_id": "53",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.4,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 0.5 instead of 0, exaggerating the visual differences between the actual and expected SLUG% values. This truncation makes relatively small differences (e.g., 0.564 vs 0.564 in 2015) appear more pronounced than they actually are."
+  },
+  {
+    "instance_id": "55",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.4,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 48% instead of 0%, exaggerating the visual difference between the 60% (2010) and 50% (2013) values. The bars appear to show a dramatic decline, when the actual difference is only 10 percentage points. For percentage data representing parts of a whole, the axis should typically start at 0% to accurately represent the magnitude of change."
+  },
+  {
+    "instance_id": "57",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "truncated axis",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "The y-axis does not start at zero, beginning instead at approximately 0, which exaggerates the visual difference between the small early values (0.4-0.9 million) and the later spike (6.4 million). Additionally, the bar for 'Sept. 2008-12' appears disproportionately large relative to its labeled value of 6.4 million compared to the 2.3 million bar, suggesting potential misrepresentation of bar heights."
+  },
+  {
+    "instance_id": "56",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "This is a scatter plot with a linear trend line showing the relationship between mass of sample and volume displaced. The axes start near zero and use appropriate scales for the data range displayed. The chart type is suitable for showing this continuous relationship, and the axis intervals appear consistent."
+  },
+  {
+    "instance_id": "58",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The chart uses a 3D perspective effect that distorts visual comparison of bar heights. The front bars (Handguns) appear disproportionately larger due to the 3D angle, while bars receding into the background appear smaller than their labeled values warrant. This perspective distortion makes it difficult to accurately compare bar sizes across different crime categories."
+  },
+  {
+    "instance_id": "54",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 4.4,
+    "veto_log": [],
+    "explanation": "The pie chart uses a 3D perspective that distorts visual comparison\u2014the front slice (45.50%) appears larger than its actual proportion due to the 3D effect. Additionally, the data appears to represent different types of online content or categories that may not constitute a meaningful whole, making a pie chart inappropriate for this comparison."
+  },
+  {
+    "instance_id": "60",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 2.5,
+    "veto_log": [],
+    "explanation": "The 3D perspective rendering distorts visual comparison of the stacked components. The front-facing sections (particularly 'Entitlements' in dark blue) appear disproportionately larger than back sections due to the 3D angle, making it difficult to accurately compare the relative sizes of expenditure categories. A 2D stacked bar or area chart would provide a more accurate visual representation."
+  },
+  {
+    "instance_id": "61",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.2,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 50% instead of 0%, exaggerating the visual differences between political parties. The actual range of values (50-64%) spans only 14 percentage points, but the truncated axis makes these differences appear much more dramatic than they are."
+  },
+  {
+    "instance_id": "59",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.7,
+    "veto_log": [],
+    "explanation": "The bar lengths do not accurately represent the labeled dollar values. For example, the 2015-16 'Funds Leveraged' bar ($60,961,031) appears significantly longer than the 2013-14 bar ($40,458,337), but the visual difference is much more exaggerated than the ~50% actual difference in values. The bars are not proportionally scaled to their labeled amounts, creating a visual misrepresentation of the data."
+  },
+  {
+    "instance_id": "67",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "A line chart is inappropriate for displaying categorical data (different mammal species) with no sequential or temporal relationship. The connecting lines between points falsely suggest a continuous progression or relationship between unrelated categories, misleading viewers about the nature of the data."
+  },
+  {
+    "instance_id": "65",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The 3D pie chart uses perspective effects that distort visual comparison of market shares. The front-facing blue slice (RIM at 39.0%) appears larger than it should relative to the back slices, and the 3D depth creates an unequal visual representation of the labeled percentages."
+  },
+  {
+    "instance_id": "64",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.9,
+    "veto_log": [],
+    "explanation": "This is a line chart showing cumulative adoption trends over time (1970-2008) across five Australian regions. The y-axis appropriately starts at 0% and goes to 100%, with evenly spaced tick intervals. The chart type is suitable for displaying sequential temporal data, and the multiple lines are clearly distinguished by legend. No misleading elements are detected."
+  },
+  {
+    "instance_id": "66",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The 3D pie chart uses a tilted perspective that distorts the visual representation of the slices. The 4.0% slice appears disproportionately large due to the 3D angle and separation effect, while the 96.0% slice appears compressed, misrepresenting the actual proportional difference between the two categories."
+  },
+  {
+    "instance_id": "62",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "3d",
+      "inverted axis"
+    ],
+    "elapsed_s": 5.4,
+    "veto_log": [],
+    "explanation": "The chart uses a 3D perspective effect that distorts visual comparison of the stacked areas, making front sections appear larger than back sections. Additionally, the y-axis is inverted (running from 7 at top to 0 at bottom), which reverses the typical convention and may create confusion about trend direction."
+  },
+  {
+    "instance_id": "63",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 5.5,
+    "veto_log": [],
+    "explanation": "The y-axis starts at $0 but the chart begins displaying data around $50-$100, and the scale jumps to $700+ at the top. More critically, the visual comparison is distorted because the y-axis range ($0-$700+) is set to accommodate the highest WAC values, making the smaller Average Revenue bars appear disproportionately small relative to the WAC bars, exaggerating the gap between the two metrics."
+  },
+  {
+    "instance_id": "70",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 34 instead of 0, visually exaggerating the increase in tax rates from 35% to 39.6%. The actual change represents only a 4.6 percentage point increase, but the truncated axis makes it appear as a dramatic spike, distorting the visual representation of the data."
+  },
+  {
+    "instance_id": "68",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 4.5,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales (left: 83-87 out of 100%, right: 55-95 out of 100%), making the two lines appear to follow similar trajectories when they actually represent different score ranges. This dual axis setup with mismatched scales can mislead viewers about the relative performance and trends of the two students."
+  },
+  {
+    "instance_id": "71",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis ranges from -400 to 200 (Fed Effective), while the right axis ranges from -100 to 50 (Velocity). These asymmetric scales can distort visual comparison between the two variables, making their relationship appear different than it actually is. The dual axis design makes it difficult to accurately assess whether movements in Fed Funds and Velocity are proportionally related."
+  },
+  {
+    "instance_id": "69",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The 3D perspective effect distorts visual comparison of the bars. The front-facing orange bar (0-20, 69.5%) appears disproportionately larger than the back-receding cyan bar (26+, 12.0%), even though the labeled percentages show a significant difference. The 3D rendering exaggerates the perceived size of nearer bars while minimizing those in the background, creating a false visual hierarchy that doesn't accurately represent the data proportions."
+  },
+  {
+    "instance_id": "72",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The bar lengths do not accurately represent the labeled values. The third bar (1.200.000.000) is visually much shorter than the second bar (7.200.000.000), but the actual ratio should be approximately 1:6, not the dramatically smaller visual representation shown. The bars are not proportionally scaled to their values."
+  },
+  {
+    "instance_id": "74",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales (left: Price-Earnings Ratio 0-50, right: Long-Term Interest Rates 0-18) to display two unrelated metrics. This dual-axis design can create false visual correlations between the two lines, making them appear more synchronized than they actually are. The different scales allow one metric to be visually exaggerated relative to the other, misleading viewers about their relative magnitudes and relationships."
+  },
+  {
+    "instance_id": "73",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "This line chart displays two separate categorical series (represented by different colored lines) across only two time points (2006 and 2013), making it unsuitable for trend visualization. A grouped or side-by-side bar chart would be more appropriate for comparing two distinct categories at two points in time."
+  },
+  {
+    "instance_id": "75",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis shows Aid/GNI (%) ranging from 0-20, while the right axis shows Growth GDP/Capita (%) ranging from -1 to 2.5. This dual-axis design makes the Aid/GNI line appear to have much larger fluctuations and trends than the Growth GDP/Capita line, even though the scales are not directly comparable. The visual impression of the two lines' relative magnitudes is distorted by the asymmetric scaling."
+  },
+  {
+    "instance_id": "76",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "The y-axis displays inconsistent tick intervals with multiple repeated values (0, 0, 100, 100, 100, 200, 200, 200, 300, 300, 300), creating confusion about the actual scale and making it difficult to accurately read data values from the chart. This irregular labeling distorts the visual interpretation of the trend."
+  },
+  {
+    "instance_id": "79",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.4,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 0 but extends to 1000, while the actual data values range only from approximately 0 to 100. This creates a highly compressed visualization where meaningful variations in the data are rendered nearly invisible, making it difficult to discern the actual trends in mean and median values over time."
+  },
+  {
+    "instance_id": "77",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The bar lengths do not accurately represent their labeled values. For example, the 'D' bar (55-68) appears visually similar in length to the 'F' bar (21-38), despite D's range being significantly higher. The bars seem to be scaled inconsistently relative to their numerical scores, misrepresenting the actual energy efficiency differences."
+  },
+  {
+    "instance_id": "78",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The chart uses multiple y-axes with different scales for different commodities (Silver, Copper, Crude Oil, and the Economist Commodity Index), making direct visual comparisons between the lines misleading. Each commodity has its own scale on the left or right side, so the visual height or position of lines does not accurately represent relative values across commodities."
+  },
+  {
+    "instance_id": "81",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 8% instead of 0%, exaggerating the visual differences between unemployment rates that only range from 8.6% to 9.2%. This truncation makes small fluctuations appear as dramatic changes, misrepresenting the actual variation in the data."
+  },
+  {
+    "instance_id": "80",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "Line charts are inappropriate for comparing two independent categorical trends (abortions vs. preventive services) over time, as they suggest a causal or continuous relationship. Additionally, the visual representation is misleading: the lines' slopes and positions do not accurately reflect the magnitude of changes in the underlying data. For example, abortions decreased from 289,750 to 327,000 (an increase), yet the line appears to trend upward, and the visual angle of the lines exaggerates or misrepresents the actual proportional changes in the data."
+  },
+  {
+    "instance_id": "83",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "This line chart displays first-year enrollment over time with a y-axis starting at approximately 37,500 rather than zero. However, this is appropriate for a line chart showing trends across a continuous time series, as line charts commonly use non-zero baselines to clearly visualize fluctuations. The axis ticks are evenly spaced, and the chart type is suitable for sequential temporal data."
+  },
+  {
+    "instance_id": "82",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis measures total abortions (400,000-520,000 range) while the right axis measures percent change (-5.0% to 2.0% range). This dual-axis design makes it difficult to accurately compare the two metrics and can create false visual impressions of their relationship. The scales are not proportionally aligned, which is a common technique used to exaggerate or minimize perceived correlations between variables."
+  },
+  {
+    "instance_id": "84",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 10\u00b0 instead of 0\u00b0, artificially exaggerating the visual magnitude of temperature variations. The title's reference to '50x scale' further suggests the chart is designed to amplify the appearance of changes in global temperature data, making small fluctuations appear much more dramatic than they actually are."
+  },
+  {
+    "instance_id": "85",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.7,
+    "veto_log": [],
+    "explanation": "The bar heights do not accurately represent the labeled values. The Fall 2016 bar (14 qt) appears taller than the Winter 2017 bar (17.5 qt), when it should be shorter. The visual encoding of bar sizes contradicts the numerical labels provided."
+  },
+  {
+    "instance_id": "86",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The legend scale for the percentage of females ranges from 47.6% to 52.6%, a span of only 5 percentage points. This narrow range exaggerates visual differences between states that have relatively similar female population percentages. The color gradient makes small variations (e.g., 50.3% vs 51.5%) appear dramatically different, when they represent only a 1.2 percentage point difference."
+  },
+  {
+    "instance_id": "46",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 21.4,
+    "veto_log": [],
+    "explanation": "The line chart appropriately displays unemployment trends over time with a y-axis starting at 0 and evenly spaced gridlines. The data points are clearly labeled, the axis range is suitable for the data (0-16), and the chart type is appropriate for showing trends across sequential time periods."
+  },
+  {
+    "instance_id": "87",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The area chart shows deaths as a percentage of population, but the visual encoding is misleading. The green area fills almost the entire chart from 0% to 100%, while the actual death percentages appear to range from approximately 0.5% to 2%. This creates a severe visual distortion where small percentage values are represented as dominating the chart space, exaggerating the magnitude of deaths relative to the population."
+  },
+  {
+    "instance_id": "89",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays the relationship between Brexit attitudes and identification with Englishness/Britishness across a 7-point ordinal scale. The y-axis starts at 0%, uses consistent tick intervals (10%), and the line chart is suitable for showing trends across ordered categories. The multiple lines are clearly distinguished and labeled, making comparisons valid."
+  },
+  {
+    "instance_id": "93",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.4,
+    "veto_log": [],
+    "explanation": "The y-axis does not start at zero, beginning instead at approximately -6.7 and extending to 11.9. This truncation exaggerates the visual differences between the relatively small percentage changes in electricity prices, making modest variations appear more dramatic than they actually are."
+  },
+  {
+    "instance_id": "92",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The 3D pie chart distorts visual comparison of the slices due to perspective effects, making the front slices appear larger than they should be relative to their labeled percentages. Additionally, the labeled percentages (3% Advanced, 8% Expert, 4% Beginner, 3% Intermediate = 18%) do not sum to 100%, indicating either missing data or misrepresentation of the actual proportions shown in the pie chart."
+  },
+  {
+    "instance_id": "90",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 4.5,
+    "veto_log": [],
+    "explanation": "The chart uses two different metrics (Deaths per 100K Residents and Stringency Score) plotted on the same normalized 0-1.0 scale without clearly distinguishing that these represent fundamentally different units and measurements. This dual-axis approach conflates two independent variables, making it appear that states with high gun deaths also have strict gun laws, when the normalized scaling obscures the actual relationship between the raw values. The footnote acknowledges normalization but does not adequately clarify that comparing normalized values across different metrics can be misleading."
+  },
+  {
+    "instance_id": "91",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays income distribution data across multiple years with consistent axis scaling starting at 0. The y-axis begins at zero, tick intervals are evenly spaced, and the chart type is suitable for comparing trends across income brackets over time. The red annotations highlighting specific values (1.6% and 7.7%) accurately represent the data shown."
+  },
+  {
+    "instance_id": "94",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The bar heights do not accurately represent the labeled values. The bar for '29 sep 24h' (784.41) appears visually similar to or only slightly taller than the bar for '18 sep' (682.57), when it should be noticeably taller given the ~15% difference in values. The visual encoding does not match the numerical data presented."
+  },
+  {
+    "instance_id": "95",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The chart uses a 3D perspective effect that distorts visual comparison of bar heights. The front-left bars (Star Plus, None) appear artificially enlarged due to the 3D angle, while the back-right bars (Colors) appear compressed, making it difficult to accurately compare the actual values represented."
+  },
+  {
+    "instance_id": "96",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis (white line) ranges from 50-58, while the right axis (black line) ranges from 100-160 deaths per 100,000. These mismatched scales make it difficult to accurately compare the relative magnitudes and trends between the two groups, potentially exaggerating or minimizing perceived differences."
+  },
+  {
+    "instance_id": "98",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The chart uses two different x-axes with incompatible scales: the top axis ranges from 0% to 100%, while the bottom axis ranges from 0 to 160. This dual-axis approach makes it impossible to fairly compare metrics that use different measurement units and scales (percentages vs. absolute counts vs. readability indices). For example, 'No. of Words' (155) appears proportionally similar to '% of Complex Words' (15.96%), despite being on completely different scales."
+  },
+  {
+    "instance_id": "97",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order",
+      "truncated axis"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "The 3D perspective effect distorts visual comparison of the bars, making the 2012 bar appear disproportionately larger than its labeled value of 55.3\u00b0F relative to other bars. The three-dimensional rendering causes front bars to appear larger and back bars smaller, regardless of their actual values, creating a false visual hierarchy that exaggerates the difference between 2012 and previous years."
+  },
+  {
+    "instance_id": "100",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "The y-axis starts at approximately 275 ppm instead of 0, visually exaggerating the recent increase in CO\u2082 concentration. While the absolute values are correct, this truncation makes the recent rise appear dramatically steeper than it would on a zero-baseline axis, potentially overstating the rate of change."
+  },
+  {
+    "instance_id": "88",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 8.5,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing U.S. population growth by state with a clear color gradient legend indicating growth ranges in thousands. The color encoding is consistent with the legend, the data categories are appropriate for this visualization type, and there are no distortions or axis manipulations present."
+  },
+  {
+    "instance_id": "102",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The line chart appropriately displays lifetime weight gain data over time with a y-axis starting at 0 and evenly spaced tick intervals. The chart type is suitable for showing trends across sequential years, and the axis range (0-5000 pounds) is appropriate for the data being presented without exaggeration or minimization."
+  },
+  {
+    "instance_id": "101",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.8,
+    "veto_log": [],
+    "explanation": "This choropleth map appropriately uses color coding to represent categorical data (age groups with the largest poverty rate increase) across European countries. The legend clearly identifies each age group and special categories, the data source is cited, and the visualization method is suitable for geographic comparison of this type of categorical information."
+  },
+  {
+    "instance_id": "99",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.9,
+    "veto_log": [],
+    "explanation": "The pie chart displays three statistics (55%, 31%, and 55%) that do not represent parts of a whole and should not be shown as a pie chart. Additionally, the visual sizes of the segments do not accurately match their labeled percentages\u2014the beige segment appears much larger than 31%, and the two 55% segments are visually unequal, creating a misrepresentation of the data."
+  },
+  {
+    "instance_id": "106",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "A line chart is used to display categorical data (different restaurant activities) rather than sequential or continuous data. The x-axis represents distinct categories, not a progression over time or a continuous variable, making a line chart inappropriate for this comparison. A grouped or clustered bar chart would be more suitable for comparing multiple categories across different activities."
+  },
+  {
+    "instance_id": "104",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This is a stacked bar chart showing vaccination progress by age group with appropriate design. The x-axis starts at 0 and goes to 100%, the tick intervals are consistent (10% increments), and the chart type is suitable for comparing parts of a whole (vaccinated vs. total population). The visual encoding accurately represents the data without distortion."
+  },
+  {
+    "instance_id": "108",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "A line chart is used to display productivity across categorical fertilizer types (A through G), which are not sequential or continuous data. This chart type implies a continuous progression or trend that doesn't exist, making it inappropriate for comparing discrete categories. A bar chart would be more suitable for this categorical comparison."
+  },
+  {
+    "instance_id": "107",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing state rankings (1-51) for mental health outcomes, which is an appropriate visualization for geographic data. The color legend correctly represents ranking ranges, and the numerical labels on each state accurately correspond to their rankings. No axis truncation, 3D effects, or other misleading techniques are present."
+  },
+  {
+    "instance_id": "105",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 4.4,
+    "veto_log": [],
+    "explanation": "This is a bubble chart with a diverging color scale showing job gains (above 0, green/blue) and losses (below 0, red/yellow) across sectors over time. The y-axis appropriately starts at -20 and goes to +20 to show both gains and losses symmetrically around zero. The color encoding matches the legend consistently, and the chart type is suitable for displaying multivariate data (time, sector count, percentage change). No misleading elements are detected."
+  },
+  {
+    "instance_id": "103",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 6.5,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales to represent the Stoxx 600 (left axis) and Tech sector (right axis). While both lines appear to move similarly, the dual axes with different scaling can create misleading visual comparisons of their relative movements and magnitudes. The sharp spike at the end appears more dramatic due to the axis scaling choices rather than reflecting true proportional changes."
+  },
+  {
+    "instance_id": "109",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 4.2,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing COVID-19 cases by Georgia county with appropriate color-coding based on case ranges. The legend clearly defines the binning categories, the color gradient is logical (lighter to darker shades representing increasing case counts), and the visualization is suitable for geographic distribution data. No misleading elements are detected."
+  },
+  {
+    "instance_id": "110",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This bar chart appropriately uses a zero-based y-axis starting at -16% to accommodate both positive and negative returns, which is standard practice for financial data. The axis ticks are evenly spaced at 4% intervals, the bars are clearly labeled with exact values, and the chart type is suitable for comparing individual stock returns. No misleading elements are detected."
+  },
+  {
+    "instance_id": "111",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis shows percentages from 0.00% to 10.00% for the bars, while the right axis shows 0% to 100% for the line chart. This dual-axis setup makes it difficult to accurately compare the magnitudes of the bar and line data, potentially misleading viewers about their relative values."
+  },
+  {
+    "instance_id": "113",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 1,100 instead of 0, exaggerating the visual differences in enrollment growth between years. The actual range of enrollment (1,200 to 1,900 students) represents only a 58% increase, but the truncated axis makes it appear much more dramatic."
+  },
+  {
+    "instance_id": "114",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This stacked bar chart appropriately displays cumulative CO2 emissions data with a zero-based y-axis, consistent tick intervals, and suitable chart type for part-to-whole comparison across countries. The color-coding clearly distinguishes time periods, and the legend properly identifies each segment."
+  },
+  {
+    "instance_id": "115",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "This bar chart displays COVID-19 daily active cases over time with a y-axis starting at 0 and extending to 4,500, which is appropriate for count data. The x-axis shows dates with consistent spacing, and the chart type is suitable for displaying time-series data. No misleading elements are detected."
+  },
+  {
+    "instance_id": "112",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.9,
+    "veto_log": [
+      "VETO truncated_axis: axis includes 0 (min=-15.0)"
+    ],
+    "explanation": "The y-axis starts at 104 instead of 0, exaggerating the visual magnitude of differences in the team's offensive rating across seasons. The actual range is only 108 to 103.5 (a 4.5-point span), but the truncated axis makes these modest fluctuations appear dramatic."
+  },
+  {
+    "instance_id": "118",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.2,
+    "veto_log": [],
+    "explanation": "This pie chart appropriately displays part-to-whole data, showing the distribution of COVID-19 cases across age groups as percentages that sum to 100%. The labeled values (1%, 56%, 35%, 8%) match the visual proportions of the slices, and the chart type is suitable for comparing categorical segments of a total population."
+  },
+  {
+    "instance_id": "116",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing the share of deaths from homicide across countries in 2017. The color scale is continuous and appropriately ranges from 0% to >10%, with clear legend intervals. The visualization correctly uses color intensity to represent data magnitude, and the geographic representation is suitable for comparing values across regions without distortion."
+  },
+  {
+    "instance_id": "117",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This is a donut chart showing favorite color preferences from 80 friends, with each slice representing a part of the whole (totaling 100%). The labeled percentages match the visual proportions of each slice, and the chart type is appropriate for part-to-whole comparison. No misleading elements are detected."
+  },
+  {
+    "instance_id": "122",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The legend shows binning categories with inconsistent interval widths: '1-9' (9 units), '10-99' (90 units), '100-499' (400 units), '500-999' (500 units), '1000-10000' (9000 units), and '>10000' (unbounded). These unequal bin sizes distort the visual representation of the underlying data distribution, making it difficult to accurately compare regional values."
+  },
+  {
+    "instance_id": "123",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "This is a dot plot showing trends across multiple demographic categories from 2007-2013, with a properly scaled x-axis starting at 0 and extending to 80%. The chart appropriately uses dots connected by dotted lines to show progression over time for each demographic segment, and the color coding clearly distinguishes between years. No misleading elements are detected."
+  },
+  {
+    "instance_id": "120",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing the percentage of Linux desktop computers by country in December 2013. The color scale is sequential and clearly labeled with appropriate ranges (6-12.3%, 3-6%, 2-3%, 1.5-2%, 1-1.5%, <1%, and 'Not enough data'). The binning intervals are reasonable for this type of data distribution, and the map appropriately uses color intensity to represent magnitude. No misleading elements are detected."
+  },
+  {
+    "instance_id": "121",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.9,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 0\u00b0F but the actual temperature range shown (56.8\u00b0F to 58.2\u00b0F) occupies most of the chart area, visually exaggerating a 1.4\u00b0F difference. Additionally, the shaded areas and labels create visual confusion\u2014the red line represents temperature, but the large colored regions (representing sea level rise and ice age conditions) are not proportional to their labeled values and distort the primary data being communicated."
+  },
+  {
+    "instance_id": "125",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing COVID-19 cases by state with appropriate categorical color binning. The legend clearly defines case ranges (1 to 100, 101 to 1,000, etc.), and the color scheme effectively distinguishes between categories. The map is a suitable visualization for geographic distribution of data, and no axis truncation, 3D effects, or other misleading techniques are present."
+  },
+  {
+    "instance_id": "119",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 5.7,
+    "veto_log": [],
+    "explanation": "The choropleth map uses color intensity to represent case count ranges, but the visual encoding is distorted by the dark background and lighting effects that make color discrimination difficult and unreliable. Additionally, the color scheme progression (from yellow for low cases to red for high cases) is not perceptually uniform, making it hard to accurately compare case counts across regions based on visual appearance alone."
+  },
+  {
+    "instance_id": "126",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "The pie chart displays individual percentages (70%, 63%, 60%, 58%) that sum to 251%, not 100%. Pie charts are designed to show parts of a whole that total 100%, making this chart inappropriate for representing these values. The data should be displayed as a bar chart or other suitable visualization."
+  },
+  {
+    "instance_id": "124",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 4.1,
+    "veto_log": [],
+    "explanation": "This choropleth map uses appropriate color gradation to represent percent change in population across states, with a clear legend showing the ranges. The labeled values for each state are consistent with their color coding, and the visualization is suitable for displaying geographic distribution of a single continuous variable. No misleading elements are detected."
+  },
+  {
+    "instance_id": "128",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "The bar sizes do not accurately represent the labeled population values. For example, 2001 (10000) and 2002 (11000) show only a 10% difference, yet their visual sizes appear nearly equal. Meanwhile, 2004 (14500) and 2005 (15000) show only a 3.4% difference but appear dramatically larger. The visual encoding does not proportionally match the data values."
+  },
+  {
+    "instance_id": "129",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The y-axis range (0 to 18000) is set to exaggerate the visual decline in cases from 2013-2016. The dramatic downward slope of the line chart visually misrepresents the data: cases only decreased from 16,160 to 681 over ~3 years, but the wide axis range makes this appear as a catastrophic collapse. Additionally, the 2016 data point (681 cases for only 2 months) is plotted as if it represents a full year, creating a severe misrepresentation when compared to full-year totals."
+  },
+  {
+    "instance_id": "130",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The y-axis is inverted, with 0% at the top and 100% at the bottom, which reverses the intuitive perception of the trend. This makes an improvement in access to safe drinking water appear as a decline, flipping the actual positive trend shown by the data."
+  },
+  {
+    "instance_id": "133",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The y-axis does not start at zero and appears to begin around .200 or higher, exaggerating the visual differences between batting averages that range only from .238 to .275. This truncation makes relatively small variations appear much more dramatic than they actually are."
+  },
+  {
+    "instance_id": "132",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The y-axis ranges from -10,000 to 20,000, with the data line hovering near zero throughout the entire period. This excessive range compresses the actual data into a thin band, making it nearly impossible to discern meaningful variations or trends in the mass shooting data. A more appropriate axis range (e.g., 0 to 500 or 0 to 1,000) would provide proper visual resolution of the underlying data."
+  },
+  {
+    "instance_id": "127",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [],
+    "elapsed_s": 5.1,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing estimated fraction of precipitation lost to evapotranspiration across U.S. counties. The color scale is continuous and appropriately ordered from low values (white/light colors) to high values (dark colors), with consistent binning intervals of 0.1 units. The legend clearly displays all ranges, and the map accurately represents spatial variation in the data without distortion."
+  },
+  {
+    "instance_id": "131",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 4.0,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 0 but the visual scale is compressed, making the bars appear to fill most of the chart space when the actual values range from approximately 800 to 1050 deaths per 100,000. This truncation exaggerates the visual differences between years, making modest increases appear more dramatic than they are relative to the full scale."
+  },
+  {
+    "instance_id": "136",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "This bar chart appropriately displays minimum height requirements for police officers across German states, with the y-axis starting at 0 and extending to 1.5 meters. The axis ticks are evenly spaced, the bars are properly scaled to their labeled values, and the grouped bar format is suitable for comparing two categories (men and women) across multiple states. No misleading elements are detected."
+  },
+  {
+    "instance_id": "137",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The left and right charts display the same data but with different visual scales. The right chart's y-axis extends to $1.4 trillion while the left chart's maximum appears around $1.2-1.3 trillion, causing identical bar values to appear different heights between the two charts. This inconsistent scaling misrepresents the visual comparison of the same underlying data."
+  },
+  {
+    "instance_id": "135",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 4.0,
+    "veto_log": [
+      "VETO truncated_axis: axis includes 0 (min=0.0)"
+    ],
+    "explanation": "The y-axis starts at 0.0000 and only extends to 0.0030, creating an extremely compressed scale that exaggerates the visual differences between countries. This narrow range makes small variations in gun death rates appear dramatically larger than they actually are, distorting the true proportional differences in the data."
+  },
+  {
+    "instance_id": "138",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The pie chart shows three segments labeled 19%, 22%, and 38%, which sum to only 79% instead of 100%. The white segment representing Dobrev Kl\u00e1ra appears visually larger than 38% of the pie, suggesting either missing data or misrepresentation of the actual proportions."
+  },
+  {
+    "instance_id": "139",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 4.0,
+    "veto_log": [],
+    "explanation": "Both charts (A and B) use appropriate axis scaling for their data types. Chart A displays energy contributions ranging from 0 to -7 kcal/mol with the y-axis starting at 0, which is standard for showing negative values. Chart B shows relative binding free energy with negative values, and the y-axis appropriately spans from 0 to -25 kcal/mol. The bar heights match their labeled values, tick intervals are consistent, and the chart types are suitable for comparing individual residue contributions."
+  },
+  {
+    "instance_id": "141",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "A pie chart is inappropriate for displaying polling preferences that sum to 193% rather than 100%, as pie charts represent parts of a whole. Additionally, the visual sizes of the pie slices do not accurately correspond to their labeled percentages\u2014the 70% slice appears disproportionately small compared to the 63% slice, misrepresenting the data visually."
+  },
+  {
+    "instance_id": "140",
+    "ground_truth": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The bar lengths do not accurately represent the labeled values. For example, the Lawn-Level bar ($599) appears visually similar in length to the Bronze bar ($795), when Bronze should be approximately 33% longer. The visual encoding of bar lengths is inconsistent with the actual price differences, making cheaper options appear more expensive than they are relative to premium options."
+  },
+  {
+    "instance_id": "142",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 4.5,
+    "veto_log": [],
+    "explanation": "The 3D pie chart distorts visual comparison of market values\u2014the front slice (2028, USD 472 billion) appears disproportionately larger due to perspective effects than the back slice (2018, USD 2.48 billion), even though the labeled values show only a modest growth. Additionally, a pie chart is inappropriate here since the two values represent sequential time points in a time series, not parts of a whole, making a line chart or bar chart more suitable."
+  },
+  {
+    "instance_id": "145",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.8,
+    "veto_log": [],
+    "explanation": "The bar chart has a y-axis starting at 0% and extending to 4.0%, with evenly spaced tick intervals (0.5% increments). The labeled values (3.5% and 1.4%) accurately correspond to the bar heights. The chart appropriately uses a bar format for comparing two categorical time periods, and the axis scaling is suitable for displaying percentage growth data."
+  },
+  {
+    "instance_id": "146",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing Hofstede's Individualism scores across countries using a categorical color scheme. The legend clearly defines four distinct score ranges (22-37, 38-63, 6-21, 64-91) with corresponding colors, and each country is appropriately colored according to its score category. The visualization is suitable for displaying regional categorical data and contains no truncated axes, 3D distortions, or other misleading elements."
+  },
+  {
+    "instance_id": "148",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "The 3D pie chart perspective distorts visual comparison, making the front red slice (Gifts at $734.04) appear disproportionately larger than its actual proportion of the total. The 3D tilt and shadow effects exaggerate the size of segments closer to the viewer while minimizing those farther away, misrepresenting the true part-to-whole relationships in the data."
+  },
+  {
+    "instance_id": "147",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "The 3D pie chart uses perspective effects that distort visual comparison of slice sizes. Slices positioned toward the front of the chart appear larger than those in the back, even when labeled percentages are equal or similar. For example, the Windsteuerung (52%) slice appears disproportionately large due to its front positioning, while smaller slices in the back appear compressed."
+  },
+  {
+    "instance_id": "143",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 5.2,
+    "veto_log": [
+      "VETO truncated_axis: axis includes 0 (min=0.0)"
+    ],
+    "explanation": "The y-axis starts at 2.0 instead of 0, exaggerating the visual differences between complaint rates. This truncation makes variations between bars appear much more dramatic than they actually are, particularly for years with lower complaint rates."
+  },
+  {
+    "instance_id": "144",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 5.1,
+    "veto_log": [],
+    "explanation": "The y-axis starts at $0.00 but the scale jumps to $1,500.00, $2,000.00, $2,500.00, and $3,500.00, creating inconsistent intervals that exaggerate visual differences between the bars and line. The non-zero baseline combined with uneven tick spacing distorts the perception of the actual cost variations across the three categories."
+  },
+  {
+    "instance_id": "134",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 11.1,
+    "veto_log": [],
+    "explanation": "The visual comparison between the 'BEFORE' and 'AFTER' cars is misleading. The 'AFTER' car appears significantly smaller in the image despite representing only a 66% reduction in price ($186 to $64), creating a false visual impression of the savings. The size disparity of the car illustrations does not proportionally match the actual price difference, exaggerating the perceived benefit of the service."
+  },
+  {
+    "instance_id": "149",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "A pie chart is inappropriate for this data because average trip lengths are not parts of a whole\u2014they are independent measurements across different time periods. Additionally, the 3D perspective distorts visual comparison, making the front red slice appear larger than the back blue slice despite Christmas (275) being only slightly larger than Reminder of the year (261)."
+  },
+  {
+    "instance_id": "151",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The x-axis (Cost) is inverted, with 'High' on the left and 'Low' on the right, which reverses the conventional left-to-right reading direction and creates confusion. This non-standard orientation can mislead viewers about the positioning of retailers relative to cost structure."
+  },
+  {
+    "instance_id": "154",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "This is a grouped bar chart with a zero-based y-axis, evenly spaced tick intervals, and appropriate use of multiple bars to compare counties across time periods. The chart type is suitable for comparing categorical data (counties) across a time series, and the visual encoding accurately represents the labeled values without distortion."
+  },
+  {
+    "instance_id": "152",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "The chart uses a 3D concentric circle design where the 3D perspective makes inner circles appear smaller than outer circles, distorting visual comparison of the percentages. Additionally, these are not parts of a whole\u2014they are independent metrics (drug charges, overall arrests, criminal behavior) that should not be displayed as nested pie/donut segments, which implies a part-to-whole relationship."
+  },
+  {
+    "instance_id": "150",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.9,
+    "veto_log": [],
+    "explanation": "This pie chart displays mutually exclusive categories of mental health treatment status, not parts of a whole that sum to 100%. The three segments (21% + 30% + 14% = 65%) do not represent the complete population, making a pie chart inappropriate for this data. A stacked bar chart or grouped bar chart would better represent these distinct treatment categories."
+  },
+  {
+    "instance_id": "155",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "This line chart displays categorical data (different fruit types) on the x-axis rather than sequential or time-series data. Line charts are designed to show trends over continuous variables, but here they create false visual connections between unrelated categories. The lines suggest a progression or relationship between fruits that doesn't exist."
+  },
+  {
+    "instance_id": "153",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.8,
+    "veto_log": [],
+    "explanation": "The pie chart in the WHO section divides 660,000 and 1,000,000+ into two segments, implying a part-to-whole relationship. However, these are not parts of a single whole\u2014660,000 is the annual number of Americans having knee replacement, while 1,000,000+ is the estimated number who could benefit. These are separate statistics that should not be represented as a pie chart showing proportional parts of a total."
+  },
+  {
+    "instance_id": "156",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "This chart uses line connections to show team rankings across years, but the lines create a false impression of continuity and trend for categorical data (team names) that are not inherently sequential. The visual flow suggests progression or relationship between teams over time, when in reality each year's ranking is independent. A grouped bar chart or separate rankings by year would be more appropriate for this categorical, non-sequential data."
+  },
+  {
+    "instance_id": "158",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.4,
+    "veto_log": [],
+    "explanation": "The bar heights do not accurately represent the labeled values. The first bar shows 30.5% but appears significantly taller than the second bar at 22.2%, yet the visual difference is exaggerated beyond the actual 8.3 percentage point gap. The visual encoding of bar heights does not proportionally match the numerical values displayed."
+  },
+  {
+    "instance_id": "157",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The y-axis uses a logarithmic scale (1, 10, 100, 1000, 10000) rather than a linear scale, which compresses differences and makes smaller values appear proportionally larger than they are. Additionally, the ordering of items around the circular layout appears designed to create visual patterns rather than follow a logical hierarchical or categorical structure, potentially creating false impressions about relationships between categories."
+  },
+  {
+    "instance_id": "162",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "The x-axis starts at -35% instead of 0%, exaggerating the visual differences between revenue changes and making negative values appear more extreme. Additionally, several bars lack labeled values while others do, creating inconsistency in data representation. The truncated axis makes changes like -2.6% appear dramatically larger than they actually are relative to the full scale."
+  },
+  {
+    "instance_id": "159",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The right side of the image shows a pie chart displaying response categories (Oui 65%, Non 35%) alongside a line chart showing a trend. However, the pie chart appears to represent survey response distribution rather than parts of a meaningful whole, and the visual mixing of pie and line chart types creates confusion about what is being compared. Additionally, the left side shows a funnel/flow diagram that may misrepresent the relationship between the 166 total responses and the subsequent percentages shown."
+  },
+  {
+    "instance_id": "160",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This stacked area chart uses a filled area visualization where the visual height of each region does not accurately represent the labeled values. The overlapping and stacking of areas makes it impossible to accurately compare individual values, and the labeled prices (e.g., Boulder at ~$800,000) do not correspond proportionally to their visual representation in the chart. The chart obscures rather than clarifies the actual data relationships."
+  },
+  {
+    "instance_id": "163",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "A line chart is inappropriate for comparing categorical data (states) that have no sequential relationship, as it falsely implies a continuous trend or progression. Additionally, the states appear to be ordered arbitrarily rather than by savings amount, which could create a misleading visual narrative about solar savings across regions."
+  },
+  {
+    "instance_id": "161",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 4.3,
+    "veto_log": [],
+    "explanation": "This line chart displays monthly trash removal data across multiple years with 12 overlapping lines representing each month. The dense overlay of lines makes it extremely difficult to track trends and compare values, and the sequential connection of non-sequential data (months across different years) creates visual confusion. A grouped bar chart or small multiples approach would be far more appropriate for this temporal and categorical data structure."
+  },
+  {
+    "instance_id": "166",
+    "ground_truth": [
+      "inappropriate axis range",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The x-axis uses a non-linear scale with unequal intervals (500,000 to 0 years), compressing most of the data into a small visual space on the left while dramatically expanding the recent period. This distorts the perception of when the revenue increase actually occurred, making the recent growth appear more sudden and dramatic than it would on a linear scale."
+  },
+  {
+    "instance_id": "165",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This is a horizontal bar chart showing percentages for 'Players to Drop' with values ranging from 27.7% to 49.0%. The bars are proportionally sized to match their labeled percentages, the axis starts at 0%, and the ordering (descending by value) is logical and appropriate. No misleading elements are detected."
+  },
+  {
+    "instance_id": "169",
+    "ground_truth": [
+      "inappropriate use of line chart",
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "A line chart is used to display categorical year-over-year data rather than sequential continuous data. Line charts imply a continuous progression and trend, but year ranges are discrete categories that should be represented with a bar chart or similar categorical visualization. The line connecting these points creates a false impression of continuous change rather than discrete period comparisons."
+  },
+  {
+    "instance_id": "170",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The y-axis is inverted, with 0 at the top and values increasing downward (0, 1, 2, 3, 4). This reversal flips the perceived trend, making the widening gap between the two groups appear as if poorer children are improving relative to others, when the chart intends to show they are falling further behind. An inverted axis distorts the natural interpretation of the data."
+  },
+  {
+    "instance_id": "171",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This is a stacked area chart showing the percentage composition of film genres over time from 1908 to 2008. The y-axis correctly starts at 0% and goes to 100%, which is appropriate for a stacked area chart representing parts of a whole. The x-axis has consistent time intervals, and the chart type is suitable for displaying how genre proportions change over time."
+  },
+  {
+    "instance_id": "173",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "This stacked horizontal bar chart appropriately displays plastic surgery procedures per 1,000 population across countries. The x-axis starts at 0 and uses consistent intervals, the categories are clearly color-coded, and the stacking method is suitable for comparing both total values and individual procedure types. The chart design accurately represents the data without distortion."
+  },
+  {
+    "instance_id": "168",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 5.0,
+    "veto_log": [],
+    "explanation": "The bar lengths do not accurately represent the labeled percentages. The Wayne Enterprises bar (22%) appears to be roughly 3 times longer than the Stark Industries bar (78%), when it should be significantly shorter. The visual encoding of bar length is inverted relative to the stated values."
+  },
+  {
+    "instance_id": "172",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.7,
+    "veto_log": [],
+    "explanation": "The chart uses objects of varying shapes and sizes (bottle, glass, satellite, cocoa pod, chip, saffron threads, printer) to represent prices, but the visual sizes do not accurately correspond to the labeled values. For example, the wine bottle appears much larger than the printer ink cartridge, yet the printer ink (\u00a32,235) is only slightly less than the saffron (\u00a32,500), creating a false visual hierarchy that misrepresents the actual price differences."
+  },
+  {
+    "instance_id": "164",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 7.5,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis ranges from 0-90 for '% Affordable to Millennials' while the right axis ranges from 32-48 for 'Absolute Mobility'. This dual-axis setup with disparate scales makes it difficult to accurately compare the two metrics and can create false visual impressions of their relationship. The inverse trends appear more dramatic than they may actually be due to the different scaling."
+  },
+  {
+    "instance_id": "167",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [],
+    "elapsed_s": 5.7,
+    "veto_log": [
+      "VETO truncated_axis: axis includes 0 (min=-510.0)"
+    ],
+    "explanation": "The y-axis starts at 0\u00b0F but the data range (approximately 56-60\u00b0F) occupies only a small portion of the chart. This truncated axis exaggerates the visual appearance of temperature changes over time, making modest variations appear dramatic. For temperature data spanning 135 years with only ~4\u00b0F variation, starting the axis closer to the data range (e.g., 55-61\u00b0F) would be more appropriate to avoid visual distortion."
+  },
+  {
+    "instance_id": "175",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "The chart uses a line chart to display daily sleep and caffeine habits, which are discrete daily measurements rather than continuous sequential data. Line charts imply continuity and trends between points, but daily habit measurements are better represented as bar charts or scatter plots. Additionally, the three variables (Sleep, Coffee, Pepsi Max) have vastly different scales (0-15 for sleep vs. 0-3 for coffee/Pepsi), making visual comparison misleading despite being on the same y-axis."
+  },
+  {
+    "instance_id": "174",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays time-series data with a y-axis starting at 0%, evenly spaced tick intervals, and a suitable chart type for showing trends across multiple categories (days of the week) over time (hours). The visual encoding accurately represents the labeled values without distortion."
+  },
+  {
+    "instance_id": "177",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays mean life expectancy trends over time for multiple countries. The y-axis starts at approximately 40 years, which is reasonable given that life expectancy values range from ~27 to ~82 years\u2014a non-zero baseline is standard practice for trend visualization. The x-axis shows consistent time intervals, tick spacing is even, and the chart type is suitable for sequential temporal data."
+  },
+  {
+    "instance_id": "179",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The bar chart uses a y-axis starting at 0 with consistent tick intervals (100 million viewers), appropriate for comparing absolute audience sizes across different sports events. The bar heights accurately represent the labeled values, and the chart type is suitable for this categorical comparison."
+  },
+  {
+    "instance_id": "178",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "The chart uses stacked bar segments to compare science and military spending, but the three categories (2011 science budgets, 2011 military budgets, and total NASA budget 1958-2011) are fundamentally different in scope and time period, making direct visual comparison misleading. Additionally, the ordering and scale choices exaggerate the visual difference between military and science spending by using vastly different time horizons without clear normalization."
+  },
+  {
+    "instance_id": "180",
+    "ground_truth": [],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "The map uses a 3D perspective effect with shading and depth that distorts visual comparison of county-level data. The three-dimensional rendering causes some regions to appear more prominent than others based on perspective rather than actual data values, making it difficult to accurately compare percentages across counties."
+  },
+  {
+    "instance_id": "181",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 4.1,
+    "veto_log": [
+      "VETO dual_axis: no right Y-axis detected by OCR"
+    ],
+    "explanation": "The chart displays two lines with dramatically different scales on what appears to be a single y-axis (0-1,000). The 'Baby' line ranges from approximately 0-800, while the 'Gangnam Style' line reaches 1,000, suggesting they share the same axis. However, the visual representation suggests these may be plotted on different scales or axes to make both trends visible simultaneously, which is misleading for direct comparison. Without explicit dual y-axis labels, viewers cannot accurately compare the relative magnitudes of these two metrics."
+  },
+  {
+    "instance_id": "182",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "The pie chart displays religious groups as percentages of total population, which is appropriate for part-to-whole comparison. However, the chart includes 'Unaffiliated' (16.3%) as a segment, which represents the absence of religion rather than a religious group, making it unsuitable for inclusion in a pie chart meant to show religious composition. This conflates a category of non-affiliation with actual religions."
+  },
+  {
+    "instance_id": "183",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The first bar (cheese) is visually represented as extremely tall, appearing to reach approximately 35+ on the y-axis, but the y-axis only shows tick marks up to 30, making it impossible to verify the actual labeled value. The bar's height does not clearly correspond to a readable value on the provided scale, creating a misrepresentation of the data."
+  },
+  {
+    "instance_id": "186",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.3,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays mortality risk trends over time with a y-axis starting at 0, consistent tick intervals, and suitable use of line charts for sequential temporal data. The two lines are clearly distinguished and labeled, and the annotations provide helpful context for interpreting the data patterns."
+  },
+  {
+    "instance_id": "185",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The bar chart appropriately uses a zero-based y-axis starting at 0.00, has evenly spaced tick intervals (0.05 increments), and the bar heights accurately match their labeled values. The data is categorical (programming languages/expressions) and the descending order is logical for showing a ranking. No misleading elements are detected."
+  },
+  {
+    "instance_id": "187",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "This is a scatter plot comparing medal performance across two Olympic events (Summer 2012 and Winter 2014), with appropriate axis scaling starting at zero. The axes are clearly labeled, tick intervals are consistent, and the chart type is suitable for showing the relationship between two continuous variables. No misleading elements are detected."
+  },
+  {
+    "instance_id": "184",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.8,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays historical trends of average movie length by genre over time. The y-axis starts at 0 and extends to 180 minutes, providing proper context for the data range. The multiple lines are clearly distinguished by color and legend, and the x-axis shows consistent year intervals, making this a suitable and non-misleading visualization of sequential temporal data."
+  },
+  {
+    "instance_id": "188",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 4.5,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays inflation-adjusted airfare trends over a 40-year period with a y-axis starting at $280, which is reasonable given the data range ($280-$600). The two lines are clearly distinguished, tick intervals are consistent, and the chart type is suitable for showing sequential temporal data. No misleading elements are detected."
+  },
+  {
+    "instance_id": "191",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "In the Political Ideology chart, the Mormon row shows labeled percentages (7% + 24% + 67%) that sum to 98%, not 100%, yet the bar extends to 100%. Additionally, in the Political Party chart, the Mormon row labels (24% + 7% + 69%) sum to 100%, but visual inspection suggests the red section appears disproportionately large compared to the labeled 69%. The bar sizes do not consistently match their labeled values across rows."
+  },
+  {
+    "instance_id": "192",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays fatality trends over a 35-year period with a y-axis starting at 0 and extending to 100, which is suitable for showing the full range of the data. The lines are clearly labeled, tick intervals are consistent, and the chart type is appropriate for displaying continuous time-series data across multiple countries."
+  },
+  {
+    "instance_id": "194",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing percentage point differences in literacy rates between males and females. The color scale is appropriately symmetric around zero, with blue indicating female advantage and orange/red indicating male advantage. The legend clearly labels the scale from -33.0% to +33.0%, and the data encoding matches the labeled values without distortion."
+  },
+  {
+    "instance_id": "193",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "This scatter plot appropriately uses two continuous axes (0-100 range) to show the relationship between two variables: percent viewing Muslims unfavorably (x-axis) and percent viewing Jews unfavorably (y-axis). The axes start at zero, use consistent tick intervals, and the chart type is suitable for displaying this bivariate relationship across countries. No misleading elements are detected."
+  },
+  {
+    "instance_id": "197",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays survival rate data over time with proper axis scaling. The y-axis starts at 50% and extends to 95%, which is suitable for showing the full range of survival proportions (0-100% scale). The x-axis is evenly spaced, the chart type is appropriate for showing trends across time periods, and the multiple lines are clearly distinguished by color and legend."
+  },
+  {
+    "instance_id": "195",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "This bar chart appropriately displays favorable response percentages across countries with a zero-based x-axis, consistent bar widths, and clear color coding by percentage ranges. The countries are ordered by descending favorability, which is a standard and appropriate ordering practice for this type of comparison. All labeled values align with their visual bar lengths."
+  },
+  {
+    "instance_id": "196",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.7,
+    "veto_log": [],
+    "explanation": "The United States bar is visually represented with horizontal stripes filling the entire bar height to 156, but the bar appears disproportionately large compared to other countries due to the visual density of the striping pattern, which creates an exaggerated perception of the difference. The labeled value of 156 is correct, but the visual encoding through striped fill makes the comparison misleading relative to the other solid-colored bars."
+  },
+  {
+    "instance_id": "199",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "This scatter plot appropriately displays the relationship between two continuous variables (health spending and life expectancy). The axes start at reasonable values (0 for y-axis, 0 for x-axis), use consistent tick intervals, and the trend line with R\u00b2 value is properly labeled. The chart type is suitable for showing correlation between variables."
+  },
+  {
+    "instance_id": "198",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis measures casualties (0-3,000) while the right axis measures aircraft passengers carried in billions (0-3.0bn). This dual-axis design creates a misleading visual comparison by making the blue line trend appear to correlate with casualty bars when they represent fundamentally different metrics on different scales. The upward trend in passengers appears to validate safety when casualties have actually declined, conflating two unrelated narratives."
+  },
+  {
+    "instance_id": "190",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.7,
+    "veto_log": [
+      "VETO dual_axis: no right Y-axis detected by OCR"
+    ],
+    "explanation": "The chart uses two different measurement scales on the same horizontal axis: yellow bars represent megabits per second (speed), while dark blue bars represent price in dollars. These are fundamentally different units being compared on the same axis without clear visual distinction or separate scales, making direct visual comparison misleading. The dual-axis design obscures the fact that speed and price are independent variables that shouldn't be directly compared visually."
+  },
+  {
+    "instance_id": "202",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "This is a stacked horizontal bar chart with appropriate axis scaling starting at zero, clearly labeled segments with a legend, and consistent spacing. The chart type is suitable for comparing composition of natural gas sources across different categories, and the visual encoding accurately represents the data values."
+  },
+  {
+    "instance_id": "201",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "The chart uses two different y-axis scales to display related data: the top chart shows absolute incident counts (0-4000) while the bottom chart shows incidents per million members (0-250). This dual-axis presentation can mislead viewers by making trends appear different when comparing the same phenomena across the two visualizations. The dramatic spike in Anti-Islamic incidents in 2001 appears proportionally different between the two charts due to the different scales, potentially distorting perception of the actual relationship between absolute numbers and per-capita rates."
+  },
+  {
+    "instance_id": "203",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "This horizontal bar chart appropriately displays occupational background counts for the 89th Congress. The x-axis starts at 0 and uses consistent intervals (50, 100, 150, 200, 250, 300, 350), the bars are properly sized to match their labeled values, and the chart type is suitable for comparing categorical data across occupations."
+  },
+  {
+    "instance_id": "200",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 4.0,
+    "veto_log": [],
+    "explanation": "The states are ordered by magnitude of funding cuts (most negative to least negative), which emphasizes the severity of cuts at the top. However, this ordering creates a false visual impression that certain regions were disproportionately affected, when the chart would be more neutral if ordered alphabetically or geographically. The visual hierarchy created by this ordering exaggerates the narrative of 'deepest cuts' rather than presenting the data objectively."
+  },
+  {
+    "instance_id": "189",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 11.4,
+    "veto_log": [],
+    "explanation": "The pie chart shows Windows market share (90.62%) alongside OS X (7.69%) and Other (1.69%), which correctly represents parts of a whole. However, the accompanying bar chart breaks down Windows into specific versions (XP, Vista, 7, 8, 8.1) that sum to 86.32%, not 90.62%. This creates confusion about what the pie chart represents and mixes two different levels of categorization (OS families vs. Windows versions), making the pie chart inappropriate for this dual-purpose visualization."
+  },
+  {
+    "instance_id": "204",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 4.5,
+    "veto_log": [],
+    "explanation": "The left chart uses a horizontal bar chart with a zero-based axis starting at 0, appropriately showing both native speakers (dark blue) and total speakers (light blue) for comparison. The right chart uses a bar chart for ratios, which is appropriate for displaying proportional data. All axes are clearly labeled, tick intervals are consistent, and the visualization accurately represents the data without distortion."
+  },
+  {
+    "instance_id": "205",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays US population trends by age group over time. The y-axis starts at 0 and uses consistent tick intervals, the chart type is suitable for showing sequential temporal data, and the multiple lines with a clear legend enable valid comparisons across age groups. No misleading elements are detected."
+  },
+  {
+    "instance_id": "176",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 18.3,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays time-series data with a y-axis starting at 0, consistent tick intervals, and suitable chart type for showing trends over time. The three age groups are clearly differentiated by color, and the vaccine introduction event is properly annotated. No misleading elements are detected."
+  },
+  {
+    "instance_id": "206",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays income tax rates (% of GDP) over time for two categories with trend lines and confidence bands. The y-axis starts at 0, axis intervals are consistent, and the line chart is suitable for showing trends across sequential time periods. The dual lines represent different categories (Individuals vs Corporations) rather than different scales, making the comparison valid."
+  },
+  {
+    "instance_id": "208",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "This is a time-series line chart showing tweet volume over a 2.5-hour period with appropriate axis scaling. The y-axis starts at 0 and goes to 25 tweets/sec, the x-axis shows time progression sequentially, and tick intervals are consistent. The chart type is suitable for temporal data, and annotations clearly identify key events. No misleading elements are detected."
+  },
+  {
+    "instance_id": "210",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The blue line chart plots actor ages across different films, which are categorical data points rather than sequential or time-series data. Using a line chart suggests a continuous progression or trend, when a bar chart would be more appropriate for comparing discrete categorical values. The connecting lines create a false impression of continuity between unrelated films."
+  },
+  {
+    "instance_id": "209",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "This line chart displays the number of students over sequential dates, which is appropriate for a time series. However, the red vertical line and annotation for 'Final Exam (29th June)' creates a visual discontinuity that misrepresents the data\u2014the sharp drop to near-zero after the exam appears to indicate a sudden event rather than a natural data point. The line chart format combined with this annotation suggests causation or a dramatic change that may not accurately reflect the underlying data pattern."
+  },
+  {
+    "instance_id": "212",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "This is a line chart showing log death rate versus age, which is an appropriate visualization for displaying continuous mortality data across age groups. The y-axis starts at 0 and extends to -8, which is standard for logarithmic scales used in mortality analysis. The x-axis shows age from 0 to 110+ with consistent intervals, and the chart accurately represents the relationship between age and mortality rates."
+  },
+  {
+    "instance_id": "213",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing average male height by country using a continuous color gradient from light (1.58m) to dark red (1.838m). The color encoding appropriately represents the continuous variable, the scale is clearly labeled, and the visualization is suitable for geographic comparison of this metric. No misleading elements are detected."
+  },
+  {
+    "instance_id": "214",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "The line chart appropriately displays three time-series trends (pregnancy rate, birthrate, and abortion rate) from 1975-2010 with a y-axis starting at 0, evenly spaced ticks, and consistent scaling. The chart type is suitable for showing sequential data over time, and the visual encoding accurately represents the labeled values without distortion."
+  },
+  {
+    "instance_id": "211",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "The three charts use different country orderings despite showing related economic data for the same countries. The left chart (Annual Mean Wage) is sorted descending by wage, the middle chart (Mean hours worked) is sorted descending by hours, and the right chart (An Hour's Worth) is sorted descending by hourly worth. This inconsistent ordering makes it difficult to compare a single country's performance across all three metrics and could create false impressions about which countries perform best overall."
+  },
+  {
+    "instance_id": "216",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays cumulative word counts over time for multiple novel series. The y-axis starts at 0, tick intervals are consistent, the chart type is suitable for showing trends across time, and the multiple series are clearly distinguished with a legend. No misleading elements are detected."
+  },
+  {
+    "instance_id": "217",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.7,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales to compare the Official Unemployment Rate (blue, right axis: 4%-12%) and the adjusted unemployment rate using 2009 labor force participation (red, left axis: also 4%-12%). While the scales appear similar, the dual-axis setup can create visual distortion in trend comparison. More critically, the chart's title and framing suggest that labor force dropouts explain the declining official unemployment rate, but the visual presentation conflates two different metrics without clearly establishing causation or properly normalizing the comparison between them."
+  },
+  {
+    "instance_id": "219",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This is a well-constructed horizontal bar chart comparing adjusted gross revenue (green) and adjusted budget (red) for 50 R-rated movies. The x-axis starts at $0 and uses consistent, evenly-spaced intervals in millions of dollars. The chart type is appropriate for comparing values across multiple categories, and the dual bars (not dual axes) are clearly distinguished by color and legend, allowing valid comparisons between budget and gross for each film."
+  },
+  {
+    "instance_id": "220",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing agriculture's footprint across regions using a continuous color scale from green (food) through yellow (50% area) to purple (feed and fuel). The color gradient appropriately represents the continuous variable of land use allocation, and the legend clearly indicates the scale from 0-100% area. No misleading elements are detected."
+  },
+  {
+    "instance_id": "221",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The line chart appropriately displays birth rate trends over time with a y-axis starting at 0, evenly spaced tick intervals, and suitable chart type for sequential temporal data. The three lines are clearly labeled and visually distinct, allowing for accurate comparison of trends across age groups."
+  },
+  {
+    "instance_id": "218",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This stacked bar chart appropriately displays death rates per 100,000 people across different causes in 1900 and 2010. The y-axis starts at 0 and extends to 1200, providing proper context for the data. All labeled values are clearly marked within each segment, and the stacked format is suitable for comparing both individual components and totals across the two time periods."
+  },
+  {
+    "instance_id": "207",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.8,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing ancestry distribution by county, which is an appropriate visualization for geographic, categorical data. The color encoding is consistent with the legend, each county is assigned a single dominant ancestry category, and the map uses standard cartographic practices. No misleading elements are detected."
+  },
+  {
+    "instance_id": "223",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "This is a horizontal bar chart displaying bank settlement amounts in descending order. The bars are proportional to their labeled values, the axis starts at zero, and the chart type is appropriate for comparing individual settlement amounts across different banks. No misleading elements are detected."
+  },
+  {
+    "instance_id": "222",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.2,
+    "veto_log": [],
+    "explanation": "In the 'Human capital' chart (bottom left), the bars for China show a labeled difference of '-0.13 p.a.' between the two categories, but the visual height of the gray bar (% of world population) appears disproportionately large compared to its labeled value relative to other countries. Additionally, the bottom-right chart mixes two different metrics (combat deaths and approximate enemy military killed) on the same y-axis without clear visual distinction, making direct comparison misleading since these represent different types of casualties with different scales."
+  },
+  {
+    "instance_id": "228",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "The pie chart displays upvote counts for different body features, which represent absolute frequencies rather than parts of a meaningful whole. Pie charts are designed for part-to-whole comparisons (e.g., market share, budget allocation), not for comparing independent categorical frequencies. A bar chart would be more appropriate for this data."
+  },
+  {
+    "instance_id": "224",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.1,
+    "veto_log": [],
+    "explanation": "The stacked area chart visually misrepresents the data through the stacking method itself. Coal's contribution appears to shrink dramatically from 1820 to 2000, but this is partially an artifact of how stacked areas work\u2014as other energy sources are added on top, coal's visual height decreases even if its absolute value remained constant or changed minimally. The visual encoding makes it difficult to accurately compare coal consumption across time periods without mentally subtracting the layers below it."
+  },
+  {
+    "instance_id": "226",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing state-level data with appropriate color coding (teal for YES, yellow for NO, gray for other categories). The legend clearly indicates population values, and the map accurately represents geographic distribution without distortion. The annotations provide context without misrepresenting the data."
+  },
+  {
+    "instance_id": "227",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [
+      "VETO truncated_axis: axis includes 0 (min=-20.0)"
+    ],
+    "explanation": "The y-axis starts at -20% instead of 0%, exaggerating the visual differences between the bottom 90% and top 10% income groups. This truncation makes the already small negative values and modest positive values appear more dramatic than they actually are, distorting the perception of income growth distribution."
+  },
+  {
+    "instance_id": "225",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.8,
+    "veto_log": [],
+    "explanation": "The left pie chart shows Comcast at 37% while the right pie chart shows Comcast at 57%, yet both charts appear to use identical visual sizes for the Comcast slice. The visual encoding does not match the labeled values between the two charts, making direct comparison misleading. Additionally, the legend items are reordered between charts without explanation, which could cause confusion about data consistency."
+  },
+  {
+    "instance_id": "229",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 2.4,
+    "veto_log": [],
+    "explanation": "A pie chart is designed to show parts of a whole that sum to 100%. However, this chart displays counts of emperors by cause of death (20 + 23 + 8 + 5 + 9 + 3 + 1 + 1 = 70 total), which represents a categorical distribution rather than a part-to-whole relationship. A bar chart would be more appropriate for comparing frequencies across categories."
+  },
+  {
+    "instance_id": "230",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.5,
+    "veto_log": [],
+    "explanation": "The chart uses two different y-axes with different scales\u2014the left axis shows '% increase' while the right axis shows absolute index values (0-1,500). This dual-axis setup with mismatched scales exaggerates the visual difference between textbook prices and consumer prices, making textbook price growth appear dramatically steeper than it actually is relative to consumer price growth."
+  },
+  {
+    "instance_id": "232",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.3,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays two indexed time series (1960=100) with a y-axis starting at 0 and evenly spaced gridlines. The dual lines represent different but related metrics (energy use and GDP per capita) that are both indexed to the same baseline, making comparison valid. The chart type is suitable for showing trends over time."
+  },
+  {
+    "instance_id": "231",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "This is a stacked area chart showing proportions of world population under different political systems from 1901-2009. The y-axis correctly starts at 0% and goes to 100%, appropriate for part-to-whole composition data. The stacked area format is suitable for displaying how shares change over time, and the consistent percentage scale allows accurate visual comparison of each category's proportion."
+  },
+  {
+    "instance_id": "234",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This is an area chart showing daily comments over time with a y-axis starting at 0 and extending to 150,000. The axis scaling is appropriate for the data range, tick intervals are consistent, and the chart type is suitable for displaying temporal trends. The annotations provide helpful context for interpreting the spikes."
+  },
+  {
+    "instance_id": "233",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays UK duty rates across different alcohol types and alcohol content levels. The y-axis starts at \u00a30.00 (zero), axis ticks are evenly spaced, and the chart type is suitable for showing continuous relationships between alcohol content and duty cost. No misleading elements are detected."
+  },
+  {
+    "instance_id": "215",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 12.0,
+    "veto_log": [],
+    "explanation": "This is a line chart tracking comment karma over time for multiple Reddit users, which is an appropriate use of line charts for sequential temporal data. The y-axis starts at 0 and uses consistent intervals (500K, 1M, 1.5M, 2M, 2.5M), and the x-axis shows evenly spaced time periods from September 2011 to May 2014. The chart accurately represents the labeled values with no distortion."
+  },
+  {
+    "instance_id": "235",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The pie chart and stacked bar chart show inconsistent data representations for the same survey. The pie chart displays only two dominant categories (Blue and Orange), while the stacked bar chart breaks down responses by eyesight condition with multiple color categories. The pie chart appears to aggregate or misrepresent the underlying data that is properly detailed in the bar chart below, creating a misleading visual summary."
+  },
+  {
+    "instance_id": "238",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 1.9,
+    "veto_log": [],
+    "explanation": "No chart image is available to analyze. The image shows an error message indicating the requested image does not exist or is no longer available on Imgur."
+  },
+  {
+    "instance_id": "237",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.4,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays Jenga sales over time from 1990 to 2010. The y-axis starts at 0 and extends to 7, providing proper context for the data range (2-5 million sets). The x-axis has consistent intervals, and the line chart is suitable for showing trends over sequential time periods."
+  },
+  {
+    "instance_id": "236",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.6,
+    "veto_log": [],
+    "explanation": "This is a choropleth map with a continuous color scale representing girls per 1000 boys. The legend shows a sequential gradient from 780 to 1020 with evenly distributed color intervals, and the axis range appropriately spans the full data range. The visualization is suitable for geographic data comparison and contains no distorting elements."
+  },
+  {
+    "instance_id": "239",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.2,
+    "veto_log": [],
+    "explanation": "The numbered vertical lines (1-5) marking specific points on the time series appear to highlight arbitrary or cherry-picked data points rather than meaningful events or milestones. This selective annotation creates a false impression of significance at those particular moments, potentially misleading viewers about which periods are most important to understand the trend."
+  },
+  {
+    "instance_id": "243",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.2,
+    "veto_log": [],
+    "explanation": "This bar chart appropriately displays percentage data with a zero-based y-axis, consistent bar widths, and accurate labeled values matching visual bar lengths. The chart type is suitable for comparing categorical data across countries, and the ordering by descending values is standard practice for this type of comparison."
+  },
+  {
+    "instance_id": "240",
+    "ground_truth": [],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The 3D donut chart uses perspective effects that distort visual comparison of slice sizes. The front slices (movies at 33%) appear larger than they should relative to back slices, and the 3D depth creates an uneven visual hierarchy that doesn't accurately represent the proportional differences in the data."
+  },
+  {
+    "instance_id": "241",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "This chart uses a grouped bar chart to compare two different metrics (% of Total U.S. Population vs. % of U.S. College Students) across racial/ethnic categories. While the chart type itself is appropriate for this comparison, the data represents parts of two different wholes and is being presented as if direct visual comparison between the two metrics is meaningful. The chart would be clearer if it explicitly showed enrollment rates (college students as a percentage of each racial/ethnic group's population) rather than comparing shares of different totals side-by-side."
+  },
+  {
+    "instance_id": "242",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.8,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays sequential game states (current numbers 1-20) with their corresponding average payouts. The y-axis starts at 0 and uses consistent intervals, the x-axis shows sequential progression, and the color coding clearly distinguishes between different strategies. No misleading elements are detected."
+  },
+  {
+    "instance_id": "244",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.7,
+    "veto_log": [],
+    "explanation": "The charts use appropriate visualizations for their data types. The bar chart (top left) has a y-axis starting at 0, showing projected population growth with properly labeled values. The line chart (top right) appropriately starts near 0 and uses a continuous scale suitable for showing settlement growth over time. The maps effectively display geographic distribution changes. All axes are consistently scaled and labeled accurately."
+  },
+  {
+    "instance_id": "247",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.5,
+    "veto_log": [],
+    "explanation": "This bar chart appropriately displays comparative death counts across different causes in Africa. The y-axis starts at zero, allowing accurate visual comparison of bar heights to their labeled values. The bars are ordered by magnitude (descending), which is a standard and appropriate practice for this type of comparison. All elements are clearly labeled and the chart type is suitable for the data."
+  },
+  {
+    "instance_id": "249",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with different scales: the left axis measures 'Pages Read' (0-400) while the right axis measures 'Pages per Day' (0-90). This dual-axis design makes it difficult to fairly compare the three data series and can create false visual impressions of their relationships. The different scales allow the lines to appear more or less dramatic than their actual values warrant."
+  },
+  {
+    "instance_id": "248",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "This is a dot plot showing the number of years taken for two business processes across countries. The x-axis starts at 0 and extends to 5 with consistent tick intervals, the chart type is appropriate for comparing two metrics across multiple categories, and the visual encoding accurately represents the labeled values without distortion."
+  },
+  {
+    "instance_id": "245",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 5.3,
+    "veto_log": [],
+    "explanation": "This bar chart appropriately displays Facebook shares for different news sites with a y-axis starting at 0 and extending to 10M, evenly spaced tick intervals, and accurate bar lengths matching the labeled values. The chart type is suitable for comparing categorical data across multiple sites."
+  },
+  {
+    "instance_id": "250",
+    "ground_truth": [],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The pie charts use 3D effects that distort visual comparison of slice sizes. Additionally, the visual sizes of the pie slices do not accurately represent their labeled percentages\u2014the 0.6% and 0.2% slices appear disproportionately large relative to their actual values, creating a misleading visual impression of the data proportions."
+  },
+  {
+    "instance_id": "251",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.7,
+    "veto_log": [],
+    "explanation": "This bar chart displays comment length by subreddit with a y-axis starting at 0 and extending to 800, with consistent tick intervals. The bars are appropriately ordered (ascending by value) and the chart type is suitable for comparing categorical data across multiple subreddits. No misleading elements are detected."
+  },
+  {
+    "instance_id": "246",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 5.5,
+    "veto_log": [],
+    "explanation": "This infographic uses appropriate chart types for each metric: line charts for trends over time (Population, GDP, Debt), bar charts for comparative values (Inflation, Industrial production). All axes start at zero or use standard conventions for trend visualization. The data is clearly labeled with units and sources, and the visual encoding accurately represents the underlying values without distortion."
+  },
+  {
+    "instance_id": "252",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays average scores over time for two categories with a y-axis starting at 0. The shaded confidence intervals around the lines are a standard visualization technique. The chart type is suitable for showing trends across sequential time periods, and the axis scaling is appropriate for the data range shown."
+  },
+  {
+    "instance_id": "253",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "The chart uses two different y-axes with vastly different scales: the main axis shows measles cases in thousands (0-800), while the inset graph shows cases in different units (0-30000). This dual-axis approach makes it difficult to directly compare the magnitude of the outbreak shown in the inset (1988-1989) with the main time series, potentially misleading viewers about the relative severity of different periods."
+  },
+  {
+    "instance_id": "255",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "This line chart appropriately displays temporal data with a y-axis starting at 0, consistent tick intervals, and suitable chart type for showing trends over time. The shaded confidence intervals around each line are properly rendered and do not distort the comparison. The two series are clearly distinguished and the axis scaling is appropriate for the data range."
+  },
+  {
+    "instance_id": "256",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.9,
+    "veto_log": [],
+    "explanation": "The line chart appropriately displays crude oil production trends over time with a y-axis starting at 0, evenly spaced tick intervals, and suitable chart type for sequential temporal data. The dual y-axis is not present\u2014both series share the same scale (Mbbl/d from 0 to 3,500). No misleading elements are detected."
+  },
+  {
+    "instance_id": "254",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "The gray background bars extend significantly beyond the labeled blue bar values, creating a visual misalignment between the data labels and their graphical representation. For example, 'character are you' shows 100,877 shares but the blue bar appears much shorter than the gray background bar, making the actual values difficult to accurately assess visually."
+  },
+  {
+    "instance_id": "257",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "The chart uses a zero-based y-axis with consistent tick intervals (100 million viewers), appropriate for comparing absolute viewership values across different sports finals. The bar heights accurately represent the labeled values, and the chart type is suitable for this categorical comparison. No misleading elements are detected."
+  },
+  {
+    "instance_id": "258",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "The line chart appropriately displays Nielsen ratings over time for multiple Star Trek series. The y-axis starts at 0 and uses consistent tick intervals, the lines are suitable for showing trends across sequential episodes, and the legend clearly identifies each series. No misleading elements are detected."
+  },
+  {
+    "instance_id": "259",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "This horizontal bar chart appropriately compares clock duration versus actual gameplay across sports using two distinct bar colors with labeled values. The x-axis starts at 0, tick intervals appear consistent, and the chart type is suitable for comparing categorical data across two measures. All labeled values are clearly visible and the visual encoding matches the data."
+  },
+  {
+    "instance_id": "263",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.6,
+    "veto_log": [],
+    "explanation": "This is a choropleth map showing correlation coefficients of UN General Assembly votes, with a continuous color scale ranging from -0.68 to 0.68. The color gradient is appropriately scaled to represent the full range of correlation values, the legend is clearly labeled, and the visualization method is suitable for geographic comparison of voting similarity data."
+  },
+  {
+    "instance_id": "265",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The x-axis starts at 0 but the visual spacing is compressed, making the differences between bars appear more dramatic than they actually are. More critically, the green bars (Amount of Action) are extremely small relative to the yellow bars (Clock Duration), but the axis scaling exaggerates this visual disparity beyond what the actual numerical ratios warrant."
+  },
+  {
+    "instance_id": "261",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 3.8,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 950 millibars instead of 0, exaggerating the visual differences in atmospheric pressure during Superstorm Sandy. While the pressure range (950-1020 mb) is appropriate for meteorological data, the truncated axis makes the pressure fluctuations appear more dramatic than they actually are relative to the full scale of atmospheric pressure."
+  },
+  {
+    "instance_id": "262",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.5,
+    "veto_log": [],
+    "explanation": "The bar heights do not accurately represent the labeled ratios. The left bar shows '15 cat mentions for every 10 dog mentions' (ratio of 1.5), while the right bar shows '9 cat mentions for every 10 dog mentions' (ratio of 0.9). However, the left bar appears roughly 1.6-1.7 times taller than the right bar, which overstates the difference between ratios of 1.5 and 0.9. The visual encoding does not match the stated values."
+  },
+  {
+    "instance_id": "266",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 2.8,
+    "veto_log": [],
+    "explanation": "The chart uses appropriate scaling with the y-axis starting at 0, clearly labeled dual lines for two different metrics (marriages and divorces per 1000 people), consistent tick intervals, and suitable line chart format for showing trends over time. The two metrics are measured on the same scale and appropriately distinguished by color and legend."
+  },
+  {
+    "instance_id": "264",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.4,
+    "veto_log": [],
+    "explanation": "This is a well-designed temperature visualization with appropriate axis scaling (starting at -20\u00b0 to accommodate the full range of Boston temperatures), consistent tick intervals, and suitable use of area/band charts to show temperature ranges over time. The chart effectively displays 2015 data against historical norms and record highs/lows without distortion."
+  },
+  {
+    "instance_id": "269",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 3.0,
+    "veto_log": [],
+    "explanation": "The chart uses two y-axes with identical scales (0-70), but they are positioned on opposite sides of the plot. This dual-axis design can mislead viewers into making direct visual comparisons between the lines when the axes may represent different measurement units or contexts. The symmetrical positioning creates an artificial visual equivalence between Clinton 16 and Sanders 16 trends that may not reflect their actual relationship."
+  },
+  {
+    "instance_id": "267",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 5.4,
+    "veto_log": [],
+    "explanation": "This stacked area chart appropriately displays absolute poverty data from 1820-2011 with a y-axis starting at zero, evenly spaced tick intervals, and a suitable chart type for showing part-to-whole composition over time. The visual encoding accurately represents the labeled values without distortion."
+  },
+  {
+    "instance_id": "268",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.9,
+    "veto_log": [],
+    "explanation": "This stacked bar chart appropriately displays the number of artists listened to over time, with the y-axis starting at 0 and using consistent intervals. The stacking clearly shows the composition of new versus old artists, and the time series is presented sequentially. No misleading elements are detected."
+  },
+  {
+    "instance_id": "270",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 3.3,
+    "veto_log": [],
+    "explanation": "This is a well-constructed density distribution visualization with consistent x-axis scaling (0%-100%) across all 18 subplots, clearly labeled medians, and appropriate use of density curves to show distributions. The chart type is suitable for comparing the distribution shapes of like ratios across categories, and there are no truncated axes, inconsistent scaling, or other misleading elements present."
+  },
+  {
+    "instance_id": "260",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 15.7,
+    "veto_log": [],
+    "explanation": "The y-axis starts at 0 but the data range is compressed between approximately 5.5 and 9.5, with most of the lower half of the scale (0-5) unused. This creates a visual exaggeration of the variation in ratings. For a 10-point scale where ratings cluster in the 6-9 range, starting the axis at 5 or 6 would be more appropriate to avoid wasting chart space, but the current truncation makes small differences appear more dramatic than they are."
+  }
+]

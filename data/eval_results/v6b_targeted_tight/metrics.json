@@ -1,0 +1,227 @@
+{
+  "total_instances": 271,
+  "binary_classification": {
+    "accuracy": 0.7343,
+    "precision": 0.7538,
+    "recall": 0.8596,
+    "f1": 0.8033,
+    "tp": 147,
+    "fp": 48,
+    "tn": 52,
+    "fn": 24
+  },
+  "exact_match": {
+    "score": 0.3469,
+    "matches": 94,
+    "total": 271
+  },
+  "partial_match": {
+    "score": 0.4686,
+    "matches": 127,
+    "total": 271
+  },
+  "per_misleader_type": {
+    "misrepresentation": {
+      "precision": 0.2459,
+      "recall": 0.8333,
+      "f1": 0.3797,
+      "support": 18,
+      "tp": 15,
+      "fp": 46,
+      "tn": 207,
+      "fn": 3
+    },
+    "3d": {
+      "precision": 0.7917,
+      "recall": 0.8261,
+      "f1": 0.8085,
+      "support": 23,
+      "tp": 19,
+      "fp": 5,
+      "tn": 243,
+      "fn": 4
+    },
+    "truncated axis": {
+      "precision": 0.4,
+      "recall": 0.7059,
+      "f1": 0.5106,
+      "support": 17,
+      "tp": 12,
+      "fp": 18,
+      "tn": 236,
+      "fn": 5
+    },
+    "inappropriate use of pie chart": {
+      "precision": 0.48,
+      "recall": 0.8,
+      "f1": 0.6,
+      "support": 15,
+      "tp": 12,
+      "fp": 13,
+      "tn": 243,
+      "fn": 3
+    },
+    "inconsistent binning size": {
+      "precision": 0.4444,
+      "recall": 0.25,
+      "f1": 0.32,
+      "support": 16,
+      "tp": 4,
+      "fp": 5,
+      "tn": 250,
+      "fn": 12
+    },
+    "dual axis": {
+      "precision": 0.6,
+      "recall": 0.8824,
+      "f1": 0.7143,
+      "support": 17,
+      "tp": 15,
+      "fp": 10,
+      "tn": 244,
+      "fn": 2
+    },
+    "inconsistent tick intervals": {
+      "precision": 0.1667,
+      "recall": 0.2353,
+      "f1": 0.1951,
+      "support": 17,
+      "tp": 4,
+      "fp": 20,
+      "tn": 234,
+      "fn": 13
+    },
+    "discretized continuous variable": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0,
+      "support": 15,
+      "tp": 0,
+      "fp": 3,
+      "tn": 253,
+      "fn": 15
+    },
+    "inappropriate use of line chart": {
+      "precision": 0.4,
+      "recall": 0.375,
+      "f1": 0.3871,
+      "support": 16,
+      "tp": 6,
+      "fp": 9,
+      "tn": 246,
+      "fn": 10
+    },
+    "inappropriate item order": {
+      "precision": 0.1429,
+      "recall": 0.0667,
+      "f1": 0.0909,
+      "support": 15,
+      "tp": 1,
+      "fp": 6,
+      "tn": 250,
+      "fn": 14
+    },
+    "inverted axis": {
+      "precision": 0.5,
+      "recall": 0.3333,
+      "f1": 0.4,
+      "support": 15,
+      "tp": 5,
+      "fp": 5,
+      "tn": 251,
+      "fn": 10
+    },
+    "inappropriate axis range": {
+      "precision": 0.1273,
+      "recall": 0.4667,
+      "f1": 0.2,
+      "support": 15,
+      "tp": 7,
+      "fp": 48,
+      "tn": 208,
+      "fn": 8
+    }
+  },
+  "confusion_summary": {
+    "3d": {
+      "inappropriate use of pie chart": 2,
+      "misrepresentation": 6,
+      "inappropriate axis range": 1
+    },
+    "truncated axis": {
+      "inappropriate axis range": 14,
+      "inconsistent tick intervals": 6,
+      "misrepresentation": 6
+    },
+    "discretized continuous variable": {
+      "inappropriate item order": 1,
+      "misrepresentation": 5,
+      "inappropriate axis range": 2,
+      "inconsistent binning size": 4
+    },
+    "inconsistent binning size": {
+      "inappropriate item order": 1,
+      "misrepresentation": 5,
+      "truncated axis": 2,
+      "inappropriate axis range": 2,
+      "dual axis": 1
+    },
+    "misrepresentation": {
+      "inappropriate use of pie chart": 2,
+      "3d": 3,
+      "inappropriate axis range": 6,
+      "truncated axis": 1,
+      "inconsistent tick intervals": 1
+    },
+    "inappropriate axis range": {
+      "truncated axis": 6,
+      "inconsistent tick intervals": 2,
+      "inappropriate use of line chart": 3,
+      "misrepresentation": 2,
+      "inverted axis": 2
+    },
+    "dual axis": {
+      "inappropriate axis range": 5,
+      "inappropriate use of line chart": 2,
+      "misrepresentation": 1,
+      "inconsistent tick intervals": 1
+    },
+    "inconsistent tick intervals": {
+      "misrepresentation": 3,
+      "inverted axis": 3,
+      "truncated axis": 4,
+      "inappropriate axis range": 1,
+      "inappropriate use of line chart": 1
+    },
+    "inappropriate item order": {
+      "misrepresentation": 3,
+      "dual axis": 1,
+      "inappropriate axis range": 2,
+      "inconsistent tick intervals": 1,
+      "discretized continuous variable": 1,
+      "inappropriate use of line chart": 1
+    },
+    "inappropriate use of line chart": {
+      "inconsistent binning size": 1,
+      "truncated axis": 2,
+      "inconsistent tick intervals": 3,
+      "inappropriate use of pie chart": 1,
+      "misrepresentation": 2,
+      "inappropriate item order": 1,
+      "inappropriate axis range": 2
+    },
+    "inverted axis": {
+      "inappropriate axis range": 6,
+      "misrepresentation": 3,
+      "inappropriate use of pie chart": 1,
+      "3d": 1,
+      "truncated axis": 2,
+      "inappropriate use of line chart": 1,
+      "inconsistent tick intervals": 1
+    },
+    "inappropriate use of pie chart": {
+      "misrepresentation": 2,
+      "3d": 1
+    }
+  }
+}

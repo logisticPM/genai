@@ -1,0 +1,19 @@
+{
+  "MYE/2022_8-K.htm": {
+    "ticker": "MYE",
+    "file": "2022_8-K.htm",
+    "findings_count": 0,
+    "elapsed_s": 14.3,
+    "findings": [],
+    "summary": {
+      "total_charts": 0,
+      "gaap_charts": 0,
+      "nongaap_charts": 0,
+      "total_findings": 0,
+      "findings_by_tier": {},
+      "findings_by_risk": {},
+      "total_claims": 0,
+      "ocr_cache_size": 0
+    }
+  }
+}

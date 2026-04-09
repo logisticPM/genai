@@ -1,0 +1,3770 @@
+[
+  {
+    "instance_id": "6",
+    "ground_truth": [
+      "3d",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "1",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: The displayed range is 1800 (21200 - 19400). As a percentage"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "2",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "3",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inverted axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.7,
+    "pp_log": [
+      "CALL2_ADD inverted_axis: Reading the Y-axis from bottom to top: 1, 3, 12, 42, 148, 51",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 1 to 1803, spanning the full d"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "5",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [],
+    "elapsed_s": 8.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "0",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [
+      "CALL2_ADD binning: This is a histogram with age range bins. The ranges are: 18-"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "7",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from left to right: 0, 50, 100, 150,"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "4",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Left Y-axis shows tick values at 0, 10, 20, 30, 40, 50, 60. ",
+      "CALL2_ADD axis_range: Left Y-axis displays range 0-60. The displayed range is 60 u"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "10",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate item order",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 5.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "8",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate item order",
+      "inconsistent tick intervals",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top are 0, 5, 10, 15,",
+      "CALL2_ADD binning: This is a histogram with salary range bins on the X-axis. Th"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "11",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "13",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at the bottom of the ",
+      "ADD axis_range: narrow range (2.6% of max, min=97.4%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "12",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: Displayed range is 450 (1,400 - 950). As a percentage of max"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "9",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 11.0,
+    "pp_log": [
+      "CALL2_ADD binning: This is a choropleth map with a legend showing percentage ra"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "14",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 9.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "15",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "16",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "17",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "23",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.3,
+    "pp_log": [
+      "ADD axis_range: narrow range (5.5% of max, min=94.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "20",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 5.8,
+    "pp_log": [
+      "CALL2_ADD binning: This is a categorical bar chart, not a histogram with numeri"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "18",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible: 0 at bottom, 50, 100",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-150, which represents 100% o"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "25",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "19",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.2,
+    "pp_log": [
+      "CALL2_ADD axis_range: The left Y-axis displays 0 to 9,000, which is a full 100% ra"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "21",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "28",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 2.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "24",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps between con",
+      "CALL2_ADD axis_range: Y-axis displays 0 to 4000. The actual data line spans approx"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "22",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps between con"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "26",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inconsistent binning size",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the left side, rea",
+      "CALL2_ADD binning: This is a bar chart with categorical complaints on the X-axi",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-50. The range spans the enti"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "27",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. Gaps between consec",
+      "ADD axis_range: narrow range (4.1% of max, min=95.9%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "29",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "CALL2_ADD binning: This is a choropleth map with binned fraud rate ranges shown"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "31",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Left Y-axis (John's Score): 83, 84, 85, 86, 87 with consiste",
+      "CALL2_ADD axis_range: Left Y-axis range is 4 units displayed out of potential 0-10"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "30",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "32",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "33",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the right side. Th",
+      "CALL2_ADD axis_range: The displayed range is 0 to 65k, which is the full range (10"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "37",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 3.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "34",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "39",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "3d"
+    ],
+    "elapsed_s": 3.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "41",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "35",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.4,
+    "pp_log": [
+      "CALL2_ADD axis_range: The left Y-axis displays 0-16, which represents the full pot"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "42",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "38",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "40",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top are 249000, 25000",
+      "CALL2_ADD axis_range: Y-axis min=249000, max=252000. Displayed range=252000-249000"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "44",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "36",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inconsistent binning size",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 13.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps between con",
+      "CALL2_ADD binning: This is a histogram with bars representing categories (weeks",
+      "CALL2_ADD axis_range: The displayed range is 210 - 196 = 14 units. As a percentage"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "43",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inverted axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co",
+      "CALL2_ADD inverted_axis: The Y-axis values DECREASE from bottom to top: starting at 0",
+      "CALL2_ADD axis_range: The displayed range is 1,400,000 (from 0 to -1,400,000). The"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "45",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.1% of max, min=99.9%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "46",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps between con",
+      "CALL2_ADD axis_range: Y-axis displays 0 to 16. The displayed range is 16 units. As"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "47",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "48",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top are 48, 51, 54, 5",
+      "CALL2_ADD axis_range: Y-axis displays range from 48% to 60%, which is a span of 12"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "49",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "51",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top are 50, 52, 54, 5",
+      "CALL2_ADD axis_range: Y-axis displays min=50, max=64, range=14. The range (14) as "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "54",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 5.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "50",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible from 0 to 7. The gap "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "52",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at 0, 10, 20, 30, and",
+      "CALL2_ADD axis_range: Y-axis displays from 0 to 40, which is the full logical rang"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "53",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps are: 3000\u21923",
+      "ADD axis_range: narrow range (9.2% of max, min=90.8%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "55",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [
+      "ADD axis_range: narrow range (14.3% of max, min=85.7%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "56",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values reading from bottom to top are: 29, 28, 6"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "62",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "elapsed_s": 4.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "58",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Gaps between consecu"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "57",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 9.4,
+    "pp_log": [
+      "CALL2_ADD binning: This is a histogram-style chart with categorical bins repres"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "60",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. Listed in order fro"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "65",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "64",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "59",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 11.4,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.5% of max, min=99.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "61",
+    "ground_truth": [
+      "truncated axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 10.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at 1-unit intervals f"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "69",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 2.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "66",
+    "ground_truth": [
+      "3d"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 5.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "63",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inconsistent binning size",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 12.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD binning: While this is a grouped bar chart, it is not a histogram. Th",
+      "CALL2_ADD axis_range: Y-axis runs from 0 to 800. Maximum data value is $608. The r"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "67",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis (horizontal axis labeled 'Weight (kg)') shows tic"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "70",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable from bottom to top. ",
+      "ADD axis_range: narrow range (11.6% of max, min=88.4%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "71",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Left Y-axis (Price-Earnings Ratio) shows tick values at inte",
+      "CALL2_ADD axis_range: Left Y-axis displays full range 0-50 (range = 50). This is 1"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "75",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 2.9,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.6% of max, min=99.4%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "68",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart"
+    ],
+    "elapsed_s": 10.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "72",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 9.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "76",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at ",
+      "CALL2_ADD axis_range: The displayed range is 0.00 to 0.45, which represents the fu"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "74",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 10.7,
+    "pp_log": [
+      "ADD axis_range: narrow range (3.7% of max, min=96.3%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "79",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-1000, which spans the full 1"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "73",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inverted axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 13.0,
+    "pp_log": [
+      "CALL2_ADD inverted_axis: The right Y-axis (Growth GDP/capita) shows values that incre",
+      "CALL2_ADD axis_range: Left Y-axis (Aid/GNI) displays range from 0 to 20, which is "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "77",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis (horizontal in this case) shows tick values at regula"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "80",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Left Y-axis (white line) shows tick values at 50, 52, 54, 56"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "78",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD axis_range: The displayed range (400000-520000 = 120000) is approximatel"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "81",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Reading from bottom ",
+      "CALL2_ADD axis_range: Y-axis range is 8% to 10%, a span of 2 percentage points. Re"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "84",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "86",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 4.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "82",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis (left) shows tick values with consistent gaps of 180 ",
+      "CALL2_ADD axis_range: Y-axis range is 900 to 1.8K (range of 900 units). The displa"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "83",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Reading the Y-axis from bottom to top, I can identify three ",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 40,000 to 50,000, a span of 10"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "85",
+    "ground_truth": [
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and readable. The gap"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "88",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD binning: This is a choropleth map with color-coded bins representing "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "87",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate use of area chart",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "91",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at ",
+      "CALL2_ADD axis_range: Displayed range is 0-80% (80 percentage points). The range e"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "94",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate item order"
+    ],
+    "elapsed_s": 3.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "89",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inconsistent binning size",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Gaps between consecu",
+      "CALL2_ADD binning: This is a histogram showing income brackets. The bin widths ",
+      "CALL2_ADD axis_range: Y-axis displays 0 to 25 (range = 25). This represents 100% o"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "92",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "90",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 11.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at the top and bottom"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "97",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order",
+      "truncated axis"
+    ],
+    "predicted": [
+      "3d",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "93",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps between con"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "95",
+    "ground_truth": [
+      "3d",
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "3d",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-16 (range of 16). This repre"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "98",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Left Y-axis has even gaps of $10,000 between consecutive tic"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "100",
+    "ground_truth": [
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at ",
+      "CALL2_ADD axis_range: Y-axis range is 10-18 (span of 8 units). This represents 8/1"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "96",
+    "ground_truth": [
+      "dual axis"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 10.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis (left, bhp DIN) shows tick values at 10, 20, 30, 40, ",
+      "CALL2_ADD axis_range: Y-axis minimum is 10 and maximum is 50, giving a displayed r"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "99",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "102",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top. Gap between cons",
+      "CALL2_ADD axis_range: Displayed Y-axis range is 0-5000 (full range of 5000). This "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "103",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top are 100.0, 100.2,",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 100.0 to 100.8, a span of 0.8 "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "104",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Reading from bottom ",
+      "CALL2_ADD axis_range: Y-axis minimum is 0 and maximum is 600,000. The displayed ra"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "101",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 11.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "106",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 5.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps between con",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-40 (range of 40). This repre"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "108",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: Displayed range is 1-8 (span of 7). If we assume data range "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "109",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "105",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inverted axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 11.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Reading from top to ",
+      "CALL2_ADD inverted_axis: Reading the Y-axis from bottom to top: -20, -15, -10, -5, 0,",
+      "CALL2_ADD axis_range: Y-axis minimum is -20 and maximum is 20. The displayed range"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "107",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 10.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "111",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inconsistent binning size",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis on left side shows tick values from 0.00% to 10.00%. ",
+      "CALL2_ADD binning: This is a bar chart with department names on X-axis, not a h",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0.00% to 10.00%, which is a fu"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "112",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible from bottom to top: 1",
+      "CALL2_ADD axis_range: Displayed range is 104-108 (span of 4). As a percentage of m",
+      "VETO truncated_axis: axis includes 0"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "113",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top: 1,100, 1,300, 1,",
+      "CALL2_ADD axis_range: Y-axis displays range 1,100 to 2,100 (span of 1,000). The ra"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "114",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "dual axis"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "115",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [
+      "VETO truncated_axis: axis includes 0",
+      "ADD axis_range: narrow range (13.5% of max, min=86.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "110",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 14.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Gap between consecut",
+      "CALL2_ADD axis_range: Y-axis displays 0 to 1200. The range is 1200 (100% of max va",
+      "VETO truncated_axis: axis includes 0"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "117",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [],
+    "elapsed_s": 6.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "118",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "116",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 8.4,
+    "pp_log": [
+      "CALL2_ADD binning: This is a choropleth map with categorical binning shown in t"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "120",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [
+      "CALL2_ADD binning: This is a choropleth map with categorical bins representing "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "119",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 9.1,
+    "pp_log": [
+      "CALL2_ADD binning: This is a choropleth map with color-coded bins. All bins hav"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "122",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "121",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "123",
+    "ground_truth": [
+      "inconsistent binning size",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at 0, 20, 40, 60, and",
+      "CALL2_ADD axis_range: The X-axis displays a range from 0 to 80 (range of 80), whic"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "124",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.3,
+    "pp_log": [
+      "CALL2_ADD binning: This is a choropleth map with a color scale legend. The lege",
+      "ADD axis_range: narrow range (4.5% of max, min=95.5%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "126",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 6.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "125",
+    "ground_truth": [
+      "discretized continuous variable",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 8.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "128",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.1% of max, min=99.9%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "127",
+    "ground_truth": [
+      "discretized continuous variable"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 9.1,
+    "pp_log": [
+      "CALL2_ADD binning: This is a binned/categorical map legend showing four distinc"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "129",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps between con"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "132",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-110 (range of 110), but the ",
+      "VETO truncated_axis: axis includes 0"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "133",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "131",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable and increase by cons",
+      "CALL2_ADD axis_range: The displayed range (0.0000 to 0.0030) spans the full 0.0030"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "136",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-14.0 (range of 14.0), which "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "135",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis shows three tick marks at 0.5, 1.0, and 1.5 meter",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0 to 1.5 meters (range = 1.5)."
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "134",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "130",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 12.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from top to bottom are 0%, 25%, 50%,"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "142",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "elapsed_s": 2.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "141",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "137",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "138",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "140",
+    "ground_truth": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [
+      "ADD axis_range: narrow range (0.0% of max, min=100.0%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "139",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values in chart A are clearly readable from 0 to",
+      "CALL2_ADD axis_range: Chart A displays Y-axis range from -7 to 0 (range of 7 units"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "145",
+    "ground_truth": [
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inappropriate axis range",
+      "truncated axis"
+    ],
+    "elapsed_s": 3.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "143",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inappropriate item order",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible: 0, 50, 100, 150. The"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "144",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis (left) shows consistent tick intervals of 500,000 bet",
+      "VETO dual_axis: no right Y-axis in OCR"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "148",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 4.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "149",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "3d"
+    ],
+    "elapsed_s": 3.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "146",
+    "ground_truth": [
+      "inappropriate item order",
+      "inconsistent binning size"
+    ],
+    "predicted": [
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [
+      "CALL2_ADD binning: This is a categorical map with color-coded ranges. The legen"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "147",
+    "ground_truth": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "152",
+    "ground_truth": [
+      "inverted axis",
+      "misrepresentation"
+    ],
+    "predicted": [
+      "3d",
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 4.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "151",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "150",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "157",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "truncated axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "153",
+    "ground_truth": [
+      "inappropriate use of pie chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "156",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate item order",
+      "truncated axis"
+    ],
+    "elapsed_s": 5.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "155",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable from 0% to 90%. The ",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0%-90% (range = 90%). The rang"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "154",
+    "ground_truth": [
+      "inappropriate item order"
+    ],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inconsistent binning size",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD binning: This is a bar chart with categorical bins (months) on the X-",
+      "CALL2_ADD axis_range: Y-axis displays 0-20, which represents the full 100% of the "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "162",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis",
+      "truncated axis"
+    ],
+    "elapsed_s": 2.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "158",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "159",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 4.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "163",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Reading from bottom ",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0 to 25 (full range of 25). Th"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "165",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "164",
+    "ground_truth": [
+      "dual axis",
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Left Y-axis shows tick values at 0, 10, 20, 30, 40, 50, 60, "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "160",
+    "ground_truth": [
+      "inappropriate use of line chart"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable from bottom to top. ",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0% to 80%, which represents a "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "166",
+    "ground_truth": [
+      "inappropriate axis range",
+      "inconsistent tick intervals"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top are 0, 1, 2, 3, 4",
+      "CALL2_ADD axis_range: Y-axis minimum is 0 and maximum is 6. The displayed range is"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "167",
+    "ground_truth": [
+      "inappropriate axis range"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible: 0, 30, 60, 90, 120. "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "161",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 10.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable and evenly spaced at"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "168",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 9.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "169",
+    "ground_truth": [
+      "inappropriate use of line chart",
+      "inverted axis"
+    ],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inverted axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.3,
+    "pp_log": [
+      "CALL2_ADD inverted_axis: The Y-axis reads from bottom to top showing years in ascendi",
+      "ADD axis_range: narrow range (0.0% of max, min=100.0%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "171",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the right side of "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "172",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "174",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co",
+      "CALL2_ADD axis_range: Displayed range is 0.0% to 1.4% (span of 1.4 percentage poin"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "170",
+    "ground_truth": [
+      "inverted axis"
+    ],
+    "predicted": [
+      "inverted axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable from bottom to top: ",
+      "CALL2_ADD axis_range: Y-axis displays min=0 and max=4, giving a range of 4. This r"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "173",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 9.2,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "175",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0 to 16 (range of 16), which r"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "178",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "176",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 10.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Gaps between consecu"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "177",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps between con"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "179",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable from bottom to top. "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "181",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. The gaps are: 250, 2"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "183",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at 0, 10, 20, and 30."
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "182",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis tick values for the 'Median age of religious grou",
+      "CALL2_ADD axis_range: The displayed range is 0-40 (range of 40). This represents 1"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "180",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [
+      "ADD axis_range: narrow range (4.4% of max, min=95.6%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "186",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis shows tick values at 0, 10, 20, 30, and 40. The gap b",
+      "CALL2_ADD axis_range: The Y-axis displays a range from 0 to 40, which represents 1"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "185",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top are 0.00, 0.05, 0",
+      "CALL2_ADD axis_range: The Y-axis displays a range of 0.00 to 0.20. The displayed r"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "184",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD axis_range: The displayed Y-axis range is 30-180 (range of 150). As a pe"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "187",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "189",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "190",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at 0, 20, 40, 60, 80,",
+      "CALL2_ADD axis_range: The displayed X-axis range is 0 to 120, which represents 100",
+      "VETO dual_axis: no right Y-axis in OCR"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "191",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on both charts. The g"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "188",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 10.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co",
+      "CALL2_ADD axis_range: Displayed range is $280-$600 = $320 span. As a percentage of"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "192",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at 0, 20, 40, 60, 80,"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "193",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "194",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inverted axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis (shown as a horizontal scale bar at bottom) displ",
+      "CALL2_ADD inverted_axis: Reading the scale bar from left to right (which functions as",
+      "CALL2_ADD axis_range: The displayed range spans from \u221233.0% to 33.0%, a total rang"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "196",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: The displayed range is 0-160, which represents 100% of the m"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "195",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "197",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: Displayed Y-axis range is 50-95 (span of 45). The range 45/9"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "199",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly marked at 65, 70, 75, 80, and",
+      "CALL2_ADD axis_range: Y-axis displays range from 65 to 85 (span of 20). The displa"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "200",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 4.4,
+    "pp_log": [
+      "VETO truncated_axis: axis includes 0"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "198",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the left side. The"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "202",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "201",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values in top chart read clearly from bottom to "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "203",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis (horizontal in this bar chart) shows tick marks at 50"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "208",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: Y-axis displays 0-25 tweets/sec, which is 100% of the maximu"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "207",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 8.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "206",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values read from bottom to top are 0, 2, 4, 6, 8"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "204",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at the top of the cha"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "210",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of line chart",
+      "inappropriate item order"
+    ],
+    "elapsed_s": 4.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "205",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 10.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at 5, 10, 15, and 20.",
+      "CALL2_ADD axis_range: Y-axis displays range from 5 to 20 (range of 15). If max val"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "209",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "213",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [
+      "ADD axis_range: narrow range (5.2% of max, min=94.8%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "212",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inverted axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values reading from top to bottom are 0, -2, -4,",
+      "CALL2_ADD inverted_axis: Reading the Y-axis from bottom to top: bottom value is -8 an",
+      "CALL2_ADD axis_range: Y-axis minimum is -8 and maximum is 0, giving a displayed ra"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "214",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "211",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate item order"
+    ],
+    "elapsed_s": 10.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "215",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co",
+      "ADD axis_range: narrow range (5.7% of max, min=94.3%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "216",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "217",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the right side. Re",
+      "CALL2_ADD axis_range: Y-axis displays 4% to 12%, a range of 8 percentage points. T"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "218",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis shows three tick marks at 0, 600, and 1200. The gaps "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "224",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 3.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "221",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable from bottom to top: ",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-20 (range of 20). This repre"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "220",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.2,
+    "pp_log": [
+      "ADD axis_range: narrow range (1.2% of max, min=98.8%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "219",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "227",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "discretized continuous variable"
+    ],
+    "elapsed_s": 3.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "225",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "223",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.8,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "226",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 6.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "222",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 12.9,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "230",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "228",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the bar chart. The",
+      "CALL2_ADD axis_range: The displayed range is 0-20 (range of 20). This represents 1"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "229",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 9.4,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "233",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at ",
+      "ADD axis_range: narrow range (1.3% of max, min=98.7%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "231",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis shows clear tick marks at regular intervals of 10% fr"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "234",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Reading from bottom ",
+      "CALL2_ADD axis_range: Y-axis min is 0 and max is 150,000. Range displayed is 150,0"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "232",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 10.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. Gaps between consec",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-350 (range of 350). This rep"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "238",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 4.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "236",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable on the legend scale.",
+      "CALL2_ADD axis_range: The displayed range is 1020 - 780 = 240. As a percentage of "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "235",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "inconsistent tick intervals",
+      "inconsistent binning size"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the bottom chart. ",
+      "CALL2_ADD binning: The bottom chart is a stacked bar chart with categorical x-a"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "237",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable from 0 to 7. The gap",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0 to 7 (range = 7). This repre"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "240",
+    "ground_truth": [],
+    "predicted": [
+      "3d"
+    ],
+    "elapsed_s": 7.1,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "241",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.1,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at 0%, 10%, 20%, 30%,",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0% to 70%, which represents th"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "239",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "242",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the right side. Th",
+      "CALL2_ADD axis_range: The displayed range is 0.00 to 2.00 (range of 2.00), which r"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "246",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 3.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "243",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "245",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at the bottom of the ",
+      "CALL2_ADD axis_range: The displayed X-axis range is 0 to 10M (10,000,000). The ran"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "244",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible on the left chart. Th",
+      "CALL2_ADD axis_range: The displayed range is 0 to 1,200,000, which is the full ran"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "247",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Gap between consecut"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "250",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate use of pie chart",
+      "misrepresentation"
+    ],
+    "elapsed_s": 5.3,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "248",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at the top of the cha"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "249",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.6,
+    "pp_log": [
+      "CALL2_ADD axis_range: Left Y-axis displays from 0 to 400. The range (400-0=400) re"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "251",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "252",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit",
+      "CALL2_ADD axis_range: The displayed range (0-80) spans the full 100% of the maximu"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "253",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.7,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "256",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 7.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at ",
+      "CALL2_ADD axis_range: Y-axis displays full range from 0 to 3500 Mbbl/d, representi"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "254",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.3,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The Y-axis (horizontal axis showing Facebook shares) display"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "255",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at ",
+      "CALL2_ADD axis_range: The displayed range (0-60) is 60 units. The actual data rang"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "258",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis ticks are clearly visible and evenly spaced at interv"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "257",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 9.0,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "259",
+    "ground_truth": [],
+    "predicted": [],
+    "elapsed_s": 7.6,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "262",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.0,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "260",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 10.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at ",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 0-10 (full range of 10). The a"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "261",
+    "ground_truth": [],
+    "predicted": [
+      "truncated axis",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 10.2,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly readable. The gaps between co",
+      "ADD axis_range: narrow range (5.1% of max, min=94.9%)"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "263",
+    "ground_truth": [],
+    "predicted": [
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.4,
+    "pp_log": [
+      "CALL2_ADD axis_range: The displayed range is -0.68 to 0.68 (total span of 1.36 uni"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "264",
+    "ground_truth": [],
+    "predicted": [
+      "discretized continuous variable",
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible from bottom to top. T",
+      "CALL2_ADD axis_range: The displayed Y-axis range is 120\u00b0 (from \u221220\u00b0 to 100\u00b0). The "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "265",
+    "ground_truth": [],
+    "predicted": [
+      "misrepresentation"
+    ],
+    "elapsed_s": 7.7,
+    "pp_log": [],
+    "had_call2": true
+  },
+  {
+    "instance_id": "266",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.8,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced wit"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "268",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 6.9,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible and evenly spaced at "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "269",
+    "ground_truth": [],
+    "predicted": [
+      "dual axis",
+      "inconsistent tick intervals"
+    ],
+    "elapsed_s": 8.5,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible at regular intervals "
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "267",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 11.6,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: Y-axis tick values are clearly visible. Each consecutive gap",
+      "CALL2_ADD axis_range: Displayed range is 6,000,000,000 (from 1B to 7B). This repre"
+    ],
+    "had_call2": true
+  },
+  {
+    "instance_id": "270",
+    "ground_truth": [],
+    "predicted": [
+      "inconsistent tick intervals",
+      "inappropriate axis range"
+    ],
+    "elapsed_s": 8.4,
+    "pp_log": [
+      "CALL2_ADD tick_intervals: The X-axis tick values are clearly visible at the bottom of ",
+      "ADD axis_range: narrow range (5.1% of max, min=94.9%)"
+    ],
+    "had_call2": true
+  }
+]
